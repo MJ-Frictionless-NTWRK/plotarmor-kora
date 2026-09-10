@@ -3,7 +3,9 @@ services:
   - type: web
     name: plotarmor-kora-devnet
     runtime: docker
-    plan: 0.5c-512mb
+    # Intentionally temporary free tier. Switch to a paid always-on plan the moment
+    # the application calls this service during a real signing flow, not before.
+    plan: free
     region: frankfurt
     dockerfilePath: ./Dockerfile
     dockerContext: .
@@ -31,7 +33,9 @@ services:
 
   - type: keyvalue
     name: plotarmor-kora-usage-devnet
-    plan: 256mb
+    # Intentionally temporary free tier. Switch to a paid always-on plan the moment
+    # the application calls this service during a real signing flow, not before.
+    plan: free
     region: frankfurt
     ipAllowList: []
     maxmemoryPolicy: noeviction
