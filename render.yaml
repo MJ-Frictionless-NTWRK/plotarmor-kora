@@ -5,13 +5,13 @@ services:
     runtime: docker
     # Intentionally temporary free tier. Switch to a paid always-on plan the moment
     # the application calls this service during a real signing flow, not before.
+    # Restore maxShutdownDelaySeconds: 60 at the same time this plan switches to paid.
     plan: free
     region: frankfurt
     dockerfilePath: ./Dockerfile
     dockerContext: .
     autoDeployTrigger: "off"
     healthCheckPath: /liveness
-    maxShutdownDelaySeconds: 60
     envVars:
       - key: PORT
         value: "10000"
