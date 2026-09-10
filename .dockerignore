@@ -1,0 +1,9 @@
+# Only public runtime configuration enters the image build context.
+**
+!Dockerfile
+!.dockerignore
+!kora.toml
+!signers.toml
+!scripts/
+scripts/**
+!scripts/start.sh

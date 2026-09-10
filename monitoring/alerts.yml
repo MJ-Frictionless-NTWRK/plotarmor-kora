@@ -1,0 +1,24 @@
+groups:
+  - name: plotarmor-kora-devnet
+    rules:
+      - alert: KoraMetricsUnavailable
+        expr: up{job="plotarmor-kora-devnet"} == 0
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: Kora metrics endpoint is unavailable
+      - alert: KoraSignerBalanceMissing
+        expr: absent(signer_balance_lamports{job="plotarmor-kora-devnet",signer_name="plotarmor-devnet"})
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: Kora signer balance series is missing
+      - alert: KoraSignerBalanceLow
+        expr: signer_balance_lamports{job="plotarmor-kora-devnet",signer_name="plotarmor-devnet"} < 100000000
+        for: 2m
+        labels:
+          severity: warning
+        annotations:
+          summary: Kora signer balance is below 0.1 devnet SOL

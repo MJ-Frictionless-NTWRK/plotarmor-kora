@@ -1,0 +1,157 @@
+# v2.2.0-beta.8 policy. Devnet network fees only; users fund account rent.
+[kora]
+rate_limit = 20
+
+[kora.auth]
+max_timestamp_age = 300
+# KORA_API_KEY and KORA_HMAC_SECRET come from the runtime secret store.
+
+[kora.cache]
+enabled = false
+default_ttl = 300
+account_ttl = 60
+price_ttl = 0
+
+[kora.usage_limit]
+enabled = true
+fallback_if_unavailable = false
+# KORA_REDIS_URL overrides this unreachable fallback. Missing configuration fails.
+cache_url = "redis://127.0.0.1:1"
+
+[[kora.usage_limit.rules]]
+type = "transaction"
+max = 10
+window_seconds = 3600
+
+[kora.lighthouse]
+enabled = true
+fail_if_transaction_size_overflow = true
+
+[kora.enabled_methods]
+liveness = true
+estimate_transaction_fee = true
+get_supported_tokens = false
+get_payer_signer = true
+get_blockhash = true
+get_config = false
+get_version = true
+sign_transaction = true
+sign_and_send_transaction = false
+transfer_transaction = false
+estimate_bundle_fee = false
+sign_bundle = false
+sign_and_send_bundle = false
+
+[kora.bundle]
+enabled = false
+
+[kora.plugins]
+enabled = []
+
+[validation]
+max_allowed_lamports = 1000000
+max_signatures = 2
+price_source = "Mock"
+allow_durable_transactions = false
+cross_cluster_check = false
+cross_cluster_endpoints = []
+# Exactly PlotArmor, System Program (including rent CPIs), and Lighthouse.
+allowed_programs = [
+    "3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2",
+    "11111111111111111111111111111111",
+    "L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95",
+]
+# Infrastructure programs alone must not qualify for sponsorship.
+require_one_of_programs = ["3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2"]
+allowed_tokens = []
+allowed_spl_paid_tokens = []
+disallowed_accounts = []
+
+[validation.price]
+type = "free"
+
+[validation.fee_payer_policy.system]
+allow_transfer = false
+allow_assign = false
+# Investigated before setting: rent payer is signer/claimant/anchorer/admin,
+# never implicitly the transaction fee payer. See README.md payer table.
+allow_create_account = false
+allow_allocate = false
+
+[validation.fee_payer_policy.system.nonce]
+allow_initialize = false
+allow_advance = false
+allow_authorize = false
+allow_withdraw = false
+
+[validation.fee_payer_policy.spl_token]
+allow_transfer = false
+allow_burn = false
+allow_close_account = false
+allow_approve = false
+allow_revoke = false
+allow_set_authority = false
+allow_mint_to = false
+allow_initialize_mint = false
+allow_initialize_account = false
+allow_initialize_multisig = false
+allow_freeze_account = false
+allow_thaw_account = false
+allow_withdraw_excess_lamports = false
+allow_unwrap_lamports = false
+
+[validation.fee_payer_policy.token_2022]
+allow_transfer = false
+allow_burn = false
+allow_close_account = false
+allow_approve = false
+allow_revoke = false
+allow_set_authority = false
+allow_mint_to = false
+allow_initialize_mint = false
+allow_initialize_account = false
+allow_initialize_multisig = false
+allow_initialize_extension_authority = false
+allow_update_extension_authority = false
+allow_freeze_account = false
+allow_thaw_account = false
+allow_withdraw_excess_lamports = false
+allow_unwrap_lamports = false
+
+[validation.fee_payer_policy.alt]
+allow_create = false
+allow_extend = false
+allow_freeze = false
+allow_deactivate = false
+allow_close = false
+
+[validation.fee_payer_policy.bpf_loader_upgradeable]
+allow_initialize_buffer = false
+allow_write = false
+allow_deploy_with_max_data_len = false
+allow_upgrade = false
+allow_set_authority = false
+allow_set_authority_checked = false
+allow_close = false
+allow_extend_program = false
+allow_extend_program_checked = false
+allow_migrate = false
+
+[validation.fee_payer_policy.loader_v4]
+allow_write = false
+allow_copy = false
+allow_set_program_length = false
+allow_deploy = false
+allow_retract = false
+allow_transfer_authority = false
+allow_finalize = false
+
+[metrics]
+enabled = true
+endpoint = "/metrics"
+port = 10000
+scrape_interval = 60
+
+[metrics.fee_payer_balance]
+enabled = true
+expiry_seconds = 30

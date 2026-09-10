@@ -1,0 +1,8 @@
+[signer_pool]
+strategy = "round_robin"
+
+[[signers]]
+name = "plotarmor-devnet"
+type = "memory"
+# Human-populated Render secret; never put its value in this repository.
+private_key_env = "KORA_FEE_PAYER_SECRET"

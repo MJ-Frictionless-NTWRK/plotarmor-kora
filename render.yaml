@@ -1,0 +1,37 @@
+# Human applies this Blueprint. No agent deployment is authorized.
+services:
+  - type: web
+    name: plotarmor-kora-devnet
+    runtime: docker
+    plan: 0.5c-512mb
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeployTrigger: "off"
+    healthCheckPath: /liveness
+    maxShutdownDelaySeconds: 60
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: RPC_URL
+        value: https://api.devnet.solana.com
+      - key: RUST_LOG
+        value: info
+      - key: KORA_API_KEY
+        sync: false
+      - key: KORA_HMAC_SECRET
+        sync: false
+      - key: KORA_FEE_PAYER_SECRET
+        sync: false
+      - key: KORA_REDIS_URL
+        fromService:
+          type: keyvalue
+          name: plotarmor-kora-usage-devnet
+          property: connectionString
+
+  - type: keyvalue
+    name: plotarmor-kora-usage-devnet
+    plan: 256mb
+    region: frankfurt
+    ipAllowList: []
+    maxmemoryPolicy: noeviction

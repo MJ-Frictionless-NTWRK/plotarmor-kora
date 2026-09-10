@@ -1,0 +1,12 @@
+.env
+.env.*
+*.pem
+*.key
+*keypair*
+*.secret
+secrets/
+.secrets/
+*.log
+__pycache__/
+.pytest_cache/
+.DS_Store

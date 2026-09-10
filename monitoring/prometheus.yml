@@ -1,0 +1,15 @@
+# Local Prometheus process scraping a Kora process on the same host.
+# For Render, replace the target with the assigned hostname and use scheme: https.
+global:
+  scrape_interval: 60s
+  evaluation_interval: 60s
+
+rule_files:
+  - alerts.yml
+
+scrape_configs:
+  - job_name: plotarmor-kora-devnet
+    metrics_path: /metrics
+    scheme: http
+    static_configs:
+      - targets: ["127.0.0.1:10000"]
