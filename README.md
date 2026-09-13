@@ -2,7 +2,9 @@
 
 This repository configures Kora to sponsor PlotArmor transaction network fees on
 Solana devnet. Users still pay account rent. It contains deployment scaffolding;
-it is not a claim that a Render service exists or that signing has been verified.
+the human has since confirmed the Render deployment and two live signing probes.
+See the provisional verification record below. Application integration in
+`plotarmor-demo` has not started.
 
 Read [CLAUDE.md](CLAUDE.md) first. Its fee-payer key canon is permanent. No agent
 may generate, read, decode, or transmit a Kora fee-payer private key or seed phrase,
@@ -250,6 +252,257 @@ unverified. It does not load or validate `signers.toml` against a secret.
 
 ## Human signer-backed verification
 
+### Standalone live signing probe
+
+The human reports the deployment at `https://plotarmor-kora-devnet.onrender.com`
+is live, with `/liveness` and `/metrics` working and the funded signer reporting
+5,000,000,000 lamports. These are human-reported observations, not an agent-run
+signing verification.
+
+Run [scripts/verify_live_sign_transaction.mjs](scripts/verify_live_sign_transaction.mjs)
+in your own private terminal with Node.js 20 or newer. No packages are required.
+This design does **not** require touching `KORA_FEE_PAYER_SECRET`. Only Kora's
+public address is fetched; its private key stays server-side. The script reads
+only `KORA_API_KEY` and `KORA_HMAC_SECRET`, with no dotenv or key files. Do not run
+these commands through an agent or provide the secret values to an agent.
+
+```bash
+cd /path/to/plotarmor-kora
+read -rsp 'KORA_API_KEY: ' KORA_API_KEY; printf '\n'
+read -rsp 'KORA_HMAC_SECRET: ' KORA_HMAC_SECRET; printf '\n'
+export KORA_API_KEY KORA_HMAC_SECRET
+node scripts/verify_live_sign_transaction.mjs
+# Optional, after the run:
+unset KORA_API_KEY KORA_HMAC_SECRET
+```
+
+Enter your existing Render API and HMAC values at those hidden prompts. This
+keeps literal secrets out of shell history. No fee-payer secret is needed in this
+terminal. Keep raw responses private and share only sanitized results.
+
+The script uses authenticated `getPayerSigner` and `getBlockhash` calls to build
+a minimal unsigned legacy transaction: one System Program transfer of **zero
+lamports from the public Kora payer to itself**, with one signature slot reserved
+for Kora. It generates no key, performs no PlotArmor operation, and never
+broadcasts. `sig_verify: false` permits the missing signature before Kora signs.
+The public payer address serves as a stable probe `user_id` for Free-mode quota
+accounting; this is not an authenticated application wallet identity.
+
+**The checked-in policy prevents this from proving successful co-signing:**
+`require_one_of_programs` requires PlotArmor, even though System is allowlisted.
+The fee-payer policy also forbids System transfers, including this instruction
+shape. The probe preserves both settings and reports the actual live response.
+A policy rejection is not a malformed Solana transaction and is not a signing
+pass. A successful System-only response warrants investigation of deployed policy.
+Testing successful signing under the current policy requires a separately
+authorized, policy-compliant transaction; this script does not fabricate one.
+
+Both signing requests use the same valid transaction, real API key, and fresh
+Unix-second timestamps. The negative control changes one hex digit of the HMAC
+and must receive HTTP 401. Each HMAC covers the timestamp immediately followed
+by the exact JSON body sent. The script then submits the correctly authenticated
+request, prints raw status/body, distinguishes JSON-RPC errors from success, and
+inspects any returned `signed_transaction`. It verifies the payer's Ed25519
+signature and the appended Lighthouse instruction's program, payer account,
+12-byte assertion layout, and minimum balance. Merely finding a program address
+in the account list does not count as an assertion. Rejection leaves Lighthouse
+unverified. No on-chain execution or assertion enforcement is tested.
+
+Exit codes: `0` means signing, signature, Lighthouse shape, and bad-HMAC checks
+passed; `2` means signing was rejected while the bad-HMAC check returned 401;
+`1` means another check or setup failed. Read the raw error to distinguish policy,
+quota, RPC, and authentication failures. An exit `0` is not policy verification.
+
+The request/response fields and assertion decoder follow the pinned upstream
+[signTransaction implementation](https://github.com/solana-foundation/kora/blob/v2.2.0-beta.8/crates/lib/src/rpc_server/method/sign_transaction.rs)
+and [Lighthouse implementation](https://github.com/solana-foundation/kora/blob/v2.2.0-beta.8/crates/lib/src/lighthouse/assertion.rs).
+
+Offline check (dummy credentials only, no network or signing keys):
+
+```bash
+node --test scripts/verify_live_sign_transaction.test.mjs
+```
+
+### Genuine PlotArmor signing probe (no broadcast)
+
+The human subsequently confirmed wrong-HMAC HTTP 401 and rejection of a
+System-only transaction by `require_one_of_programs`. Those checks do not yet
+establish successful PlotArmor signing.
+
+[scripts/verify_plotarmor_sign_transaction.mjs](scripts/verify_plotarmor_sign_transaction.mjs)
+uses `anchor_evidence_contract`. Read-only inspection of the sibling
+`../plotarmor-program/target/idl/plotarmor.json` and all seven instruction account
+structs found:
+
+| Instruction | Accounts | Existing state or authority needed |
+| --- | --- | --- |
+| `anchor_evidence_contract` | 6 | RegistryConfig only; funded anchorer |
+| `register_work_claim` | 9 | RegistryConfig only; funded claimant |
+| `sign_contract` | 5 | RegistryConfig and existing ContractArtifact |
+| `add_version` | 7 | RegistryConfig and existing claimant-owned WorkClaim |
+| `add_owner` | 7 | RegistryConfig, WorkClaim, Ownership, matching admin |
+| `anchor_authorized_contract` | 8 | RegistryConfig, WorkClaim, Ownership, matching admin |
+| `init_registry_config` | 5 | Upgrade authority; singleton must not already exist |
+
+Evidence anchoring has fewer accounts than registration while requiring no
+existing user records. Its argument order is `raw_contract_hash: [u8;32]`,
+`contract_kind: u8`, `anchor_nonce: [u8;32]`, `anchor_mode_arg: u8`,
+`asserted_work_claim: Pubkey`, `external_ref_hash: [u8;32]`. The discriminator is
+`[5,43,187,2,36,176,229,86]`. Account order and PDA seeds are:
+
+1. RegistryConfig: `["config"]`, readonly.
+2. ContractArtifact: `["contract_artifact", raw_contract_hash]`, writable.
+3. EvidenceAnchor: `["evidence", anchorer, contract_artifact]`, writable.
+4. AnchorRecord: `["anchor", evidence_anchor, anchor_nonce]`, writable.
+5. Anchorer: writable signer and rent payer.
+6. System Program: readonly.
+
+Both registration and evidence anchoring permit the instruction signer to equal
+the transaction fee payer at the **program** level. However, all their created
+accounts charge rent to that signer. Using Kora would conflict with
+`allow_create_account = false` and the network-fees-only policy. The new script
+therefore requires a distinct, funded devnet user **public address**. It does not
+need that user's private key to simulate with `sigVerify: false` and request
+Kora's partial signature. Both signature slots start empty. If the deployment
+forces signature verification, its rejection remains a real blocker; the script
+does not circumvent it.
+
+The script reads the sibling IDL and reuses its already-installed
+`@coral-xyz/anchor` and `@solana/web3.js` packages for the Anchor encoding boundary
+and PDA derivation. It writes nothing in the sibling repo. Run with both checkouts
+in the same parent directory and those dependencies already present. No wallet
+provider, keypair file, environment file, or fee-payer secret is loaded.
+
+Run the offline tests first:
+
+```bash
+node --test scripts/verify_live_sign_transaction.test.mjs scripts/verify_plotarmor_sign_transaction.test.mjs
+```
+
+Then, in your private terminal, using your existing API/HMAC secrets and a funded
+user wallet's public address:
+
+```bash
+cd /path/to/plotarmor-kora
+read -rsp 'KORA_API_KEY: ' KORA_API_KEY; printf '\n'
+read -rsp 'KORA_HMAC_SECRET: ' KORA_HMAC_SECRET; printf '\n'
+read -rp 'Funded devnet user PUBLIC address: ' PLOTARMOR_PROBE_USER
+export KORA_API_KEY KORA_HMAC_SECRET PLOTARMOR_PROBE_USER
+export PLOTARMOR_PROBE_INTENT='kora-signing-only-check-001'
+node scripts/verify_plotarmor_sign_transaction.mjs
+unset KORA_API_KEY KORA_HMAC_SECRET
+```
+
+Keep the intent unchanged for retries. It deterministically identifies public
+synthetic probe content and the anchor nonce. The probe uses contract kind 0
+(unspecified), mode 1 (attested devnet), zero asserted claim, and zero external
+reference hash. It creates no actual record because it never broadcasts.
+
+The script checks the public devnet genesis, obtains Kora's public fee payer and
+blockhash through the shared authenticated RPC helper, and prints all derived
+public accounts. It simulates the unsigned transaction against public devnet
+before requesting signing. Simulation failure prints the raw error/logs and
+stops before Kora signing. Common prerequisites include an existing unpaused
+registry, a funded rent payer, and unused EvidenceAnchor/AnchorRecord PDAs.
+Simulation with signature checks disabled does not prove wallet ownership.
+
+After simulation passes it calls only Kora `signTransaction`, prints the raw
+HTTP status/body, and reuses the original probe's Ed25519 signature verification
+and Lighthouse balance-assertion decoder. It also checks that the original
+PlotArmor instruction is preserved and both signer slots remain. Exit `0` means
+those checks passed, `2` means simulation or Kora rejected the request, and `1`
+means setup or returned-transaction verification failed. The human has now
+provided a successful live evidence-anchoring run, recorded below.
+
+Before any later broadcast, obtain separate explicit authorization for the
+permanent evidence record, review the synthetic content and account attribution,
+and have the user wallet sign **Kora's returned message**. Ensure rent funding,
+unchanged relevant account state, a still-valid blockhash, and a still-satisfied
+Lighthouse minimum balance; simulate the fully signed transaction including
+Lighthouse. If the blockhash has expired, obtain a fresh Kora-signed transaction
+and sign that new message. Do not edit a message after either party signs it.
+The signing-only script contains no broadcast method.
+
+Offline probe evidence: one combined offline suite run passed, including independent
+IDL seed resolution, explicit expected instruction bytes, SDK wire decoding,
+and a mocked signing rejection. That is one offline suite pass, separate from
+the two human-confirmed live signing passes in the verification record.
+
+### Registration signing probe
+
+The human supplied one successful live `anchor_evidence_contract` signing run:
+simulation passed, Kora returned a valid Ed25519 signature, the original
+instruction and two signer slots remained, and a trailing Lighthouse assertion
+required a payer balance of at least 4,999,990,000 lamports. Nothing was broadcast.
+This is the first of **two independent live signing passes**, still provisional.
+
+[scripts/verify_register_work_claim.mjs](scripts/verify_register_work_claim.mjs)
+tests `register_work_claim` using the same shared authentication, response,
+signature, and Lighthouse helpers. Read-only IDL and Rust account inspection
+give this account order:
+
+| Account | Seeds or identity | Access |
+| --- | --- | --- |
+| RegistryConfig | `["config"]` | Readonly |
+| ContentArtifact | `["content", raw_hash]` | Writable |
+| WorkClaim | `["claim", content_artifact, signer]` | Writable |
+| Ownership | `["ownership", work_claim]` | Writable |
+| OwnerRecord | `["owner", ownership, signer]` | Writable |
+| ClaimArtifactLink | `["claim_artifact", work_claim, link_nonce]` | Writable |
+| AnchorRecord | `["anchor", work_claim, anchor_nonce]` | Writable |
+| Signer | User wallet, claimant, initial owner/admin, rent payer | Writable signer |
+| System Program | `11111111111111111111111111111111` | Readonly |
+
+The existing funded wallet
+`HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn` can be the claimant. No previous
+claim or privileged authority is required. Kora remains the separate network fee
+payer. The probe uses unspecified content/claim kinds (0), total/threshold shares
+1/1, attested devnet mode (1), and a zero external reference hash. The registration
+discriminator is `[128,224,48,240,166,14,119,76]`.
+
+Each invocation generates and prints a fresh UUID-based **public intent**, with
+separate domain-separated hashes for synthetic content, link nonce, and anchor
+nonce. No keys are generated. `PLOTARMOR_PROBE_INTENT` is not read by this script.
+All six record PDAs change per invocation; the existing registry is reused. The
+script checks all six records are absent before simulation and fails if any is
+occupied, including the `init_if_needed` ContentArtifact. This is a point-in-time
+check, not an on-chain reservation. Within a run, the same intent and transaction
+are used for simulation and signing. Simulation and signing do not create PDAs.
+
+With Node.js 20+ and the sibling IDL/dependencies present, run privately:
+
+```bash
+cd /home/sucka/plotarmor-kora
+read -rsp 'KORA_API_KEY: ' KORA_API_KEY; printf '\n'
+read -rsp 'KORA_HMAC_SECRET: ' KORA_HMAC_SECRET; printf '\n'
+export KORA_API_KEY KORA_HMAC_SECRET
+PLOTARMOR_PROBE_USER='HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn' \
+  node scripts/verify_register_work_claim.mjs
+unset KORA_API_KEY KORA_HMAC_SECRET
+```
+
+No private wallet key or fee-payer secret is accessed and no broadcast method is
+called. Any later broadcast requires separate authorization and the claimant's
+signature on Kora's returned message, plus fresh validity/funding checks.
+
+Offline tests:
+
+```bash
+node --test scripts/verify_live_sign_transaction.test.mjs scripts/verify_plotarmor_sign_transaction.test.mjs scripts/verify_register_work_claim.test.mjs
+```
+
+One combined offline suite run passed for this registration implementation:
+explicit argument bytes, nine account positions and privileges, independent IDL
+seed resolution, fresh-intent PDA changes, mocked authenticated signing rejection,
+and refusal of an occupied record. The human subsequently confirmed successful
+live registration simulation and Kora signing, a valid Kora signature, the
+preserved original instruction, and a Lighthouse assertion at the same
+4,999,990,000-lamport threshold as the evidence probe. Simulation postBalances
+confirmed user-funded account rent. This is the second independent live signing
+pass. Simulation balance changes are not actual spending; no broadcast occurred.
+
+### Local signer-backed checks
+
 Run these checks privately, with a human-created test signer if desired. Never
 ask an agent to prepare or read even a disposable fee-payer key. On a private
 machine, build the image above and prepare a private environment file containing
@@ -286,10 +539,11 @@ docker run --rm --network host \
 
 This checks the configured programs against the actual RPC as well as signer setup.
 
-Human integration evidence must additionally cover a user-funded PlotArmor rent
-CPI, Lighthouse presence in the returned transaction, wallet quota rejection,
-rejection of infrastructure-only transactions and disallowed programs, and failure
-when Redis is unavailable. This scaffolding alone is not proof of those behaviors.
+Human live probes have covered user-funded PlotArmor rent CPIs in simulation,
+Lighthouse presence in returned transactions, and infrastructure-only rejection.
+Further live evidence is still needed for wallet quota rejection, disallowed
+program rejection, and failure when Redis is unavailable. These probes do not
+establish application integration or on-chain execution of returned transactions.
 
 Return only pass/fail results, the public address, image identity, nonsecret metric
 labels/value, and any sanitized error category. Never paste the environment file,
@@ -312,10 +566,20 @@ independent runtime passes. Multiple assertions within one suite remain one pass
 | Native Kora startup without signer and with Redis | Passed |
 | `/liveness`, API-key/HMAC checks, disabled sign-and-send, HTTP `/metrics` | Passed |
 | Docker image build and container startup | Not run: Docker unavailable; installation requires interactive sudo |
-| Signer-backed startup and balance gauge labels/value | Pending private human check |
-| Live RPC validation and PlotArmor transaction policy behavior | Pending |
-| Render deployment | Not performed |
+| Signer-backed startup and balance gauge labels/value | Human confirmed live; Kora payer funded at 5,000,000,000 lamports |
+| Live authentication and infrastructure-only policy rejection | Human confirmed wrong-HMAC HTTP 401 and `require_one_of_programs` rejection |
+| Live signing pass 1: `anchor_evidence_contract` | Human-provided output: simulation passed, valid Kora signature, Lighthouse threshold 4,999,990,000 lamports, original instruction preserved |
+| Live signing pass 2: `register_work_claim` | Human confirmed simulation, valid Kora signature, same Lighthouse threshold, original instruction preserved, user-funded rent in simulated postBalances |
+| Broadcast of signing-probe transactions | Never performed; no probe records permanently created |
+| Application integration in `plotarmor-demo` | Not started |
+| Remaining live policy coverage | Wallet quota, disallowed programs, Redis failure, and full deployment verification remain incomplete |
+| Render deployment | Human confirmed live at `https://plotarmor-kora-devnet.onrender.com` |
 
-**Automated no-signer verification: 1 of 4 required passes.** No claim of complete
-verification or security is made. No commit is authorized until the required
-verification is satisfied; the current scaffolding remains uncommitted.
+**Independent live signing verification: 2 of 4 required passes, provisional.**
+The two different instructions are counted as separate live passes. Assertions
+within each run are not extra passes. Historical no-signer and offline checks
+are recorded separately and do not increase this live signing count. No broadcast
+has ever been performed by these probes, and `plotarmor-demo` integration has not
+started. No claim of complete verification or security is made. The human has
+explicitly authorized committing these probes and documentation and pushing the
+pending commits while verification remains provisional.
