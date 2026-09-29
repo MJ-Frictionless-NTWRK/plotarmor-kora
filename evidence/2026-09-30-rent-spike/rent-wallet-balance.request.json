@@ -1,0 +1,1 @@
+{"jsonrpc": "2.0", "id": "rent-wallet-balance", "method": "getBalance", "params": ["HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn", {"commitment": "confirmed"}]}

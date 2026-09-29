@@ -1,0 +1,37 @@
+{
+  "accounts": [
+    {
+      "account": "ContentArtifact",
+      "bytes_including_discriminator": 50,
+      "rent_lamports": 904240
+    },
+    {
+      "account": "WorkClaim",
+      "bytes_including_discriminator": 210,
+      "rent_lamports": 1717040
+    },
+    {
+      "account": "Ownership",
+      "bytes_including_discriminator": 110,
+      "rent_lamports": 1209040
+    },
+    {
+      "account": "OwnerRecord",
+      "bytes_including_discriminator": 75,
+      "rent_lamports": 1031240
+    },
+    {
+      "account": "ClaimArtifactLink",
+      "bytes_including_discriminator": 112,
+      "rent_lamports": 1219200
+    },
+    {
+      "account": "AnchorRecord",
+      "bytes_including_discriminator": 82,
+      "rent_lamports": 1066800
+    }
+  ],
+  "total_lamports": 7147560,
+  "method": "getMinimumBalanceForRentExemption per size; no byte-rate formula",
+  "assumptions": "six target accounts absent; registry config already exists; user starts at zero"
+}

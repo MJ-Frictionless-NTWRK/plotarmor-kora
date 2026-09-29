@@ -1,0 +1,1 @@
+{"jsonrpc": "2.0", "id": "fee-payer-balance", "method": "getBalance", "params": ["HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW", {"commitment": "confirmed"}]}

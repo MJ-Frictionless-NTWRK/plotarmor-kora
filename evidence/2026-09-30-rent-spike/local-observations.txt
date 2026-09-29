@@ -1,0 +1,12 @@
+UTC 2026-09-29T22:05:23.613410+00:00
+ M README.md
+?? evidence/
+?? scripts/verify_stateful_signing.mjs
+?? scripts/verify_stateful_signing.test.mjs
+
+6de622fe5aa687dc5448135026eb2c94af547ce2
+
+/home/sucka/secrets/probe-user.json mode=600 owner=sucka size=231
+Key file stat only; contents never read.
+Credential availability (names/boolean only):
+{"KORA_API_KEY": false, "KORA_HMAC_SECRET": false, "RENDER_API_KEY": false}

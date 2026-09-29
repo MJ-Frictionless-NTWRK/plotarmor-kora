@@ -1,0 +1,115 @@
+scripts/verify_stateful_signing.mjs
+149:     assert.ok(process.env.KORA_API_KEY && process.env.KORA_HMAC_SECRET, 'Kora API/HMAC credentials unavailable in this session');
+150:     assert.equal(await rpc('getGenesisHash', []), DEVNET_GENESIS_HASH);
+151:     // Only this explicitly authorized ordinary user key is loaded. Never open Kora's key.
+152:     const wallet = Keypair.fromSecretKey(Uint8Array.from(JSON.parse(readFileSync('/home/sucka/secrets/probe-user.json', 'utf8'))));
+153:     const authority = wallet.publicKey.toBase58();
+154:     assert.equal(authority, 'HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn', 'Unexpected ordinary probe wallet');
+155:     const payer = (await rpc('getPayerSigner', {}, true)).signer_address;
+156:     assert.notEqual(payer, authority);
+
+README.md
+190: 
+191: ## Health and monitoring
+192: 
+193: `GET /liveness` responds without authentication and performs no signing. It is a
+194: process liveness check, not a balance, Redis, or Solana RPC readiness guarantee.
+195: Render uses it for `healthCheckPath`; later warmup pings may use the same path.
+196: 
+197: `GET /metrics` is also unauthenticated in this upstream version. On the shared
+198: public listener, telemetry and signer public addresses are publicly visible.
+199: Do not assume the API/HMAC middleware protects this endpoint. Changing exposure
+200: requires a proxy or separate private monitoring listener and a reviewed design.
+201: 
+202: The actual balance gauge is `signer_balance_lamports`, labelled by `signer_name`
+203: and `signer_pubkey`. The earlier `fee_payer_balance_lamports` name was a
+204: documentation mismatch; the decision is to use the real gauge without an alias.
+205: With this signer config, `signer_name` is `plotarmor-devnet` and `signer_pubkey`
+206: must match the human-provided public address. Tracking runs every 30 seconds.
+207: Upstream can report zero on an account-read error, so investigate RPC failures
+208: alongside low-balance alerts. A no-signer process cannot supply balance samples.
+
+evidence/2026-09-17-stateful-probes-001/REPORT.md
+1: # Devnet stateful Kora signing coverage, 2026-09-17
+2: 
+3: Live execution finished at 17:41:45 UTC. All three requested instructions passed
+4: on their first live attempt. Registration also passed its signing refresh during
+5: setup. There were no live failures or retries. Earlier credential-readiness and
+6: local startup failures remain preserved in ../2026-09-17-stateful-readiness/.
+7: 
+8: | Instruction | Status | Raw Kora request / response | Fully signed raw simulation | Authority delta (lamports) |
+9: | --- | --- | --- | --- | --- |
+10: | add_version | PASS | [request](006-kora-signTransaction.request.json), [response](006-kora-signTransaction.response.txt) | [simulation](007-devnet-simulateTransaction.response.txt) | -3,190,240 |
+11: | add_owner | PASS | [request](010-kora-signTransaction.request.json), [response](010-kora-signTransaction.response.txt) | [simulation](011-devnet-simulateTransaction.response.txt) | -1,031,240 |
+12: | anchor_authorized_contract | PASS | [request](014-kora-signTransaction.request.json), [response](014-kora-signTransaction.response.txt) | [simulation](015-devnet-simulateTransaction.response.txt) | -3,027,680 |
+13: | register_work_claim refresh | PASS | [request](../2026-09-17-stateful-setup-001/005-kora-signTransaction.request.json), [response](../2026-09-17-stateful-setup-001/005-kora-signTransaction.response.txt) | [simulation](../2026-09-17-stateful-setup-001/006-devnet-simulateTransaction.response.txt) | -7,147,560 |
+14: 
+15: Each PASS includes unsigned preflight, a valid Kora Ed25519 signature, unchanged
+16: PlotArmor instruction data/account order/account privileges, unchanged blockhash
+17: and fee payer, exactly one appended Lighthouse assertion, an ordinary authority
+18: signature added without message changes, and successful sigVerify=true simulation
+19: of that exact fully signed transaction without blockhash replacement. Saved raw
+20: request/response bodies, base64 transactions, IDL, arguments, account maps, balance
+21: summaries and verification summaries allow reconstruction. Authentication headers
+22: are omitted so credentials are not persisted. Requests and responses are otherwise
+23: the original JSON RPC bodies.
+24: 
+25: Kora necessarily signs the returned Lighthouse-bearing message, not the original
+26: pre-Lighthouse message. Verification reconstructs that permitted message change
+27: and compares exact serialized messages, in addition to checking the original
+28: PlotArmor instruction byte-for-byte.
+29: 
+30: All four Lighthouse assertions target Kora fee payer
+31: `HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW` and require at least
+32: **4,999,990,000 lamports**. The ordinary authority/rent payer is
+33: `HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn`.
+34: Each Kora transaction simulation debits the fee payer 10,000 lamports and the
+35: authority the rent amount above. Those are simulated debits, not actual spending.
+36: 
+37: ## Actual setup broadcast
+38: 
+39: Exactly one transaction was broadcast, directly through devnet RPC and paid and
+40: signed solely by the ordinary authority wallet. It contains only registration,
+41: no Kora signature and no Lighthouse instruction. The registration created the
+42: WorkClaim and matching Ownership/admin used by all three probes. The probe stage
+43: read and validated their owners, discriminators, claimant/admin fields and PDAs.
+44: 
+45: Setup signature:
+46: 
+47: `4V1gZYiuRWNWvUY52o1rNwVBjA6aASrg2SZ25JyReXYiP3683kY1WkPDArkT1Jmg3N53davDv2pJEgbtKtUWPaC6`
+48: 
+49: [Confirmed signature status](../2026-09-17-stateful-setup-001/011-devnet-getSignatureStatuses.response.txt),
+50: [on-chain transaction and metadata](../2026-09-17-stateful-setup-001/012-devnet-getTransaction.response.txt),
+51: [fixture accounts](fixture.json).
+52: 
+53: The setup preflight debited the ordinary authority 7,152,560 lamports including
+54: its 5,000-lamport network fee. No add_version, add_owner, authorized-contract or
+55: Kora-signed registration probe was broadcast. The synthetic new owner is a public
+56: Edwards basepoint address; no ownership addition was persisted.
+57: 
+58: ## Coverage and constraints
+59: 
+60: This run produced **4 qualifying live signing passes**: 3 new instruction shapes
+61: and 1 registration refresh. The three target probes used confirmed state and do
+62: not depend on M2. Source inspection and the M2 diff confirm RegistryConfig was
+63: already present; rent is charged to claimant for add_version and admin for the
+64: other two.
+65: 
+66: Historical plus current evidence now covers **5 of 6 application instructions**.
+67: sign_contract remains unprobed through Kora; its current five-account client
+68: shape needs the pending M2 deployment alignment. anchor_evidence_contract retains
+69: its historical pass and was not refreshed here. Thus four shapes have fresh
+70: fully signed simulation evidence today, not six. The separate four-pass numerical
+71: verification requirement is satisfied by this run; this does not establish full
+72: policy, security, deployment, application integration or instruction coverage.
+73: 
+74: Valid authenticated Kora calls succeeded today. Wrong-HMAC rejection and
+75: infrastructure-only policy rejection were not rerun. Lighthouse was freshly
+76: verified structurally and in the successful fully signed simulations. No kora.toml
+77: change, sign-and-send enablement, redeployment, commit or push was performed.
+78: The Kora fee-payer private-key file was never opened.
+79: 
+80: The combined offline suite passed before live execution. A read-only replay of
+81: the saved artifacts independently rechecked all four Kora signatures, all four
+82: fully signed messages, raw simulation success/balance deltas, and the single
+83: ordinary-wallet setup send. That replay is not counted as another live pass.

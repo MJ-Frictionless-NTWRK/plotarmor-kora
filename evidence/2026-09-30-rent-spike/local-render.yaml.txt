@@ -1,0 +1,41 @@
+# Human applies this Blueprint. No agent deployment is authorized.
+services:
+  - type: web
+    name: plotarmor-kora-devnet
+    runtime: docker
+    # Intentionally temporary free tier. Switch to a paid always-on plan the moment
+    # the application calls this service during a real signing flow, not before.
+    # Restore maxShutdownDelaySeconds: 60 at the same time this plan switches to paid.
+    plan: free
+    region: frankfurt
+    dockerfilePath: ./Dockerfile
+    dockerContext: .
+    autoDeployTrigger: "off"
+    healthCheckPath: /liveness
+    envVars:
+      - key: PORT
+        value: "10000"
+      - key: RPC_URL
+        value: https://api.devnet.solana.com
+      - key: RUST_LOG
+        value: info
+      - key: KORA_API_KEY
+        sync: false
+      - key: KORA_HMAC_SECRET
+        sync: false
+      - key: KORA_FEE_PAYER_SECRET
+        sync: false
+      - key: KORA_REDIS_URL
+        fromService:
+          type: keyvalue
+          name: plotarmor-kora-usage-devnet
+          property: connectionString
+
+  - type: keyvalue
+    name: plotarmor-kora-usage-devnet
+    # Intentionally temporary free tier. Switch to a paid always-on plan the moment
+    # the application calls this service during a real signing flow, not before.
+    plan: free
+    region: frankfurt
+    ipAllowList: []
+    maxmemoryPolicy: noeviction

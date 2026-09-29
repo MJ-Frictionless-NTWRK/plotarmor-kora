@@ -1,0 +1,775 @@
+Render Compute Plans – Render Docs
+Docs
+Changelog
+Search
+Ask AI
+Sign in
+Get started
+Search
+Ask
+Start
+Home
+Your first deploy
+Free instances
+Platform features by plan
+Use with coding agents
+FAQ
+Templates
+Migrate from…
+Heroku
+Railway
+Compute
+Compute plans
+New
+Service types
+Which to use?
+Static sites
+Web services
+Private services
+Background workers
+Cron jobs
+Workflows
+Multi-service architectures
+Data storage
+Render Postgres
+Render Key Value (Redis®-compatible)
+Persistent disks
+Sandboxes
+EA
+Overview
+CLI commands
+TypeScript SDK
+Python SDK
+Deploys
+How deploys work
+Supported languages
+Git providers (GitHub, etc.)
+Build pipeline
+Deploy hooks
+Monorepo support
+Troubleshooting deploys
+Previewing changes
+Single-service previews
+Preview environments (multi-service)
+Docker deploys
+Overview
+Deploy a registered image
+Using secrets
+Runtime
+Native runtimes
+Environment variables & secrets
+Default environment variables
+Workflows
+Intro to workflows
+Tutorial
+Limits & pricing
+How to…
+Define tasks
+Trigger runs
+Develop locally
+SDK reference
+TypeScript SDK
+Python SDK
+Example workflows
+TypeScript examples
+Python examples
+Render Postgres
+Overview
+Create & connect
+Database credentials
+Extensions
+Version upgrades
+Logical replication
+Legacy instance types
+Database recovery
+Recovery & backups
+High availability
+Database performance
+Read replicas
+Connection pooling
+Admin apps
+Repacking tables
+Troubleshooting performance
+Networking
+Regions
+Inbound IP rules
+Edge caching
+WebSockets
+TLS certificates
+Custom domains
+Overview
+Cloudflare
+Namecheap
+Other DNS providers
+Internal traffic
+Private network
+Private links
+Outbound traffic
+Default IP ranges
+Dedicated IP addresses
+Outbound bandwidth
+Handling network changes
+Static site config
+Custom response headers
+Redirects & rewrites
+Operational Controls
+The Render Dashboard
+SSH / Shell access
+Projects & environments
+Service actions
+Scaling
+Rollbacks
+Maintenance mode
+One-off jobs
+Infrastructure as code
+Blueprints overview
+render.yaml reference
+Terraform provider
+Observability
+In-dashboard metrics
+Health checks
+Uptime best practices
+Logging
+In-dashboard logs
+Log streams (syslog/HTTPS)
+OpenTelemetry (OTel) metrics
+Provider setup
+Metrics reference
+Notifications
+Webhooks
+Email / Slack
+Integrations
+MCP Server
+Render CLI
+Overview
+Command reference
+REST API
+Overview
+API reference
+Third-party connections
+OIDC support
+Datadog
+User Management
+Workspaces, members, & roles
+Login settings
+Audit logs
+Organizations
+Overview
+SAML SSO
+Platform Protections
+DDoS protection
+Platform maintenance
+Compliance
+Overview
+HIPAA (US health data)
+HIPAA best practices
+Shared responsibility model
+Pentest policy
+Compare
+Heroku vs Render
+Vercel vs Render
+Render Compute Plans
+Specify your service's available CPU and RAM.
+Copy page
+We've updated compute plan names and added new plans.
+There are no pricing changes to existing plans. For other details, see
+Updates to Render Compute Plans
+.
+Your Render service's
+compute plan
+determines the CPU and RAM specs for its
+instances
+. For example, the
+1c-2g
+compute plan provides 1 CPU and 2 GB of RAM.
+For most service types, you select a compute plan during
+service creation
+and can
+change plans
+later.
+If you
+scale
+a service to run multiple instances, each instance uses the same compute plan and is billed accordingly:
+Static sites
+do not have a compute plan at all, because they do not perform server-side processing.
+All plans
+For pricing details on compute plans, see the
+pricing page
+.
+Compute plans vary by
+service type
+:
+Web service
+Web service
+Private service / Background worker
+Private service / Background worker
+Cron job
+Cron job
+Workflow
+Workflow
+Postgres
+Postgres
+Key Value
+Key Value
+Web service
+plans
+CPU
+RAM
+Plan ID
+Legacy Plan Name
+0.1 CPU
+512 MB
+free
+0.5 CPU
+512 MB
+0.5c-512mb
+starter
+1 CPU
+2 GB
+1c-2g
+standard
+2 CPU
+4 GB
+2c-4g
+pro
+2 CPU
+8 GB
+2c-8g
+2 CPU
+16 GB
+2c-16g
+4 CPU
+8 GB
+4c-8g
+pro_plus
+4 CPU
+16 GB
+4c-16g
+pro_max
+4 CPU
+32 GB
+4c-32g
+8 CPU
+16 GB
+8c-16g
+8 CPU
+32 GB
+8c-32g
+pro_ultra
+8 CPU
+64 GB
+8c-64g
+12 CPU
+24 GB
+12c-24g
+12 CPU
+48 GB
+12c-48g
+12 CPU
+96 GB
+12c-96g
+Private service
+/
+Background worker
+plans
+CPU
+RAM
+Plan ID
+Legacy Plan Name
+0.5 CPU
+512 MB
+0.5c-512mb
+starter
+1 CPU
+2 GB
+1c-2g
+standard
+2 CPU
+4 GB
+2c-4g
+pro
+2 CPU
+8 GB
+2c-8g
+2 CPU
+16 GB
+2c-16g
+4 CPU
+8 GB
+4c-8g
+pro_plus
+4 CPU
+16 GB
+4c-16g
+pro_max
+4 CPU
+32 GB
+4c-32g
+8 CPU
+16 GB
+8c-16g
+8 CPU
+32 GB
+8c-32g
+pro_ultra
+8 CPU
+64 GB
+8c-64g
+12 CPU
+24 GB
+12c-24g
+12 CPU
+48 GB
+12c-48g
+12 CPU
+96 GB
+12c-96g
+Cron job
+plans
+CPU
+RAM
+Plan ID
+Legacy Plan Name
+0.5 CPU
+512 MB
+0.5c-512mb
+starter
+1 CPU
+2 GB
+1c-2g
+standard
+2 CPU
+4 GB
+2c-4g
+pro
+2 CPU
+8 GB
+2c-8g
+2 CPU
+16 GB
+2c-16g
+4 CPU
+8 GB
+4c-8g
+pro_plus
+4 CPU
+16 GB
+4c-16g
+4 CPU
+32 GB
+4c-32g
+8 CPU
+16 GB
+8c-16g
+8 CPU
+32 GB
+8c-32g
+8 CPU
+64 GB
+8c-64g
+Workflow
+plans
+Workflows define collections of runnable tasks. You specify which compute plan to use for
+each task
+directly in your code.
+Learn more.
+Where are
+starter
+and
+standard
+?
+The
+starter
+and
+standard
+compute plans from the Render Workflows beta have been discontinued in favor of
+flex
+.
+The
+flex
+plan is now the default for any task that doesn't
+specify a different plan
+.
+Any task that sets its plan to
+starter
+or
+standard
+now automatically uses
+flex
+instead.
+The
+flex
+plan is billed according to your task run's actual RAM and CPU usage. This results in lower costs for most tasks that previously used
+starter
+or
+standard
+.
+The
+flex
+plan provides up to the same CPU as
+standard
+and double the RAM.
+CPU
+RAM
+Plan ID
+Legacy Plan Name
+Up to
+1 CPU
+Up to
+4 GB
+flex
+2
+4 GB
+2c-4g
+pro
+2
+8 GB
+2c-8g
+4
+8 GB
+4c-8g
+pro_plus
+4
+16 GB
+4c-16g
+pro_max
+8
+32 GB
+8c-32g
+pro_ultra
+Render Postgres
+plans
+Your Render Postgres compute plan does not affect storage capacity.
+The compute plan only determines your database instance's RAM, CPU, and connection limit.
+Learn how to
+add storage to your database
+.
+CPU
+RAM
+Plan ID
+Legacy Plan Name
+Max 100 connections:
+0.1 CPU
+256 MB
+free
+0.1 CPU
+256 MB
+0.1c-256mb
+basic-256mb
+0.5 CPU
+1 GB
+0.5c-1g
+basic-1gb
+1 CPU
+2 GB
+1c-2g
+1 CPU
+4 GB
+1c-4g
+pro-4gb
+Max 200 connections:
+2 CPU
+4 GB
+2c-4g
+basic-4gb
+2 CPU
+8 GB
+2c-8g
+pro-8gb
+Max 400 connections:
+2 CPU
+16 GB
+2c-16g
+accelerated-16gb
+4 CPU
+16 GB
+4c-16g
+pro-16gb
+4 CPU
+32 GB
+4c-32g
+accelerated-32gb
+Max 500 connections:
+8 CPU
+32 GB
+8c-32g
+pro-32gb
+8 CPU
+64 GB
+8c-64g
+accelerated-64gb
+16 CPU
+64 GB
+16c-64g
+pro-64gb
+16 CPU
+128 GB
+16c-128g
+accelerated-128gb
+32 CPU
+128 GB
+32c-128g
+pro-128gb
+32 CPU
+256 GB
+32c-256g
+accelerated-256gb
+48 CPU
+192 GB
+48c-192g
+pro-192gb
+48 CPU
+384 GB
+48c-384g
+accelerated-384gb
+64 CPU
+256 GB
+64c-256g
+pro-256gb
+64 CPU
+512 GB
+64c-512g
+accelerated-512gb
+96 CPU
+384 GB
+96c-384g
+pro-384gb
+96 CPU
+768 GB
+96c-768g
+accelerated-768gb
+128 CPU
+512 GB
+128c-512g
+pro-512gb
+128 CPU
+1024 GB
+128c-1024g
+accelerated-1024gb
+Render Key Value
+plans
+Key Value plan IDs use a different naming format from other service types:
+RAM
+Plan ID
+Legacy Plan Name
+Connection Limit
+25 MB
+free
+50 connections
+256 MB
+256mb
+starter
+250 connections
+1 GB
+1g
+standard
+1,000 connections
+5 GB
+5g
+pro
+5,000 connections
+10 GB
+10g
+pro_plus
+10,000 connections
+20 GB
+20g
+pro_max
+20,000 connections
+40 GB
+40g
+pro_ultra
+40,000 connections
+Need larger compute plans?
+Reach out with details about your use case:
+Talk to our team
+Changing a service's compute plan
+The following services require brief downtime when changing their compute plan:
+Render Postgres
+Render Key Value
+Any service with an attached
+persistent disk
+Other services redeploy with
+zero downtime
+.
+Change your service's compute plan using any method listed below. Note that your service's compute plan does not change until the first successful deploy
+after
+you update it.
+Dashboard
+Dashboard
+API
+API
+Blueprint (render.yaml)
+Blueprint (render.yaml)
+Open your service's
+Compute
+page in the
+Render Dashboard
+.
+Under
+Compute
+, click
+Edit
+:
+Select a new compute plan and click
+Save
+.
+Render automatically triggers a deploy to apply the new compute plan.
+Get started with the
+Render API
+.
+Send a request to the Render API endpoint that corresponds to your service type:
+Update service
+(all non-datastore services)
+Update Postgres instance
+Update Key Value instance
+In your request body, provide the new compute plan in the
+plan
+field. For
+Update service
+, this field is nested under
+serviceDetails
+:
+For
+Update service
+, follow up with a request to the
+Trigger deploy
+endpoint to apply the new compute plan.
+The Update service endpoint does
+not
+trigger a new deploy.
+In your Blueprint file (usually
+render.yaml
+), set your service's
+plan
+field to a new compute plan:
+The next time you sync your Blueprint, Render triggers a deploy to apply the new compute plan.
+Plan ID format
+Each compute plan has a corresponding plan ID.
+Most
+plan IDs use the following format:
+For example, the
+1c-2g
+plan provides 1 CPU and 2 GB of RAM.
+Exceptions include:
+The
+free
+compute plan
+Paid compute plans with less than 1 GB of RAM
+These end in
+mb
+instead of
+g
+(such as
+0.5c-512mb
+)
+Plan IDs for Render Key Value
+These IDs only reflect memory (
+256mb
+,
+1g
+, and so on)
+Legacy plan names
+Legacy plan names
+Render introduced new compute plan IDs in August 2026. Before this change, compute plans were called "instance types" and they used a different naming format (
+Starter
+,
+Standard
+,
+Pro
+, and so on).
+Legacy plan names remain valid across all Render tooling.
+This includes API requests and Blueprint files.
+Each legacy plan name has a corresponding new plan ID.
+In all cases, specs and pricing are identical:
+Legacy Plan Name
+Plan ID
+Key Value Plan ID
+Starter
+0.5c-512mb
+256mb
+Standard
+1c-2g
+1g
+Pro
+2c-4g
+5g
+Pro Plus
+4c-8g
+10g
+Pro Max
+4c-16g
+20g
+Pro Ultra
+8c-32g
+40g
+For example, the
+Standard
+legacy plan name corresponds to the
+1c-2g
+plan ID (or the
+1g
+plan ID for Render Key Value).
+You can update your configuration to use new plan IDs at any time.
+Render Postgres has a separate set of legacy plan names (
+Basic-1gb
+,
+Pro-4gb
+, and so on). See the full mapping for Postgres under
+All plans
+.
+Copy page
+Render Compute Plans
+All plans
+Changing a service's compute plan
+Plan ID format
+Legacy plan names
+Pricing
+Blog
+Security
+Customers
+Careers
+© Render 2026
+Web Service
+Instance A
+1c-2g
+Instance B
+1c-2g
+Instance C
+1c-2g
+json
+Copy to clipboard
+{
+"serviceDetails"
+:
+{
+"plan"
+:
+"1c-2g"
+}
+}
+render.yaml
+yaml
+Copy to clipboard
+services
+:
+-
+type
+:
+web
+name
+:
+my
+-
+service
+runtime
+:
+node
+plan
+:
+1c
+-
+2g
+plaintext
+Copy to clipboard
+{CPU_COUNT}c-{RAM_GB}g

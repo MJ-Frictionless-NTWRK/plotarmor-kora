@@ -1,0 +1,6 @@
+Additional pinned source snapshots retrieved successfully in this session:
+https://raw.githubusercontent.com/solana-foundation/kora/v2.2.0-beta.8/crates/lib/src/validator/macros.rs
+https://raw.githubusercontent.com/solana-foundation/kora/v2.2.0-beta.8/crates/lib/src/lighthouse/assertion.rs
+All source-* files are raw public source evidence, not application changes.
+Initial sandbox GitHub request failed DNS resolution (curl exit 6); repeated with approved network access.
+No signer, keypair-generation, transaction-signing, simulation, broadcast, airdrop or Render mutation calls made.

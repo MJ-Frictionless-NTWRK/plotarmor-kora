@@ -1,0 +1,3922 @@
+{
+  "sha": "7aea236d9d24f579e21c578ccf69707246968b23",
+  "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/7aea236d9d24f579e21c578ccf69707246968b23",
+  "tree": [
+    {
+      "path": ".cargo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "614952d5b29521d0504ccbfa319dd905ed8f6dae",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/614952d5b29521d0504ccbfa319dd905ed8f6dae"
+    },
+    {
+      "path": ".cargo/audit.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd89ba103d241d4cb76846ed26aa278476526605",
+      "size": 638,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/cd89ba103d241d4cb76846ed26aa278476526605"
+    },
+    {
+      "path": ".claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "961d5dbf050930ea52b1b478d4282de2c34adf48",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/961d5dbf050930ea52b1b478d4282de2c34adf48"
+    },
+    {
+      "path": ".claude-plugin/kora-keychain-sync",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ba7372eb523a0b0b408525e760d22c1d2cb67cca",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/ba7372eb523a0b0b408525e760d22c1d2cb67cca"
+    },
+    {
+      "path": ".claude-plugin/kora-keychain-sync/.claude-plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d62e61e1d66d0f0ec399840b92099d942882a0a2",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/d62e61e1d66d0f0ec399840b92099d942882a0a2"
+    },
+    {
+      "path": ".claude-plugin/kora-keychain-sync/.claude-plugin/plugin.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4b6a9bd9ab4a2ca01079f1be26f2c1ae634176c3",
+      "size": 244,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4b6a9bd9ab4a2ca01079f1be26f2c1ae634176c3"
+    },
+    {
+      "path": ".claude-plugin/kora-keychain-sync/commands",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be78aa19e3bc670bf1c23b79edfb50d0e3c61ea9",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/be78aa19e3bc670bf1c23b79edfb50d0e3c61ea9"
+    },
+    {
+      "path": ".claude-plugin/kora-keychain-sync/commands/sync-keychain.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "960e8b56e73dbced808273dbdf8442e146fcd616",
+      "size": 3294,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/960e8b56e73dbced808273dbdf8442e146fcd616"
+    },
+    {
+      "path": ".claude-plugin/marketplace.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cf6dca980ffac3a220710529fb5779b4932d4245",
+      "size": 330,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/cf6dca980ffac3a220710529fb5779b4932d4245"
+    },
+    {
+      "path": ".claude",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7c5f7afc101041881ff20b409d32cbfd7ffbdd3b",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/7c5f7afc101041881ff20b409d32cbfd7ffbdd3b"
+    },
+    {
+      "path": ".claude/skills",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8847fe211687e24e8f368dd19c66c542b0419d4b",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/8847fe211687e24e8f368dd19c66c542b0419d4b"
+    },
+    {
+      "path": ".claude/skills/complete-release",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "82d9551bd46fb98727f50a4218433eae62a7b0e8",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/82d9551bd46fb98727f50a4218433eae62a7b0e8"
+    },
+    {
+      "path": ".claude/skills/complete-release/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59274609e9a35312da8c76e700c59c5d07f205b9",
+      "size": 2903,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/59274609e9a35312da8c76e700c59c5d07f205b9"
+    },
+    {
+      "path": ".claude/skills/kora-client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "af5a8dbfc64386cc63ca799e69260a07bb6decd6",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/af5a8dbfc64386cc63ca799e69260a07bb6decd6"
+    },
+    {
+      "path": ".claude/skills/kora-client/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "679bb8667150b584c4dc2531910cf905107a1a15",
+      "size": 7848,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/679bb8667150b584c4dc2531910cf905107a1a15"
+    },
+    {
+      "path": ".claude/skills/kora-client/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6d2acc0fda8941422314cbaa964a2b2342841f7a",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/6d2acc0fda8941422314cbaa964a2b2342841f7a"
+    },
+    {
+      "path": ".claude/skills/kora-client/references/guides.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6b87b90af1465312700f6f61935682e957097b6",
+      "size": 7694,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f6b87b90af1465312700f6f61935682e957097b6"
+    },
+    {
+      "path": ".claude/skills/kora-client/references/rpc-api.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db4c07ea45ef59d6bd8949d067349c7c064c2852",
+      "size": 8819,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/db4c07ea45ef59d6bd8949d067349c7c064c2852"
+    },
+    {
+      "path": ".claude/skills/kora-operator",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "936a8bfc97c38e304c1e2102e1b801713b335853",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/936a8bfc97c38e304c1e2102e1b801713b335853"
+    },
+    {
+      "path": ".claude/skills/kora-operator/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0674947e294394956a1d8e201cbdb70a9827464b",
+      "size": 7994,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0674947e294394956a1d8e201cbdb70a9827464b"
+    },
+    {
+      "path": ".claude/skills/kora-operator/references",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "acff9225647a96d494709afdfcd4ca2003a08498",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/acff9225647a96d494709afdfcd4ca2003a08498"
+    },
+    {
+      "path": ".claude/skills/kora-operator/references/configuration.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6ade8506f3ff32c255ab7688589737228fb3d01e",
+      "size": 13493,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6ade8506f3ff32c255ab7688589737228fb3d01e"
+    },
+    {
+      "path": ".claude/skills/kora-operator/references/fees.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd9d7f4a43f84a5975dd575012fd3badd958163e",
+      "size": 3803,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/dd9d7f4a43f84a5975dd575012fd3badd958163e"
+    },
+    {
+      "path": ".claude/skills/kora-operator/references/signers.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b85c7d343dea1486a4b0600ba3d4ac57e0b6eccb",
+      "size": 4776,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b85c7d343dea1486a4b0600ba3d4ac57e0b6eccb"
+    },
+    {
+      "path": ".claude/skills/release",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "316a090d79eb068a201f0c0b56d7994e9292f8bd",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/316a090d79eb068a201f0c0b56d7994e9292f8bd"
+    },
+    {
+      "path": ".claude/skills/release/SKILL.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "23bb4829328ca4d1e31427f10044a5ea87acd693",
+      "size": 4171,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/23bb4829328ca4d1e31427f10044a5ea87acd693"
+    },
+    {
+      "path": ".dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d0523298e5cf6d1212d4c7644b0be596d5868dea",
+      "size": 560,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d0523298e5cf6d1212d4c7644b0be596d5868dea"
+    },
+    {
+      "path": ".env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cdf556440080d8e7512e4e82862fe67f24319a7c",
+      "size": 754,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/cdf556440080d8e7512e4e82862fe67f24319a7c"
+    },
+    {
+      "path": ".github",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6fdfd9e1284d236f3c671c339156d40de7bf2add",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/6fdfd9e1284d236f3c671c339156d40de7bf2add"
+    },
+    {
+      "path": ".github/CODEOWNERS",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "685f17dd2193ac6078a99ac0adb866b3865d39c6",
+      "size": 58,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/685f17dd2193ac6078a99ac0adb866b3865d39c6"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ecc19264be850f021a78d8606dfb58d9371b415d",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/ecc19264be850f021a78d8606dfb58d9371b415d"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/bug_report.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78c59529907f0c2ac108107cfa551714affd9d51",
+      "size": 1942,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/78c59529907f0c2ac108107cfa551714affd9d51"
+    },
+    {
+      "path": ".github/ISSUE_TEMPLATE/feature_request.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f1ebee6adda0f9308c0d08a29305a733a585df88",
+      "size": 814,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f1ebee6adda0f9308c0d08a29305a733a585df88"
+    },
+    {
+      "path": ".github/actions",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2fa38ce3aa31cdea86599066e94a15d033338bfc",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/2fa38ce3aa31cdea86599066e94a15d033338bfc"
+    },
+    {
+      "path": ".github/actions/cleanup-test-env",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ac9482e4e692d68dd0ebec0fc968f17191370ead",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/ac9482e4e692d68dd0ebec0fc968f17191370ead"
+    },
+    {
+      "path": ".github/actions/cleanup-test-env/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b5a26d31ff3fd28158a0aa3483b40bd308b7856",
+      "size": 466,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9b5a26d31ff3fd28158a0aa3483b40bd308b7856"
+    },
+    {
+      "path": ".github/actions/run-test-runner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a512c48f93d1c35197ce836b7b9b59ff5f1b8287",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/a512c48f93d1c35197ce836b7b9b59ff5f1b8287"
+    },
+    {
+      "path": ".github/actions/run-test-runner/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7396c57634efd979240c3eceec84593b467a8b9",
+      "size": 1317,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a7396c57634efd979240c3eceec84593b467a8b9"
+    },
+    {
+      "path": ".github/actions/setup-solana",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f329cc5e6572673010ad7fceb988f284152b820e",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/f329cc5e6572673010ad7fceb988f284152b820e"
+    },
+    {
+      "path": ".github/actions/setup-solana/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1bc44134bc2572e47a237106a2f7cc22ef31652c",
+      "size": 1090,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1bc44134bc2572e47a237106a2f7cc22ef31652c"
+    },
+    {
+      "path": ".github/actions/show-failure-logs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c21afba7de35bbbb7ddfd1b4dd6cffe71740563b",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/c21afba7de35bbbb7ddfd1b4dd6cffe71740563b"
+    },
+    {
+      "path": ".github/actions/show-failure-logs/action.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8d80e784bdd3256825edbdc6a14d9ef71830f98",
+      "size": 1643,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b8d80e784bdd3256825edbdc6a14d9ef71830f98"
+    },
+    {
+      "path": ".github/cliff.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c977d5746d779448f0c1f536227fbec6f543affe",
+      "size": 1529,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/c977d5746d779448f0c1f536227fbec6f543affe"
+    },
+    {
+      "path": ".github/dependabot.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "724c6b3df7432036758eb8eca9c2dc7f536a661d",
+      "size": 915,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/724c6b3df7432036758eb8eca9c2dc7f536a661d"
+    },
+    {
+      "path": ".github/workflows",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "14cac11374559e39ea7e18b257f8d718d40246c4",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/14cac11374559e39ea7e18b257f8d718d40246c4"
+    },
+    {
+      "path": ".github/workflows/build-rust.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2207c97e2822fe9730ccac4ccf0f0fc67582ca46",
+      "size": 1691,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2207c97e2822fe9730ccac4ccf0f0fc67582ca46"
+    },
+    {
+      "path": ".github/workflows/deploy-devnet-paymaster.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "afe5aaec04a80cf755348f2e9b000ec9d48f8726",
+      "size": 6108,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/afe5aaec04a80cf755348f2e9b000ec9d48f8726"
+    },
+    {
+      "path": ".github/workflows/docker-edge.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9731e1790a74f7a23e3b9bdaedbb283f200c2855",
+      "size": 1454,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9731e1790a74f7a23e3b9bdaedbb283f200c2855"
+    },
+    {
+      "path": ".github/workflows/docker-publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3eb10b6056a79e13be18ac472e7e922c45370378",
+      "size": 6693,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3eb10b6056a79e13be18ac472e7e922c45370378"
+    },
+    {
+      "path": ".github/workflows/fork-external-live-manual.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a9a5c3dc679c80352a52d81dd3ed7ab9b9f6ec7",
+      "size": 5770,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5a9a5c3dc679c80352a52d81dd3ed7ab9b9f6ec7"
+    },
+    {
+      "path": ".github/workflows/fork-live-gate.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9aa1c43daff8b79e36e6e2e4f6a5933059358184",
+      "size": 1693,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9aa1c43daff8b79e36e6e2e4f6a5933059358184"
+    },
+    {
+      "path": ".github/workflows/pr-target-check.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "222eb681e8987bfa00007ec8c2eebd1a90a3b6eb",
+      "size": 663,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/222eb681e8987bfa00007ec8c2eebd1a90a3b6eb"
+    },
+    {
+      "path": ".github/workflows/rust-publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e06f95556a05b77d5b596355acff7ff2d9b9e524",
+      "size": 8823,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e06f95556a05b77d5b596355acff7ff2d9b9e524"
+    },
+    {
+      "path": ".github/workflows/rust-unit.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c6723770fa3ba46a44a44f0f57af845495960b8e",
+      "size": 1352,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/c6723770fa3ba46a44a44f0f57af845495960b8e"
+    },
+    {
+      "path": ".github/workflows/rust.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf3ef7363ecb95c2d7532c841113587d140deaa4",
+      "size": 3072,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/bf3ef7363ecb95c2d7532c841113587d140deaa4"
+    },
+    {
+      "path": ".github/workflows/security.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d4c1ba103af3526c189db2a598bdfea34f7f457",
+      "size": 1438,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3d4c1ba103af3526c189db2a598bdfea34f7f457"
+    },
+    {
+      "path": ".github/workflows/stale-prs.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f51b905aad85b65f3adcad6d96cd87fa7f226f61",
+      "size": 718,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f51b905aad85b65f3adcad6d96cd87fa7f226f61"
+    },
+    {
+      "path": ".github/workflows/typescript-integration.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a33c154f17ee4637976d9c8d4919235f717b2144",
+      "size": 3031,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a33c154f17ee4637976d9c8d4919235f717b2144"
+    },
+    {
+      "path": ".github/workflows/typescript-publish.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54f3ea919b661f7869fef3bd32c88bf3f1293e5a",
+      "size": 9293,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/54f3ea919b661f7869fef3bd32c88bf3f1293e5a"
+    },
+    {
+      "path": ".github/workflows/typescript-unit.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d36a36d2b9b33a55b894045018763efd1f3198a5",
+      "size": 1518,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d36a36d2b9b33a55b894045018763efd1f3198a5"
+    },
+    {
+      "path": ".gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "41e6c555181530fe07d1e9cdcbe2b9e58b2808ad",
+      "size": 643,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/41e6c555181530fe07d1e9cdcbe2b9e58b2808ad"
+    },
+    {
+      "path": ".pre-commit-config.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "434a8a8ac340bd30a54cd63d891fb35b27081b9f",
+      "size": 849,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/434a8a8ac340bd30a54cd63d891fb35b27081b9f"
+    },
+    {
+      "path": "CHANGELOG.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "17b90d541cfe325710dbdeeaef5104fd6160d865",
+      "size": 12875,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/17b90d541cfe325710dbdeeaef5104fd6160d865"
+    },
+    {
+      "path": "CLAUDE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e123962b4d38e029e7f1a722ef29a08d31f96e2",
+      "size": 34682,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7e123962b4d38e029e7f1a722ef29a08d31f96e2"
+    },
+    {
+      "path": "CONTRIBUTING.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "034f902c6178ea9841a155b9d4944a9883df2cc3",
+      "size": 1206,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/034f902c6178ea9841a155b9d4944a9883df2cc3"
+    },
+    {
+      "path": "Cargo.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ccf15b57c35f122b8a699d2746acf0252cbb1233",
+      "size": 235691,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ccf15b57c35f122b8a699d2746acf0252cbb1233"
+    },
+    {
+      "path": "Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bf3bc240f976065d2fd77ae84595800cd0f40212",
+      "size": 2923,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/bf3bc240f976065d2fd77ae84595800cd0f40212"
+    },
+    {
+      "path": "DEVELOPMENT.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "963f29482efaf12957091430ac74d85b98816ef9",
+      "size": 1482,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/963f29482efaf12957091430ac74d85b98816ef9"
+    },
+    {
+      "path": "Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cf0e7235d996ffe1c716a45b9120baefe3c3d50",
+      "size": 1143,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4cf0e7235d996ffe1c716a45b9120baefe3c3d50"
+    },
+    {
+      "path": "LICENSE.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad9016a97e1bb7a0fa83cafc235727ef3bcaa128",
+      "size": 1074,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ad9016a97e1bb7a0fa83cafc235727ef3bcaa128"
+    },
+    {
+      "path": "README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9e2d192bf1739cd26e3bbba401c7e18004718fcb",
+      "size": 5584,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9e2d192bf1739cd26e3bbba401c7e18004718fcb"
+    },
+    {
+      "path": "SECURITY.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce4cb8ff126142c89a5d80a68e662502e7f865e5",
+      "size": 386,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ce4cb8ff126142c89a5d80a68e662502e7f865e5"
+    },
+    {
+      "path": "audits",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4d7a5b885985ec2588b2a154a8eba0cce60da5b5",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/4d7a5b885985ec2588b2a154a8eba0cce60da5b5"
+    },
+    {
+      "path": "audits/20251119_runtime-verification.pdf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "819a34673deedb023eb636044e2bd6f5dd2c0192",
+      "size": 2303961,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/819a34673deedb023eb636044e2bd6f5dd2c0192"
+    },
+    {
+      "path": "audits/AUDIT_STATUS.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "901d36118d9269dc6c7ab6ebed27647cb61ec8ce",
+      "size": 1445,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/901d36118d9269dc6c7ab6ebed27647cb61ec8ce"
+    },
+    {
+      "path": "crates",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "908ff5c0ab4d2413bfe9a8ded41116e0c0548288",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/908ff5c0ab4d2413bfe9a8ded41116e0c0548288"
+    },
+    {
+      "path": "crates/cli",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8b655ead9fce17e53be9bf49435d0f419fb3a3ca",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/8b655ead9fce17e53be9bf49435d0f419fb3a3ca"
+    },
+    {
+      "path": "crates/cli/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43fba11dee02b8585ec2f89e9cb57fcf9261587d",
+      "size": 640,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/43fba11dee02b8585ec2f89e9cb57fcf9261587d"
+    },
+    {
+      "path": "crates/cli/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0bbb5efc596479f6cc436513fdc5fd8065c22115",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/0bbb5efc596479f6cc436513fdc5fd8065c22115"
+    },
+    {
+      "path": "crates/cli/src/args.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d326009aefce0beff3dd5bd1ff4c6146b471a4aa",
+      "size": 398,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d326009aefce0beff3dd5bd1ff4c6146b471a4aa"
+    },
+    {
+      "path": "crates/cli/src/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e00613a7e35c7d525b7f2c504b60c7441db87b3",
+      "size": 11170,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4e00613a7e35c7d525b7f2c504b60c7441db87b3"
+    },
+    {
+      "path": "crates/cli/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f05e89f917622715890e06052381e7209267a55d",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/f05e89f917622715890e06052381e7209267a55d"
+    },
+    {
+      "path": "crates/cli/tests/integration_tests.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b481b308f6c0e1b5976a1708cd84a768011f972a",
+      "size": 1455,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b481b308f6c0e1b5976a1708cd84a768011f972a"
+    },
+    {
+      "path": "crates/kora-deploy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf2f5945f50d3939de7ae47a9525fad107df1b9c",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/bf2f5945f50d3939de7ae47a9525fad107df1b9c"
+    },
+    {
+      "path": "crates/kora-deploy/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "312e5f667abeddaf2f644758262d357e397ebc38",
+      "size": 944,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/312e5f667abeddaf2f644758262d357e397ebc38"
+    },
+    {
+      "path": "crates/kora-deploy/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "88ff99663c2340badcb835cb0d8a020d77e00cf6",
+      "size": 1994,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/88ff99663c2340badcb835cb0d8a020d77e00cf6"
+    },
+    {
+      "path": "crates/kora-deploy/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "41b1134ade06455c9b791c006154da5f242b63b3",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/41b1134ade06455c9b791c006154da5f242b63b3"
+    },
+    {
+      "path": "crates/kora-deploy/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4148855f7fb3e3944ae54baf8cdc92108b56a4db",
+      "size": 14098,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4148855f7fb3e3944ae54baf8cdc92108b56a4db"
+    },
+    {
+      "path": "crates/kora-deploy/src/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6c4ebd17a450b0761f5dbcbaceea3cd8179993f6",
+      "size": 4720,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6c4ebd17a450b0761f5dbcbaceea3cd8179993f6"
+    },
+    {
+      "path": "crates/lib",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d82167fa961e3f0e51dfbb7258456e8f57c0660a",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/d82167fa961e3f0e51dfbb7258456e8f57c0660a"
+    },
+    {
+      "path": "crates/lib/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35e42f25b2484126eb0e8416181d9dfc03caf7d2",
+      "size": 3065,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/35e42f25b2484126eb0e8416181d9dfc03caf7d2"
+    },
+    {
+      "path": "crates/lib/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a0d8a997d69ce3a595f5c73e9e52b1c79eff1edb",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/a0d8a997d69ce3a595f5c73e9e52b1c79eff1edb"
+    },
+    {
+      "path": "crates/lib/src/admin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "51652e02c9e4e1266969756afcb25cfb802cb88c",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/51652e02c9e4e1266969756afcb25cfb802cb88c"
+    },
+    {
+      "path": "crates/lib/src/admin/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a8cc801e8a9e9f1ffdfba3241fb2b51925e1391",
+      "size": 20,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4a8cc801e8a9e9f1ffdfba3241fb2b51925e1391"
+    },
+    {
+      "path": "crates/lib/src/admin/token_util.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8ef5b9135fe210c78f3a87345c5c4122b6edab1e",
+      "size": 27106,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8ef5b9135fe210c78f3a87345c5c4122b6edab1e"
+    },
+    {
+      "path": "crates/lib/src/bundle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f366fbba52df793836e014263d350cefff055ff6",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/f366fbba52df793836e014263d350cefff055ff6"
+    },
+    {
+      "path": "crates/lib/src/bundle/error.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "265d04b72c6ce0c37bffe710ae5ff508dd004f19",
+      "size": 387,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/265d04b72c6ce0c37bffe710ae5ff508dd004f19"
+    },
+    {
+      "path": "crates/lib/src/bundle/helper.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05752151de363258e7aca03dbb5ae54685d7e97b",
+      "size": 21305,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/05752151de363258e7aca03dbb5ae54685d7e97b"
+    },
+    {
+      "path": "crates/lib/src/bundle/jito",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5fee7b4562d05b966810fed32ba21828fe5f7df8",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/5fee7b4562d05b966810fed32ba21828fe5f7df8"
+    },
+    {
+      "path": "crates/lib/src/bundle/jito/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d782b3750983a38a1a75388676390fdd0d93fee",
+      "size": 34700,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4d782b3750983a38a1a75388676390fdd0d93fee"
+    },
+    {
+      "path": "crates/lib/src/bundle/jito/config.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e455fbac1a8743a1f3395864e316139bead3b1c",
+      "size": 2094,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6e455fbac1a8743a1f3395864e316139bead3b1c"
+    },
+    {
+      "path": "crates/lib/src/bundle/jito/constant.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db0733be7e335654c201174462ea55b47912814d",
+      "size": 223,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/db0733be7e335654c201174462ea55b47912814d"
+    },
+    {
+      "path": "crates/lib/src/bundle/jito/error.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a39383d71e3910ec2dfb83180df3b6c4d17ac398",
+      "size": 449,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a39383d71e3910ec2dfb83180df3b6c4d17ac398"
+    },
+    {
+      "path": "crates/lib/src/bundle/jito/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b90f398f1a5d546dfd072bd441e3a88a65465170",
+      "size": 304,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b90f398f1a5d546dfd072bd441e3a88a65465170"
+    },
+    {
+      "path": "crates/lib/src/bundle/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e12844fdfcc12b73b55ef20469795fa21b3dc675",
+      "size": 136,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e12844fdfcc12b73b55ef20469795fa21b3dc675"
+    },
+    {
+      "path": "crates/lib/src/cache.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50eb3108861534cd42b6389f9f1f08ed18a6ef33",
+      "size": 44645,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/50eb3108861534cd42b6389f9f1f08ed18a6ef33"
+    },
+    {
+      "path": "crates/lib/src/config.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3dce5ac643203903dea3b40eaeac379d5b4c6e54",
+      "size": 54526,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3dce5ac643203903dea3b40eaeac379d5b4c6e54"
+    },
+    {
+      "path": "crates/lib/src/constant.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "53744d131e4e1464d76abb93c660f52970d49e0f",
+      "size": 17786,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/53744d131e4e1464d76abb93c660f52970d49e0f"
+    },
+    {
+      "path": "crates/lib/src/error.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "116fd59df80e764aff0df12c3db54a8eea3b5f18",
+      "size": 19852,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/116fd59df80e764aff0df12c3db54a8eea3b5f18"
+    },
+    {
+      "path": "crates/lib/src/fee",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "be654afb70cfbf225ed9eecc8f0a5f0f3513b471",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/be654afb70cfbf225ed9eecc8f0a5f0f3513b471"
+    },
+    {
+      "path": "crates/lib/src/fee/fee.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ee2495456e4a5169384fc93ecf98096a6bb0a032",
+      "size": 94590,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ee2495456e4a5169384fc93ecf98096a6bb0a032"
+    },
+    {
+      "path": "crates/lib/src/fee/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d5d7adb872b2c0053b8a33c844c530554f16aa8",
+      "size": 28,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1d5d7adb872b2c0053b8a33c844c530554f16aa8"
+    },
+    {
+      "path": "crates/lib/src/fee/price.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9259d5976ff3ce0cd7449a46b37c7372fd26726e",
+      "size": 8244,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9259d5976ff3ce0cd7449a46b37c7372fd26726e"
+    },
+    {
+      "path": "crates/lib/src/lighthouse",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0c567339d94924d91e4dff7ec72b6fd8ec2439a2",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/0c567339d94924d91e4dff7ec72b6fd8ec2439a2"
+    },
+    {
+      "path": "crates/lib/src/lighthouse/assertion.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd2ea2ebf9ec9d91f206930500fb9b12634e6c65",
+      "size": 26583,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/fd2ea2ebf9ec9d91f206930500fb9b12634e6c65"
+    },
+    {
+      "path": "crates/lib/src/lighthouse/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7ce3c0ff13e82de87dbcc74d1c2465b068d26a13",
+      "size": 38,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7ce3c0ff13e82de87dbcc74d1c2465b068d26a13"
+    },
+    {
+      "path": "crates/lib/src/log.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "57d4db426c024be758701e4294f48a61b5a240ab",
+      "size": 126,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/57d4db426c024be758701e4294f48a61b5a240ab"
+    },
+    {
+      "path": "crates/lib/src/metrics",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b86dc9d356aad74aaf0d4917a8f572faf42c0601",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/b86dc9d356aad74aaf0d4917a8f572faf42c0601"
+    },
+    {
+      "path": "crates/lib/src/metrics/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7b63791be65f383f1ad2d6d71b98523277cb9ad",
+      "size": 2539,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f7b63791be65f383f1ad2d6d71b98523277cb9ad"
+    },
+    {
+      "path": "crates/lib/src/metrics/balance.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eeec6133fa89645bb3d11ae7e07d589045895433",
+      "size": 14274,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/eeec6133fa89645bb3d11ae7e07d589045895433"
+    },
+    {
+      "path": "crates/lib/src/metrics/bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e5409ae2b468e981a4ffcc08753705c4fea81bff",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/e5409ae2b468e981a4ffcc08753705c4fea81bff"
+    },
+    {
+      "path": "crates/lib/src/metrics/bin/update-config.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b2906ccc04196c4305cad22ac29ab88bbcb5e530",
+      "size": 7179,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b2906ccc04196c4305cad22ac29ab88bbcb5e530"
+    },
+    {
+      "path": "crates/lib/src/metrics/docker-compose.metrics.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1a712e784fa43710172dd18b172e74940f1d1a0e",
+      "size": 1077,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1a712e784fa43710172dd18b172e74940f1d1a0e"
+    },
+    {
+      "path": "crates/lib/src/metrics/grafana",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c5d0fc8188b30796a438a9056f356c72c57dab28",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/c5d0fc8188b30796a438a9056f356c72c57dab28"
+    },
+    {
+      "path": "crates/lib/src/metrics/grafana/provisioning",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fdd1df7cc3597bb2057859ee23083d9b3c64e35d",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/fdd1df7cc3597bb2057859ee23083d9b3c64e35d"
+    },
+    {
+      "path": "crates/lib/src/metrics/grafana/provisioning/dashboards",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1147c1a0c3e30b15437e7bef2cc71fc95763f542",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/1147c1a0c3e30b15437e7bef2cc71fc95763f542"
+    },
+    {
+      "path": "crates/lib/src/metrics/grafana/provisioning/dashboards/dashboards.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d5cd9316088aa320734c4c98f7c022c7e4dad37",
+      "size": 233,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5d5cd9316088aa320734c4c98f7c022c7e4dad37"
+    },
+    {
+      "path": "crates/lib/src/metrics/grafana/provisioning/dashboards/kora-metrics.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43c7a2d7afde5d9f64a4b225b4ca96eb9cc6585a",
+      "size": 17082,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/43c7a2d7afde5d9f64a4b225b4ca96eb9cc6585a"
+    },
+    {
+      "path": "crates/lib/src/metrics/grafana/provisioning/datasources",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "827052b3add14ed66ccb411d57cbf61154c668e9",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/827052b3add14ed66ccb411d57cbf61154c668e9"
+    },
+    {
+      "path": "crates/lib/src/metrics/grafana/provisioning/datasources/datasources.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "25f732d1fa8f2bfd02cf03359d212c1e9ba96ddd",
+      "size": 216,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/25f732d1fa8f2bfd02cf03359d212c1e9ba96ddd"
+    },
+    {
+      "path": "crates/lib/src/metrics/handler.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8dc00e629a420e8072aee056c6baa75f12dbebfb",
+      "size": 2637,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8dc00e629a420e8072aee056c6baa75f12dbebfb"
+    },
+    {
+      "path": "crates/lib/src/metrics/middleware.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "46ba687fa77a12c0a9130e362d8f3cc2de28a017",
+      "size": 4778,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/46ba687fa77a12c0a9130e362d8f3cc2de28a017"
+    },
+    {
+      "path": "crates/lib/src/metrics/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4522ed6b62bcf0e9028d8b6155cec6c090a89713",
+      "size": 3874,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4522ed6b62bcf0e9028d8b6155cec6c090a89713"
+    },
+    {
+      "path": "crates/lib/src/metrics/prometheus.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9f1a94b7374b95639f64525b2ea1920a50426987",
+      "size": 340,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9f1a94b7374b95639f64525b2ea1920a50426987"
+    },
+    {
+      "path": "crates/lib/src/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a94add710aadb6de145488ec79149cef67403199",
+      "size": 712,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a94add710aadb6de145488ec79149cef67403199"
+    },
+    {
+      "path": "crates/lib/src/oracle",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f6f2a5b64601c2db3b62fd47d4a8684dd3a2a464",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/f6f2a5b64601c2db3b62fd47d4a8684dd3a2a464"
+    },
+    {
+      "path": "crates/lib/src/oracle/jupiter.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f0655530c1ade30d7f084ad028d09aeeec7e53cb",
+      "size": 15099,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f0655530c1ade30d7f084ad028d09aeeec7e53cb"
+    },
+    {
+      "path": "crates/lib/src/oracle/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4c94d05e43a3f78f612f7dc7a501809856824a68",
+      "size": 68,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4c94d05e43a3f78f612f7dc7a501809856824a68"
+    },
+    {
+      "path": "crates/lib/src/oracle/oracle.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1ca54e84579fe0daff7f4482b1c404fbc3a1fdc8",
+      "size": 8294,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1ca54e84579fe0daff7f4482b1c404fbc3a1fdc8"
+    },
+    {
+      "path": "crates/lib/src/oracle/utils.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "22e4856bea47ce0a06489bc8611567d54d6818df",
+      "size": 3398,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/22e4856bea47ce0a06489bc8611567d54d6818df"
+    },
+    {
+      "path": "crates/lib/src/plugin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5c1bffa788bd6d241795b54a8992788dff06c0a3",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/5c1bffa788bd6d241795b54a8992788dff06c0a3"
+    },
+    {
+      "path": "crates/lib/src/plugin/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "54743c6108aa7f134fac565c86cb3170e67669d3",
+      "size": 4192,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/54743c6108aa7f134fac565c86cb3170e67669d3"
+    },
+    {
+      "path": "crates/lib/src/plugin/plugin_deploy_authority.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "89115167356258644a004e21936c5d05c94e9f4d",
+      "size": 63058,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/89115167356258644a004e21936c5d05c94e9f4d"
+    },
+    {
+      "path": "crates/lib/src/plugin/plugin_gas_swap.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffee7a37e620ca7532c2b436e63fc01bcfac090e",
+      "size": 17832,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ffee7a37e620ca7532c2b436e63fc01bcfac090e"
+    },
+    {
+      "path": "crates/lib/src/rpc.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a92420ab36a06303edef94dba175dd5480ec37c",
+      "size": 367,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7a92420ab36a06303edef94dba175dd5480ec37c"
+    },
+    {
+      "path": "crates/lib/src/rpc_server",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4ecc2d22c49bfeb9d3c2a44c3afb22e7eefbf4f6",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/4ecc2d22c49bfeb9d3c2a44c3afb22e7eefbf4f6"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/args.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "225df34db4a9b0c2728bce9771a7d7af0ea54bf1",
+      "size": 2770,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/225df34db4a9b0c2728bce9771a7d7af0ea54bf1"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/auth.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfb45f0ea1160a0bc868da8fc9b2f0123e0d7bd8",
+      "size": 15869,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/dfb45f0ea1160a0bc868da8fc9b2f0123e0d7bd8"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7488f5f260dc4e29769e8765257066d464ebe134",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/7488f5f260dc4e29769e8765257066d464ebe134"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/estimate_bundle_fee.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dd046a9b1602b1d4c24717cee6153a8675cb3b6a",
+      "size": 19586,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/dd046a9b1602b1d4c24717cee6153a8675cb3b6a"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/estimate_transaction_fee.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "77a24839c3b7ab0fe94b53478f2c0f04498d9c76",
+      "size": 6252,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/77a24839c3b7ab0fe94b53478f2c0f04498d9c76"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/get_blockhash.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4720d45adc4e2bc218a3b17905bf0cd3ff8b67ff",
+      "size": 1231,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4720d45adc4e2bc218a3b17905bf0cd3ff8b67ff"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/get_config.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1d6a05d249cf7aaa9225160da53585fe244ce41b",
+      "size": 9167,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1d6a05d249cf7aaa9225160da53585fe244ce41b"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/get_payer_signer.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a026797ce7b3b9db7c8295768037d4fc4120f892",
+      "size": 1054,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a026797ce7b3b9db7c8295768037d4fc4120f892"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/get_supported_tokens.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1954b3db0f1349297a2f770b0c8383593d436381",
+      "size": 2333,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1954b3db0f1349297a2f770b0c8383593d436381"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/get_version.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4fae5407ef3f717337a3aadd56a5755fed4f0775",
+      "size": 714,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4fae5407ef3f717337a3aadd56a5755fed4f0775"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed34eb4e95d4b540992fb455c775952a6c544619",
+      "size": 325,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ed34eb4e95d4b540992fb455c775952a6c544619"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/sign_and_send_bundle.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "df5326e0066b18b7945dcd65d5250cb8fb11d5d6",
+      "size": 22904,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/df5326e0066b18b7945dcd65d5250cb8fb11d5d6"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/sign_and_send_transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "284bf357243ba7e064780c84b2fb473c90919e44",
+      "size": 7665,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/284bf357243ba7e064780c84b2fb473c90919e44"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/sign_bundle.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1da4bf125459d914a3adbce4831bf3755901f6e4",
+      "size": 21010,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1da4bf125459d914a3adbce4831bf3755901f6e4"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/sign_transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1974a09cca4b4c7ad93ef128a588a10c33680b44",
+      "size": 7009,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1974a09cca4b4c7ad93ef128a588a10c33680b44"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/method/transfer_transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b417814571db540af4d01972d105020b98a26cf",
+      "size": 13131,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5b417814571db540af4d01972d105020b98a26cf"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/middleware_utils.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f95dc8265d0c7d1c5aecfd346bb38bc1cd65fcb4",
+      "size": 7649,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f95dc8265d0c7d1c5aecfd346bb38bc1cd65fcb4"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4356dcf8e4b0f970d947a70c56bc1c106456e8fa",
+      "size": 376,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4356dcf8e4b0f970d947a70c56bc1c106456e8fa"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/openapi",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1ec4fd9963d35695eab42c4eecd14e43f30914f0",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/1ec4fd9963d35695eab42c4eecd14e43f30914f0"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/openapi/docs.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7abf6e51a5ddbd2add1b005676ee47e301b2ca82",
+      "size": 4883,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7abf6e51a5ddbd2add1b005676ee47e301b2ca82"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/openapi/helper.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "15b9396c61e6f604976adf59bcb8071669d9dfaf",
+      "size": 8169,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/15b9396c61e6f604976adf59bcb8071669d9dfaf"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/openapi/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "468db4546a6744662f4a662b221ed411d21a99f3",
+      "size": 26,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/468db4546a6744662f4a662b221ed411d21a99f3"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/openapi/spec",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5b284263391183424e8c551ff16d3d433e1ef93c",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/5b284263391183424e8c551ff16d3d433e1ef93c"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/openapi/spec/combined_api.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efe87ed8e395f911653a8762d509f531c35e0a70",
+      "size": 78346,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/efe87ed8e395f911653a8762d509f531c35e0a70"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/recaptcha.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c5a52c2df914a6135adf9a984105e3f30ea88a2c",
+      "size": 5705,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/c5a52c2df914a6135adf9a984105e3f30ea88a2c"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/recaptcha_util.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3e3a03ac3f5a1f782e0f30a0ee43059aed977748",
+      "size": 5005,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3e3a03ac3f5a1f782e0f30a0ee43059aed977748"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/rpc.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1db20ea06b7257e3dcdeef931ddaa3f0d694832c",
+      "size": 10824,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1db20ea06b7257e3dcdeef931ddaa3f0d694832c"
+    },
+    {
+      "path": "crates/lib/src/rpc_server/server.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0995f40c1f5a92ee894f83140bb8f7c0ed498cae",
+      "size": 17454,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0995f40c1f5a92ee894f83140bb8f7c0ed498cae"
+    },
+    {
+      "path": "crates/lib/src/sanitize.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "abbfdac8f9404f58753ffec9fd4fb9ed865b65b2",
+      "size": 5738,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/abbfdac8f9404f58753ffec9fd4fb9ed865b65b2"
+    },
+    {
+      "path": "crates/lib/src/signer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dd52d74a0806f1c0400799a2b9ed0db767d56a3b",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/dd52d74a0806f1c0400799a2b9ed0db767d56a3b"
+    },
+    {
+      "path": "crates/lib/src/signer/bundle_signer.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5447a0f660a7f4a1183f0c43164b07c62069fce4",
+      "size": 9721,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5447a0f660a7f4a1183f0c43164b07c62069fce4"
+    },
+    {
+      "path": "crates/lib/src/signer/config.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb8d3f394c7fcd80d2d6e53c47ddd7623623dd5f",
+      "size": 44146,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/cb8d3f394c7fcd80d2d6e53c47ddd7623623dd5f"
+    },
+    {
+      "path": "crates/lib/src/signer/init.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "856155dbc3e9d82d2ce8394a7fb19ad107b9a201",
+      "size": 2807,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/856155dbc3e9d82d2ce8394a7fb19ad107b9a201"
+    },
+    {
+      "path": "crates/lib/src/signer/keypair_util.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1f8343b3ef71acb3cccdcbea628ac8a2877c004c",
+      "size": 6184,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1f8343b3ef71acb3cccdcbea628ac8a2877c004c"
+    },
+    {
+      "path": "crates/lib/src/signer/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7e9a19a49f5312613b899a286388a109ffdc3011",
+      "size": 425,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7e9a19a49f5312613b899a286388a109ffdc3011"
+    },
+    {
+      "path": "crates/lib/src/signer/pool.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9ed21209bcb8dcb1665ff1cab4847a1c2b8858a4",
+      "size": 33737,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9ed21209bcb8dcb1665ff1cab4847a1c2b8858a4"
+    },
+    {
+      "path": "crates/lib/src/signer/signer.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8339d3e3dcdc89951e8b4a2e1696975d373546bd",
+      "size": 286,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8339d3e3dcdc89951e8b4a2e1696975d373546bd"
+    },
+    {
+      "path": "crates/lib/src/signer/utils.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72ee53580d2baa22366b0362424a529aebd4fd6d",
+      "size": 3521,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/72ee53580d2baa22366b0362424a529aebd4fd6d"
+    },
+    {
+      "path": "crates/lib/src/state.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "874d29151f6d30168c5d5aa68d8fff823d505b4d",
+      "size": 8384,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/874d29151f6d30168c5d5aa68d8fff823d505b4d"
+    },
+    {
+      "path": "crates/lib/src/tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "eea8fb1c3add90363464f9c6cafec9139050fa3d",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/eea8fb1c3add90363464f9c6cafec9139050fa3d"
+    },
+    {
+      "path": "crates/lib/src/tests/account_mock.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d60102eacdce7049842faddc38d58753f53dc7e0",
+      "size": 19768,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d60102eacdce7049842faddc38d58753f53dc7e0"
+    },
+    {
+      "path": "crates/lib/src/tests/cache_mock.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2333a9ed0ff4eac0f74ce8be818bab028e80898f",
+      "size": 466,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2333a9ed0ff4eac0f74ce8be818bab028e80898f"
+    },
+    {
+      "path": "crates/lib/src/tests/common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f27944fc70dd68288f88aa4a998b450c3abe8b1b",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/f27944fc70dd68288f88aa4a998b450c3abe8b1b"
+    },
+    {
+      "path": "crates/lib/src/tests/common/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5274e3ae00dc8512d15210ee421671b4df13dda",
+      "size": 3346,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e5274e3ae00dc8512d15210ee421671b4df13dda"
+    },
+    {
+      "path": "crates/lib/src/tests/config_mock.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e436b6a28d07f74108e9197c0d2a4800cec33341",
+      "size": 31873,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e436b6a28d07f74108e9197c0d2a4800cec33341"
+    },
+    {
+      "path": "crates/lib/src/tests/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05776809d41c1379d019923ceba136162aba1421",
+      "size": 274,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/05776809d41c1379d019923ceba136162aba1421"
+    },
+    {
+      "path": "crates/lib/src/tests/oracle_mock.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66fdcf322ef5a53cb0a07de9016387cd062fa588",
+      "size": 2661,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/66fdcf322ef5a53cb0a07de9016387cd062fa588"
+    },
+    {
+      "path": "crates/lib/src/tests/rpc_mock.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "48b2fcf6bad0b0b311c155be5a97c3055cb67ec7",
+      "size": 6870,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/48b2fcf6bad0b0b311c155be5a97c3055cb67ec7"
+    },
+    {
+      "path": "crates/lib/src/tests/toml_mock.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bc62545328c73410ae6771f5dc6454331bc4c62",
+      "size": 13197,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0bc62545328c73410ae6771f5dc6454331bc4c62"
+    },
+    {
+      "path": "crates/lib/src/tests/transaction_mock.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fb6716962f59b4d95e89b22dbc8a0b66bba02013",
+      "size": 1249,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/fb6716962f59b4d95e89b22dbc8a0b66bba02013"
+    },
+    {
+      "path": "crates/lib/src/token",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b2bbbb8ab1e1ef8ce28e12d93c0875dc4af7c7c8",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/b2bbbb8ab1e1ef8ce28e12d93c0875dc4af7c7c8"
+    },
+    {
+      "path": "crates/lib/src/token/interface.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f81af01b6c0492b74a8aa75d0c19004779de340",
+      "size": 2232,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6f81af01b6c0492b74a8aa75d0c19004779de340"
+    },
+    {
+      "path": "crates/lib/src/token/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "71014e3eec9af7e368c807a2ac4e40f0e76d5137",
+      "size": 156,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/71014e3eec9af7e368c807a2ac4e40f0e76d5137"
+    },
+    {
+      "path": "crates/lib/src/token/spl_token.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd5ac2371fed06e8e8a1d56fd5f778bac6e6bf8c",
+      "size": 15007,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/bd5ac2371fed06e8e8a1d56fd5f778bac6e6bf8c"
+    },
+    {
+      "path": "crates/lib/src/token/spl_token_2022.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "da4b6d5a9fa73b3fef04990c2e8cf201f172429a",
+      "size": 26291,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/da4b6d5a9fa73b3fef04990c2e8cf201f172429a"
+    },
+    {
+      "path": "crates/lib/src/token/spl_token_2022_util.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6223bf4599b6d815e5fe18c5e7ba5fbd42629a18",
+      "size": 27671,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6223bf4599b6d815e5fe18c5e7ba5fbd42629a18"
+    },
+    {
+      "path": "crates/lib/src/token/token.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "01110c6e72b9ab8ad08021a5ab521d0441d234b9",
+      "size": 87417,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/01110c6e72b9ab8ad08021a5ab521d0441d234b9"
+    },
+    {
+      "path": "crates/lib/src/transaction",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff8698c54cf33d1dd065520c9a3ad6e00d488790",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/ff8698c54cf33d1dd065520c9a3ad6e00d488790"
+    },
+    {
+      "path": "crates/lib/src/transaction/instruction_util.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d12963c2fa26f41a89952ae030194b3ddf6b384e",
+      "size": 316637,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d12963c2fa26f41a89952ae030194b3ddf6b384e"
+    },
+    {
+      "path": "crates/lib/src/transaction/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "63519f2304de2e60265541847fd8a437cfaa3d25",
+      "size": 352,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/63519f2304de2e60265541847fd8a437cfaa3d25"
+    },
+    {
+      "path": "crates/lib/src/transaction/retry_util.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6f358c068c940fde52798a54b8fcfdc48d2d81ba",
+      "size": 5233,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6f358c068c940fde52798a54b8fcfdc48d2d81ba"
+    },
+    {
+      "path": "crates/lib/src/transaction/token2022_security.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5f6485569562eebda61bdfadf3de5d61fc3652e",
+      "size": 40781,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d5f6485569562eebda61bdfadf3de5d61fc3652e"
+    },
+    {
+      "path": "crates/lib/src/transaction/transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f7a4069608342cc6d464d65ed0ad0fe3e3b6cd6",
+      "size": 6281,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0f7a4069608342cc6d464d65ed0ad0fe3e3b6cd6"
+    },
+    {
+      "path": "crates/lib/src/transaction/versioned_message.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "67f11a81c07ae14c9370ef29f668e9283e8c95dc",
+      "size": 4880,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/67f11a81c07ae14c9370ef29f668e9283e8c95dc"
+    },
+    {
+      "path": "crates/lib/src/transaction/versioned_transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d70be2866478cef03d292bf76d88be805b2a0c46",
+      "size": 66216,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d70be2866478cef03d292bf76d88be805b2a0c46"
+    },
+    {
+      "path": "crates/lib/src/usage_limit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ff2c65fa9a9ccbede1a2e3dd12784136ed413ead",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/ff2c65fa9a9ccbede1a2e3dd12784136ed413ead"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/config.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "eede042e958c713111deac5af29cfae016b3da60",
+      "size": 15121,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/eede042e958c713111deac5af29cfae016b3da60"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/limiter.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2d6580d94904c74e05ccf98544b3d264e1a36fe7",
+      "size": 792,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2d6580d94904c74e05ccf98544b3d264e1a36fe7"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b4626534d5cd08653886841872d925d41555189b",
+      "size": 372,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b4626534d5cd08653886841872d925d41555189b"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/rules",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57b66618a0cffa77b102fc9b3db4cfeaa6734ce0",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/57b66618a0cffa77b102fc9b3db4cfeaa6734ce0"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/rules/instruction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9df8485fd0b7d554e859ba95e8a7989318f6777b",
+      "size": 30805,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9df8485fd0b7d554e859ba95e8a7989318f6777b"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/rules/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6a9e21b21e995df99ea1f8c16c71ad9b2488c089",
+      "size": 170,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6a9e21b21e995df99ea1f8c16c71ad9b2488c089"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/rules/transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7484a5f60d64216ecad14749e2bdc40bb0c14d8",
+      "size": 2987,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f7484a5f60d64216ecad14749e2bdc40bb0c14d8"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/rules/usage_rule.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "43138b889722b894d81f1f9ea29d1bc7b3591e84",
+      "size": 1339,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/43138b889722b894d81f1f9ea29d1bc7b3591e84"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/usage_store.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "789dcb23e11665d1cf564455fbf0c93b5efe5f1d",
+      "size": 17782,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/789dcb23e11665d1cf564455fbf0c93b5efe5f1d"
+    },
+    {
+      "path": "crates/lib/src/usage_limit/usage_tracker.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5f9ae969678f2b9b510b0c0c17a4e5678f1a94d",
+      "size": 50004,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f5f9ae969678f2b9b510b0c0c17a4e5678f1a94d"
+    },
+    {
+      "path": "crates/lib/src/validator",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "35bb38c9a517f73640fe357adafdb7e6125c2fd4",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/35bb38c9a517f73640fe357adafdb7e6125c2fd4"
+    },
+    {
+      "path": "crates/lib/src/validator/account_validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad1deb20608a08fbb50927a5c2de3ac72bb7b4cb",
+      "size": 16757,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ad1deb20608a08fbb50927a5c2de3ac72bb7b4cb"
+    },
+    {
+      "path": "crates/lib/src/validator/bundle_validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "35009cccacb9319398b5f7a384302ae08eaf2df8",
+      "size": 24216,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/35009cccacb9319398b5f7a384302ae08eaf2df8"
+    },
+    {
+      "path": "crates/lib/src/validator/cache_validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c677953204ba9840df0bdd906ab98c4cb14b1d6b",
+      "size": 11284,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/c677953204ba9840df0bdd906ab98c4cb14b1d6b"
+    },
+    {
+      "path": "crates/lib/src/validator/config_validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd5530589a14ea36e24dadd92135eb3dc377a2e6",
+      "size": 149462,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/fd5530589a14ea36e24dadd92135eb3dc377a2e6"
+    },
+    {
+      "path": "crates/lib/src/validator/cross_cluster.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3fb0d1324c87bd64d59f672fd87c750966991dc",
+      "size": 7356,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e3fb0d1324c87bd64d59f672fd87c750966991dc"
+    },
+    {
+      "path": "crates/lib/src/validator/macros.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9d67114e37da12e43aa891f60b6a329c69c336b8",
+      "size": 7742,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9d67114e37da12e43aa891f60b6a329c69c336b8"
+    },
+    {
+      "path": "crates/lib/src/validator/math_validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5054b53d703e344f6a5853dc8dc90e2dd3fb137",
+      "size": 240,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b5054b53d703e344f6a5853dc8dc90e2dd3fb137"
+    },
+    {
+      "path": "crates/lib/src/validator/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6b6994e5fcb188fe270f7b4c61d8ed64b6b7ebd",
+      "size": 237,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e6b6994e5fcb188fe270f7b4c61d8ed64b6b7ebd"
+    },
+    {
+      "path": "crates/lib/src/validator/signer_validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ad70441c209bc778a5126a2d3a79b0e57c88a175",
+      "size": 7583,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ad70441c209bc778a5126a2d3a79b0e57c88a175"
+    },
+    {
+      "path": "crates/lib/src/validator/transaction_validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6219a33634b19a5749087ac0cb8e5fff0be56279",
+      "size": 273829,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6219a33634b19a5749087ac0cb8e5fff0be56279"
+    },
+    {
+      "path": "docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "79562441f76b28a8840c5197f2cbe7f10e887745",
+      "size": 781,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/79562441f76b28a8840c5197f2cbe7f10e887745"
+    },
+    {
+      "path": "doppler.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7a5f1495cdde17dfeacf00904b64dd9352b15ec3",
+      "size": 50,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7a5f1495cdde17dfeacf00904b64dd9352b15ec3"
+    },
+    {
+      "path": "examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fdb355e85a9ac1adafbee2a355bcdc4d031ddb38",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/fdb355e85a9ac1adafbee2a355bcdc4d031ddb38"
+    },
+    {
+      "path": "examples/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26630c4e3df88e3cf9f02c4dd6831ff6a370d723",
+      "size": 1151,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/26630c4e3df88e3cf9f02c4dd6831ff6a370d723"
+    },
+    {
+      "path": "examples/deploy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "71e64639e973f7550cf8c4d89d3d9a3dfc33b37c",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/71e64639e973f7550cf8c4d89d3d9a3dfc33b37c"
+    },
+    {
+      "path": "examples/deploy/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f85d5db796ee2d6475da91477688c2570ab812c4",
+      "size": 335,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f85d5db796ee2d6475da91477688c2570ab812c4"
+    },
+    {
+      "path": "examples/deploy/kora.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50487c4670cf6f48ed74200faceaaffb9e8142cf",
+      "size": 6436,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/50487c4670cf6f48ed74200faceaaffb9e8142cf"
+    },
+    {
+      "path": "examples/deploy/signers.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ed6af283c4d8ff92cd6766e8f8a1012257880b51",
+      "size": 137,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ed6af283c4d8ff92cd6766e8f8a1012257880b51"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "10223749418c9bc0091a0f1507b7051f3e9f621e",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/10223749418c9bc0091a0f1507b7051f3e9f621e"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "94aebab908ab738c5901e99b181d3898eb7e6122",
+      "size": 1328,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/94aebab908ab738c5901e99b181d3898eb7e6122"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "af46ceccf6803246814d3720d0009bdb1621b476",
+      "size": 605,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/af46ceccf6803246814d3720d0009bdb1621b476"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/Dockerfile.reaper",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3a7a89efca9ded5d6c754158f43cba44baa92d4",
+      "size": 321,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e3a7a89efca9ded5d6c754158f43cba44baa92d4"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f677437b9d2b4958fb8f2f8e3f11e67b2e0f8211",
+      "size": 5802,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f677437b9d2b4958fb8f2f8e3f11e67b2e0f8211"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/cloudbuild.reaper.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1db82d3ad35df2561586edcc1790b71386395017",
+      "size": 207,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1db82d3ad35df2561586edcc1790b71386395017"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/dashboard",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7e75756021813d70972f6dda6d4d88ca21f3ba32",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/7e75756021813d70972f6dda6d4d88ca21f3ba32"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/dashboard/.gitignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e18d851ee8416b223234bfecd3b61b1bc6224c6",
+      "size": 33,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8e18d851ee8416b223234bfecd3b61b1bc6224c6"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/dashboard/databricks.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e4aec8e7e1a909d645e0909d4c8189007cd8fa99",
+      "size": 1551,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e4aec8e7e1a909d645e0909d4c8189007cd8fa99"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/dashboard/ingest.py",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "000a3a7dae65a1300540bbc7b59fc5754de40dc2",
+      "size": 5831,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/000a3a7dae65a1300540bbc7b59fc5754de40dc2"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/dashboard/kora_devnet.example.lvdash.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8f154c92d90f073fcb797a93efa8e9a9fcfc3a4",
+      "size": 10366,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d8f154c92d90f073fcb797a93efa8e9a9fcfc3a4"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/dashboard/prod.example.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffc8d2b4757ae98897a7b59bc46b115e853101f1",
+      "size": 336,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ffc8d2b4757ae98897a7b59bc46b115e853101f1"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/kora.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "587d689a1526f95bf8b26427fc351d219abb91fa",
+      "size": 2888,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/587d689a1526f95bf8b26427fc351d219abb91fa"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/registry-program",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2594b8813965f424c88e9fec0323c56c9319da21",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/2594b8813965f424c88e9fec0323c56c9319da21"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/registry-program/Cargo.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b124240d30b7e63c2131c1791c5fb460fe5454f",
+      "size": 41097,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9b124240d30b7e63c2131c1791c5fb460fe5454f"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/registry-program/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d6355b5ebb4caa7f3dbf568888f9b09a3af7be3c",
+      "size": 297,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d6355b5ebb4caa7f3dbf568888f9b09a3af7be3c"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/registry-program/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d72672c6dae7c3f6652a2dba4e5650607a59b86d",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/d72672c6dae7c3f6652a2dba4e5650607a59b86d"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/registry-program/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9b13f5d25b6ffab1a115602b72103976591a58dd",
+      "size": 4067,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9b13f5d25b6ffab1a115602b72103976591a58dd"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/signers.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "59790fcee63756b80dc030f180bb7eb1be1671df",
+      "size": 184,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/59790fcee63756b80dc030f180bb7eb1be1671df"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/smoke-test.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "a6b920b770779321906ddc31bd806cf6161914b5",
+      "size": 689,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a6b920b770779321906ddc31bd806cf6161914b5"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "135ce30f754acb3cebb32dcfbe13c8e2907b82ac",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/135ce30f754acb3cebb32dcfbe13c8e2907b82ac"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "aca8baa70f34e0aaaeb14a6f6a51a554f2e7fc4b",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/aca8baa70f34e0aaaeb14a6f6a51a554f2e7fc4b"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/bin/devnet_deployer_smoke.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9a82610c05d32a1e45effc7dc3dded0199065270",
+      "size": 1592,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9a82610c05d32a1e45effc7dc3dded0199065270"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/bin/reaper.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d61112f5958329e85b2e76e71584c7b3fca742b8",
+      "size": 3232,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d61112f5958329e85b2e76e71584c7b3fca742b8"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "04676228aa8dd8ec822ae2672cfd802a5b415540",
+      "size": 54,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/04676228aa8dd8ec822ae2672cfd802a5b415540"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/reaper",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "73aa3cabf9769f49fa530e2c45981fe26cb14829",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/73aa3cabf9769f49fa530e2c45981fe26cb14829"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/reaper/activity.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b36a5076acc4ead28136cd331f1d7e3212cbd402",
+      "size": 2212,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b36a5076acc4ead28136cd331f1d7e3212cbd402"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/reaper/closer.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64eff039d442bb08ebbe04eb08f4cce4f83fedcb",
+      "size": 6924,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/64eff039d442bb08ebbe04eb08f4cce4f83fedcb"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/reaper/discovery.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0fd255cdc455e1a6ec0f548ca63d00681b7583c2",
+      "size": 8180,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0fd255cdc455e1a6ec0f548ca63d00681b7583c2"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/reaper/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f80a3e8187568091eb56b4014ba8919f9e205717",
+      "size": 124,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f80a3e8187568091eb56b4014ba8919f9e205717"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/reaper/runner.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8bb68d3fbcd57691252d55062ff57096c613d075",
+      "size": 2001,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8bb68d3fbcd57691252d55062ff57096c613d075"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/reaper/types.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1659a24717fd0edcec86ddfb4e3bd78352f8b1b",
+      "size": 1184,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e1659a24717fd0edcec86ddfb4e3bd78352f8b1b"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/suite",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a2d56de65c331db55d42743cfedde12ba7008168",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/a2d56de65c331db55d42743cfedde12ba7008168"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/suite/adversarial.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bb588384bd8970e6b3d863536f20e22c2773372b",
+      "size": 6799,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/bb588384bd8970e6b3d863536f20e22c2773372b"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/suite/happy.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bd09ef98f5132ac21af60fb3e5df6dbac5b22b0e",
+      "size": 1369,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/bd09ef98f5132ac21af60fb3e5df6dbac5b22b0e"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/suite/harness.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e5648f0fac6dfcfff810235b2d6da54c242719d7",
+      "size": 9172,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e5648f0fac6dfcfff810235b2d6da54c242719d7"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/suite/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b0f3c605657a0b0b0072dd7f63cff07938fbd2e7",
+      "size": 80,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b0f3c605657a0b0b0072dd7f63cff07938fbd2e7"
+    },
+    {
+      "path": "examples/devnet-deploy-paymaster/src/suite/runner.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5423487b51fa569bc1072b85dc7009c420bb9f99",
+      "size": 902,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5423487b51fa569bc1072b85dc7009c420bb9f99"
+    },
+    {
+      "path": "examples/getting-started",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d3bfd0d351bfbeff8437934fe97465bda8f47b71",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/d3bfd0d351bfbeff8437934fe97465bda8f47b71"
+    },
+    {
+      "path": "examples/getting-started/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "480c4ceb4dddcc4d52a17bb3c98e1420c96721f4",
+      "size": 408,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/480c4ceb4dddcc4d52a17bb3c98e1420c96721f4"
+    },
+    {
+      "path": "examples/getting-started/demo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1b8e90e4b264d9086918d3c457140c5d0f4a7892",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/1b8e90e4b264d9086918d3c457140c5d0f4a7892"
+    },
+    {
+      "path": "examples/getting-started/demo/client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "83b8860281fc738ec9f337f9da375a1ce2a6b87d",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/83b8860281fc738ec9f337f9da375a1ce2a6b87d"
+    },
+    {
+      "path": "examples/getting-started/demo/client/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "424f691edf2b07f6c10e7101378860fa273c3b7e",
+      "size": 864,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/424f691edf2b07f6c10e7101378860fa273c3b7e"
+    },
+    {
+      "path": "examples/getting-started/demo/client/pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "336fb73f063b3bb2114ac899423636206885f931",
+      "size": 47682,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/336fb73f063b3bb2114ac899423636206885f931"
+    },
+    {
+      "path": "examples/getting-started/demo/client/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bac94ab9c7dbdf6783368b849f90dc323ec1acfa",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/bac94ab9c7dbdf6783368b849f90dc323ec1acfa"
+    },
+    {
+      "path": "examples/getting-started/demo/client/src/full-demo.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "00a2471fc59721cbcaa55901a3b9b232597c8473",
+      "size": 11488,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/00a2471fc59721cbcaa55901a3b9b232597c8473"
+    },
+    {
+      "path": "examples/getting-started/demo/client/src/quick-start.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "44c7fe8aaa1f5330a45a77a261dc88834b9db333",
+      "size": 465,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/44c7fe8aaa1f5330a45a77a261dc88834b9db333"
+    },
+    {
+      "path": "examples/getting-started/demo/client/src/setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "952751a1d6f6dd0c0c1f83b248042102ab0e525b",
+      "size": 11342,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/952751a1d6f6dd0c0c1f83b248042102ab0e525b"
+    },
+    {
+      "path": "examples/getting-started/demo/client/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8406331bd4a12544dbdb40b316710d6f4dd59580",
+      "size": 469,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8406331bd4a12544dbdb40b316710d6f4dd59580"
+    },
+    {
+      "path": "examples/getting-started/demo/server",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8a3cd5b3b42b8716979082a632a039270b9e89ba",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/8a3cd5b3b42b8716979082a632a039270b9e89ba"
+    },
+    {
+      "path": "examples/getting-started/demo/server/kora.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b8e4e56e48455e7d7c0a1dadc71102a2b3c0855d",
+      "size": 5126,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b8e4e56e48455e7d7c0a1dadc71102a2b3c0855d"
+    },
+    {
+      "path": "examples/getting-started/demo/server/signers.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e1e3e75f7aff422ab018a0190458ca8aac7cdc5",
+      "size": 136,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1e1e3e75f7aff422ab018a0190458ca8aac7cdc5"
+    },
+    {
+      "path": "examples/jito-bundles",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "a5c757a3c6ff38fc4e6edf370ef639320cc67d7e",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/a5c757a3c6ff38fc4e6edf370ef639320cc67d7e"
+    },
+    {
+      "path": "examples/jito-bundles/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e085a8ef30b6ebe24584647235d7356dc1ee31f6",
+      "size": 1969,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e085a8ef30b6ebe24584647235d7356dc1ee31f6"
+    },
+    {
+      "path": "examples/jito-bundles/client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "21951739cebc67c1c2c04e3bccc192bfbdd0886c",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/21951739cebc67c1c2c04e3bccc192bfbdd0886c"
+    },
+    {
+      "path": "examples/jito-bundles/client/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "be46182985bfa5798d6ee23b90e1847bb92dc47b",
+      "size": 564,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/be46182985bfa5798d6ee23b90e1847bb92dc47b"
+    },
+    {
+      "path": "examples/jito-bundles/client/pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2b4ea17a1ec7553a9b9e6a2ffa543d0918bdec5f",
+      "size": 38072,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2b4ea17a1ec7553a9b9e6a2ffa543d0918bdec5f"
+    },
+    {
+      "path": "examples/jito-bundles/client/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "29d1f4216346980263db68b72c0c140bcc461755",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/29d1f4216346980263db68b72c0c140bcc461755"
+    },
+    {
+      "path": "examples/jito-bundles/client/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b45a494e8709eb0b23c4751173f7d9eca379deaa",
+      "size": 6511,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b45a494e8709eb0b23c4751173f7d9eca379deaa"
+    },
+    {
+      "path": "examples/jito-bundles/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1da0572b85cb93cd67dc199cba36dc5016d50572",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/1da0572b85cb93cd67dc199cba36dc5016d50572"
+    },
+    {
+      "path": "examples/jito-bundles/scripts/start-kora.sh",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ffe48a98f868204f0fa50e20876361fa7815c1ec",
+      "size": 105,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ffe48a98f868204f0fa50e20876361fa7815c1ec"
+    },
+    {
+      "path": "examples/jito-bundles/server",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2756f0b9afe21b345d4e26adc25b12513a68c998",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/2756f0b9afe21b345d4e26adc25b12513a68c998"
+    },
+    {
+      "path": "examples/jito-bundles/server/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8c9fcc480d2b9e222be2b32dd92f4866046954f2",
+      "size": 17,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8c9fcc480d2b9e222be2b32dd92f4866046954f2"
+    },
+    {
+      "path": "examples/jito-bundles/server/kora.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8d72dc42cbb9e020e8bd54bbaf31b2e1a0c11b70",
+      "size": 4869,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8d72dc42cbb9e020e8bd54bbaf31b2e1a0c11b70"
+    },
+    {
+      "path": "examples/jito-bundles/server/signers.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "85a297212cd2ab4044a0621bc617d2793f3bfa7d",
+      "size": 125,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/85a297212cd2ab4044a0621bc617d2793f3bfa7d"
+    },
+    {
+      "path": "examples/x402",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f26aef81e2fb6b8051c43bc26009ed76a1ea0b53",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/f26aef81e2fb6b8051c43bc26009ed76a1ea0b53"
+    },
+    {
+      "path": "examples/x402/demo",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b35371f7e4b4ba80e31d9881c78583417aa76cd8",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/b35371f7e4b4ba80e31d9881c78583417aa76cd8"
+    },
+    {
+      "path": "examples/x402/demo/.env.example",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "30d7a6b7801cbdece494a7f24fec020017e8c5b5",
+      "size": 1124,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/30d7a6b7801cbdece494a7f24fec020017e8c5b5"
+    },
+    {
+      "path": "examples/x402/demo/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3ccb79d6667fea0f1ec278f7d5d08f2edf7130a6",
+      "size": 4839,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3ccb79d6667fea0f1ec278f7d5d08f2edf7130a6"
+    },
+    {
+      "path": "examples/x402/demo/api",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b6e3d3070ceff8cb07e12860aa5ab6592703ea33",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/b6e3d3070ceff8cb07e12860aa5ab6592703ea33"
+    },
+    {
+      "path": "examples/x402/demo/api/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d58708b8816538535b7557a54cf383099dfbb4b3",
+      "size": 684,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d58708b8816538535b7557a54cf383099dfbb4b3"
+    },
+    {
+      "path": "examples/x402/demo/api/pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93e5d08f076d4492d839796f8ec2219421f8b863",
+      "size": 97506,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/93e5d08f076d4492d839796f8ec2219421f8b863"
+    },
+    {
+      "path": "examples/x402/demo/api/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6708860126ebae8b28dd0eece0fd3d4d4032c8e0",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/6708860126ebae8b28dd0eece0fd3d4d4032c8e0"
+    },
+    {
+      "path": "examples/x402/demo/api/src/api.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9351b0bff41d236553f483d924c3dbd10a95d83",
+      "size": 2089,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e9351b0bff41d236553f483d924c3dbd10a95d83"
+    },
+    {
+      "path": "examples/x402/demo/api/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "596085aaaee29b4ccd1488e7c4243113391a6c76",
+      "size": 399,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/596085aaaee29b4ccd1488e7c4243113391a6c76"
+    },
+    {
+      "path": "examples/x402/demo/assets",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e4ecf1b15dfd0d21a67dd3d06507ac2b62c19bce",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/e4ecf1b15dfd0d21a67dd3d06507ac2b62c19bce"
+    },
+    {
+      "path": "examples/x402/demo/assets/x402-protocol-flow.png",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "610b69f2e62561ea2e43405f1ea821618da48c6e",
+      "size": 138808,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/610b69f2e62561ea2e43405f1ea821618da48c6e"
+    },
+    {
+      "path": "examples/x402/demo/client",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "dab34a5a8453c282ae577cbf48c17fc2ea8bd0fd",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/dab34a5a8453c282ae577cbf48c17fc2ea8bd0fd"
+    },
+    {
+      "path": "examples/x402/demo/client/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0f73a601b8ff10448a1ccaf50859140113f6d97a",
+      "size": 584,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0f73a601b8ff10448a1ccaf50859140113f6d97a"
+    },
+    {
+      "path": "examples/x402/demo/client/pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7cfd90a56d51add3d75fc7ad35c654abf53c6ab",
+      "size": 54725,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f7cfd90a56d51add3d75fc7ad35c654abf53c6ab"
+    },
+    {
+      "path": "examples/x402/demo/client/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "11773e7d205051f1d79498ec281bfb1dc80af3a3",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/11773e7d205051f1d79498ec281bfb1dc80af3a3"
+    },
+    {
+      "path": "examples/x402/demo/client/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f82deebd88c92c7ecd42378f346b3ab3e952d9b2",
+      "size": 5722,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f82deebd88c92c7ecd42378f346b3ab3e952d9b2"
+    },
+    {
+      "path": "examples/x402/demo/client/src/setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "66b7cb9d7dd42ea47f635b4e78cd246650755080",
+      "size": 3547,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/66b7cb9d7dd42ea47f635b4e78cd246650755080"
+    },
+    {
+      "path": "examples/x402/demo/client/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8406331bd4a12544dbdb40b316710d6f4dd59580",
+      "size": 469,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8406331bd4a12544dbdb40b316710d6f4dd59580"
+    },
+    {
+      "path": "examples/x402/demo/docker-compose.yml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "793286893631c6e23efae3a8b130f295e295f71f",
+      "size": 1018,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/793286893631c6e23efae3a8b130f295e295f71f"
+    },
+    {
+      "path": "examples/x402/demo/facilitator",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "02298454a8480f926250503332b7b1dec69e38cf",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/02298454a8480f926250503332b7b1dec69e38cf"
+    },
+    {
+      "path": "examples/x402/demo/facilitator/.dockerignore",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c2658d7d1b31848c3b71960543cb0368e56cd4c7",
+      "size": 14,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/c2658d7d1b31848c3b71960543cb0368e56cd4c7"
+    },
+    {
+      "path": "examples/x402/demo/facilitator/Dockerfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6160ca3fc1e295baba886b3ba88ec9f8bb35edc5",
+      "size": 333,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6160ca3fc1e295baba886b3ba88ec9f8bb35edc5"
+    },
+    {
+      "path": "examples/x402/demo/facilitator/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "97daa5568c37ec4cc22affdc0ee1fc26a71e8736",
+      "size": 637,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/97daa5568c37ec4cc22affdc0ee1fc26a71e8736"
+    },
+    {
+      "path": "examples/x402/demo/facilitator/pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "08458850c9b9a2d8d0fe3413befa73aafda01bd0",
+      "size": 63585,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/08458850c9b9a2d8d0fe3413befa73aafda01bd0"
+    },
+    {
+      "path": "examples/x402/demo/facilitator/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8ddeed812a8263e49c34f2e2f79ff8ae56d06dec",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/8ddeed812a8263e49c34f2e2f79ff8ae56d06dec"
+    },
+    {
+      "path": "examples/x402/demo/facilitator/src/facilitator.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "291f172e48464020f717a3ba47664f699e3eaf86",
+      "size": 4608,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/291f172e48464020f717a3ba47664f699e3eaf86"
+    },
+    {
+      "path": "examples/x402/demo/facilitator/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "596085aaaee29b4ccd1488e7c4243113391a6c76",
+      "size": 399,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/596085aaaee29b4ccd1488e7c4243113391a6c76"
+    },
+    {
+      "path": "examples/x402/demo/kora",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "e32cb47099bd874a5f0a474ef9f5358f2f42d495",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/e32cb47099bd874a5f0a474ef9f5358f2f42d495"
+    },
+    {
+      "path": "examples/x402/demo/kora/kora.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3fed4591e07c9a3e3d9763dbc3086c6c757712b2",
+      "size": 4888,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3fed4591e07c9a3e3d9763dbc3086c6c757712b2"
+    },
+    {
+      "path": "examples/x402/demo/kora/signers.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7f42fd0a73d73e5192bdbd716a426c4b00a9a14d",
+      "size": 126,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7f42fd0a73d73e5192bdbd716a426c4b00a9a14d"
+    },
+    {
+      "path": "examples/x402/demo/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e9ec8b6a6e0d06c2a95808a2ef37949f15157ccb",
+      "size": 572,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e9ec8b6a6e0d06c2a95808a2ef37949f15157ccb"
+    },
+    {
+      "path": "justfile",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0bc9b8538711f9625dac7828294b5c08b4c0a546",
+      "size": 12913,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0bc9b8538711f9625dac7828294b5c08b4c0a546"
+    },
+    {
+      "path": "kora.svg",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1560c0cd1cdbb370815fa5441ed99c1bc8f620d4",
+      "size": 4161,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1560c0cd1cdbb370815fa5441ed99c1bc8f620d4"
+    },
+    {
+      "path": "kora.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4a9fd836f54de60552bbd45628a338adc57f14d8",
+      "size": 9475,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4a9fd836f54de60552bbd45628a338adc57f14d8"
+    },
+    {
+      "path": "openapi.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "140f9fbfbb67a4abe0799e0a70a80db95e88dd78",
+      "size": 8888,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/140f9fbfbb67a4abe0799e0a70a80db95e88dd78"
+    },
+    {
+      "path": "redis.conf",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58dffdd381ad992b4cad3858a7a668b85b0ef0e7",
+      "size": 1384,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/58dffdd381ad992b4cad3858a7a668b85b0ef0e7"
+    },
+    {
+      "path": "rust-toolchain.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "107c063013f90ddafbe12aaa4ab7a5ede740d2cc",
+      "size": 98,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/107c063013f90ddafbe12aaa4ab7a5ede740d2cc"
+    },
+    {
+      "path": "rustfmt.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "18fb5134ac3ff0460c28d52fb6567af8579a344d",
+      "size": 210,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/18fb5134ac3ff0460c28d52fb6567af8579a344d"
+    },
+    {
+      "path": "sdks",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "90425e387cd819b28090fe9e4db547984d83c5fd",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/90425e387cd819b28090fe9e4db547984d83c5fd"
+    },
+    {
+      "path": "sdks/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4af401918a678d3ba6693872f25748fe5f83da2e",
+      "size": 198,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4af401918a678d3ba6693872f25748fe5f83da2e"
+    },
+    {
+      "path": "sdks/pnpm-lock.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36a086d4501122f4d3227b3ba3fd7ecbaf46c0ea",
+      "size": 226357,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/36a086d4501122f4d3227b3ba3fd7ecbaf46c0ea"
+    },
+    {
+      "path": "sdks/pnpm-workspace.yaml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "039be15d5914043ca5e1e6bc7d1520dbf918e5d8",
+      "size": 324,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/039be15d5914043ca5e1e6bc7d1520dbf918e5d8"
+    },
+    {
+      "path": "sdks/ts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "0a4c6d9927f29bd65c34d5494bc33ad70fe68e38",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/0a4c6d9927f29bd65c34d5494bc33ad70fe68e38"
+    },
+    {
+      "path": "sdks/ts/.prettierrc.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b5f77b114b4b0f4647b9194b1158351fe93f2d8c",
+      "size": 32,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b5f77b114b4b0f4647b9194b1158351fe93f2d8c"
+    },
+    {
+      "path": "sdks/ts/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "49101b3736df0b8880f7a7f8d55c4d5d4f416122",
+      "size": 1408,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/49101b3736df0b8880f7a7f8d55c4d5d4f416122"
+    },
+    {
+      "path": "sdks/ts/docs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d1116db859dc53ace0c8ee138299e2b93901d6f7",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/d1116db859dc53ace0c8ee138299e2b93901d6f7"
+    },
+    {
+      "path": "sdks/ts/docs/README.md",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "efd169cec3a3a0a264a6c8ddf0f461478732e319",
+      "size": 21658,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/efd169cec3a3a0a264a6c8ddf0f461478732e319"
+    },
+    {
+      "path": "sdks/ts/eslint.config.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ced9f609d2b5811caa424504c1e45fcf169b709",
+      "size": 568,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0ced9f609d2b5811caa424504c1e45fcf169b709"
+    },
+    {
+      "path": "sdks/ts/examples",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6c7ec1cdad9d3b9dae8815a61f4d71b98e4dfeb5",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/6c7ec1cdad9d3b9dae8815a61f4d71b98e4dfeb5"
+    },
+    {
+      "path": "sdks/ts/examples/basic-usage.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8a3ae4a145869ade27316d1a552bd3248f23c379",
+      "size": 2187,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8a3ae4a145869ade27316d1a552bd3248f23c379"
+    },
+    {
+      "path": "sdks/ts/jest.config.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b24959c30b447b01c9a7ef32fbc47ef29d8237df",
+      "size": 776,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b24959c30b447b01c9a7ef32fbc47ef29d8237df"
+    },
+    {
+      "path": "sdks/ts/package.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6461306ee3d5ea0b515a68471e07db1fd236a774",
+      "size": 3169,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6461306ee3d5ea0b515a68471e07db1fd236a774"
+    },
+    {
+      "path": "sdks/ts/scripts",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "19e876600a5c6a62f68b8d62c4b43c489b11d7bd",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/19e876600a5c6a62f68b8d62c4b43c489b11d7bd"
+    },
+    {
+      "path": "sdks/ts/scripts/add-toc.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e63023d8bad64214492fb71a6531106e1d53c237",
+      "size": 1186,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e63023d8bad64214492fb71a6531106e1d53c237"
+    },
+    {
+      "path": "sdks/ts/scripts/generate-api-docs.js",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1bff55b31557a07ac1f7ffc6493db0cc5338a21",
+      "size": 12269,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e1bff55b31557a07ac1f7ffc6493db0cc5338a21"
+    },
+    {
+      "path": "sdks/ts/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "6b5a8ce2ecec950f1e25eb74e3aa92eca9279ec3",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/6b5a8ce2ecec950f1e25eb74e3aa92eca9279ec3"
+    },
+    {
+      "path": "sdks/ts/src/client.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "05fd7696a9d06492fb6da8537571d7704aedeb20",
+      "size": 17362,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/05fd7696a9d06492fb6da8537571d7704aedeb20"
+    },
+    {
+      "path": "sdks/ts/src/error.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "55cd15e0fea15e0e523426fd9258336fd1ef526c",
+      "size": 2044,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/55cd15e0fea15e0e523426fd9258336fd1ef526c"
+    },
+    {
+      "path": "sdks/ts/src/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "927e86e30b24423eafdf6c63fa22d26154ad3f28",
+      "size": 160,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/927e86e30b24423eafdf6c63fa22d26154ad3f28"
+    },
+    {
+      "path": "sdks/ts/src/kit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "4fff276045372bdd4dd8143f0f710fac00ede4ec",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/4fff276045372bdd4dd8143f0f710fac00ede4ec"
+    },
+    {
+      "path": "sdks/ts/src/kit/executor.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "054b7a27b7d193ecb33cb93ffd36f0c69c561273",
+      "size": 6360,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/054b7a27b7d193ecb33cb93ffd36f0c69c561273"
+    },
+    {
+      "path": "sdks/ts/src/kit/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0ed2cf808076f3b460a29140905da9bd5c4bf175",
+      "size": 5753,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0ed2cf808076f3b460a29140905da9bd5c4bf175"
+    },
+    {
+      "path": "sdks/ts/src/kit/payment.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fbe0b83ee35344eece83f8e63e9a5a60dbe78a2f",
+      "size": 4534,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/fbe0b83ee35344eece83f8e63e9a5a60dbe78a2f"
+    },
+    {
+      "path": "sdks/ts/src/kit/planner.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f7c83291fce8959f1c9fa4a01a59e088836efeff",
+      "size": 1737,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f7c83291fce8959f1c9fa4a01a59e088836efeff"
+    },
+    {
+      "path": "sdks/ts/src/plugin.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "65b7e0fb1b7dd496f588a0976c6f03fb2c99e0c4",
+      "size": 9306,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/65b7e0fb1b7dd496f588a0976c6f03fb2c99e0c4"
+    },
+    {
+      "path": "sdks/ts/src/types",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cf127324bc5bf2903f76f2e4486a9dc105350191",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/cf127324bc5bf2903f76f2e4486a9dc105350191"
+    },
+    {
+      "path": "sdks/ts/src/types/index.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ce9c0325514d57f45ab785aa66e2dd4425cec308",
+      "size": 24189,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ce9c0325514d57f45ab785aa66e2dd4425cec308"
+    },
+    {
+      "path": "sdks/ts/src/utils",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "bf7118f752f357f0c880536af5dd76bc17ea2efa",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/bf7118f752f357f0c880536af5dd76bc17ea2efa"
+    },
+    {
+      "path": "sdks/ts/src/utils/transaction.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adf066ca88a1d8e6c0aa5a2b296f802ba4392c7a",
+      "size": 1218,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/adf066ca88a1d8e6c0aa5a2b296f802ba4392c7a"
+    },
+    {
+      "path": "sdks/ts/test",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "8f069fc1dd35e72693c0a190a4ff804ef2b42282",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/8f069fc1dd35e72693c0a190a4ff804ef2b42282"
+    },
+    {
+      "path": "sdks/ts/test/auth-setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "72b377a9da310dc681d107c623f2585d5ac3b498",
+      "size": 2240,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/72b377a9da310dc681d107c623f2585d5ac3b498"
+    },
+    {
+      "path": "sdks/ts/test/integration.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a7e208d8331af244542526b859f2e4fbcade1743",
+      "size": 23115,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a7e208d8331af244542526b859f2e4fbcade1743"
+    },
+    {
+      "path": "sdks/ts/test/kit-client.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4977d905566b42a3f4cca8de17cfa047aeadfb9a",
+      "size": 24490,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4977d905566b42a3f4cca8de17cfa047aeadfb9a"
+    },
+    {
+      "path": "sdks/ts/test/plugin.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b6247bd377b13ef6bec16c3377d837b2dd29f9d8",
+      "size": 26238,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b6247bd377b13ef6bec16c3377d837b2dd29f9d8"
+    },
+    {
+      "path": "sdks/ts/test/setup.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5a3611d213754a13e4fe7c9f36b5fe5aed9bcb33",
+      "size": 7280,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5a3611d213754a13e4fe7c9f36b5fe5aed9bcb33"
+    },
+    {
+      "path": "sdks/ts/test/unit.test.ts",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "289812146b067e276f9f4b619e96778e86f55980",
+      "size": 38259,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/289812146b067e276f9f4b619e96778e86f55980"
+    },
+    {
+      "path": "sdks/ts/tsconfig.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9203bc4c171344e173fe3da41ae3499e70011315",
+      "size": 429,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9203bc4c171344e173fe3da41ae3499e70011315"
+    },
+    {
+      "path": "sdks/ts/typedoc.html.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0b7d1bc7377baaa79b7c87ecb976910cd514d9e6",
+      "size": 760,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0b7d1bc7377baaa79b7c87ecb976910cd514d9e6"
+    },
+    {
+      "path": "sdks/ts/typedoc.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9857d0bba78f0565573b80cf38142c7fc0485413",
+      "size": 1031,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9857d0bba78f0565573b80cf38142c7fc0485413"
+    },
+    {
+      "path": "signers.example.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ea54a2b79f9f256f3064b2cfdcb55418566062f4",
+      "size": 3091,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ea54a2b79f9f256f3064b2cfdcb55418566062f4"
+    },
+    {
+      "path": "signers.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1e1e3e75f7aff422ab018a0190458ca8aac7cdc5",
+      "size": 136,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1e1e3e75f7aff422ab018a0190458ca8aac7cdc5"
+    },
+    {
+      "path": "tests",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "f68d6e378099c3782057ab501365000e102fe729",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/f68d6e378099c3782057ab501365000e102fe729"
+    },
+    {
+      "path": "tests/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4849768621d1be218a4b20d00475e6f99ba51918",
+      "size": 2206,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4849768621d1be218a4b20d00475e6f99ba51918"
+    },
+    {
+      "path": "tests/adversarial",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7d8d71c2fee74061098277ad218bc7fbeccb3289",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/7d8d71c2fee74061098277ad218bc7fbeccb3289"
+    },
+    {
+      "path": "tests/adversarial/body_size_limit.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5d5f8a1af7fea6a39b7b955a0c664b394ec3435",
+      "size": 866,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f5d5f8a1af7fea6a39b7b955a0c664b394ec3435"
+    },
+    {
+      "path": "tests/adversarial/fee_payer_exploitation.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bc7898ab0fad415c8afe6a94c6934b9ade383181",
+      "size": 12964,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/bc7898ab0fad415c8afe6a94c6934b9ade383181"
+    },
+    {
+      "path": "tests/adversarial/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5fb63646ca77f6327dc552fccbf5bcbf6643667b",
+      "size": 542,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5fb63646ca77f6327dc552fccbf5bcbf6643667b"
+    },
+    {
+      "path": "tests/adversarial/program_validation.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e921ff0a2519c0f7128da614a1bd0dc3e14ab30a",
+      "size": 2491,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e921ff0a2519c0f7128da614a1bd0dc3e14ab30a"
+    },
+    {
+      "path": "tests/adversarial/token_states.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "26deb343e7eeda2223b6b4f1298c38914e5142a1",
+      "size": 3555,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/26deb343e7eeda2223b6b4f1298c38914e5142a1"
+    },
+    {
+      "path": "tests/auth",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "1413cf02ae6c25135cd73b77f39f3e2383d65dae",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/1413cf02ae6c25135cd73b77f39f3e2383d65dae"
+    },
+    {
+      "path": "tests/auth/api_key_auth.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7c051f3fab52da9f07bcdc9d4427d30422737b07",
+      "size": 2377,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7c051f3fab52da9f07bcdc9d4427d30422737b07"
+    },
+    {
+      "path": "tests/auth/hmac_auth.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8e9fc201adfd31336d4f329bae5338fa7d7db5e1",
+      "size": 2483,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8e9fc201adfd31336d4f329bae5338fa7d7db5e1"
+    },
+    {
+      "path": "tests/auth/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e191dfb3003842d64452a2e27288422c067a67a5",
+      "size": 557,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e191dfb3003842d64452a2e27288422c067a67a5"
+    },
+    {
+      "path": "tests/external",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "5da766d7e6ea094594e2fc48eefad9609cebd38f",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/5da766d7e6ea094594e2fc48eefad9609cebd38f"
+    },
+    {
+      "path": "tests/external/jito_integration.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f6e993572d96abae631ba749d50310c6758dc3a7",
+      "size": 2391,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f6e993572d96abae631ba749d50310c6758dc3a7"
+    },
+    {
+      "path": "tests/external/jupiter_integration.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d8d532fe3363c2d3ecdc4526aaf00e34cbd0f233",
+      "size": 4688,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d8d532fe3363c2d3ecdc4526aaf00e34cbd0f233"
+    },
+    {
+      "path": "tests/external/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2f9c2fbbf157cd968f90e58f27bdb70e4e7f331e",
+      "size": 457,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2f9c2fbbf157cd968f90e58f27bdb70e4e7f331e"
+    },
+    {
+      "path": "tests/fee_payer_policy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "fdc086afd752b845597cee80bccf965e5b5fb717",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/fdc086afd752b845597cee80bccf965e5b5fb717"
+    },
+    {
+      "path": "tests/fee_payer_policy/fee_payer_policy_violations.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cb0216ab0b36993ed5b42a6c5c314e9e36e49583",
+      "size": 56625,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/cb0216ab0b36993ed5b42a6c5c314e9e36e49583"
+    },
+    {
+      "path": "tests/fee_payer_policy/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "200b768632178aa3cb75eb6cb82f41051959b1ec",
+      "size": 802,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/200b768632178aa3cb75eb6cb82f41051959b1ec"
+    },
+    {
+      "path": "tests/free_signing",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d5f22e6902885a842d832bdc5c01b21b0813d559",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/d5f22e6902885a842d832bdc5c01b21b0813d559"
+    },
+    {
+      "path": "tests/free_signing/free_signing_tests.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4cfe6d4bf21a3b581ebb690f5c4aa8b01b54861a",
+      "size": 15806,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4cfe6d4bf21a3b581ebb690f5c4aa8b01b54861a"
+    },
+    {
+      "path": "tests/free_signing/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4f8bbac2b2d2dbb5a60731d3f3c47abd9ec80d2f",
+      "size": 70,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4f8bbac2b2d2dbb5a60731d3f3c47abd9ec80d2f"
+    },
+    {
+      "path": "tests/lighthouse",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "d7d05d56ecfaa6aaaea91667a053f242dd97cc8a",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/d7d05d56ecfaa6aaaea91667a053f242dd97cc8a"
+    },
+    {
+      "path": "tests/lighthouse/lighthouse_tests.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f93e716945eeb5b66a42731bfccad67f97134f6f",
+      "size": 20600,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f93e716945eeb5b66a42731bfccad67f97134f6f"
+    },
+    {
+      "path": "tests/lighthouse/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3d9546df4515eb9c693a438bed8af8365fd91243",
+      "size": 762,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3d9546df4515eb9c693a438bed8af8365fd91243"
+    },
+    {
+      "path": "tests/loader_v3_deploy",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "597a124d4526031f1ccc981f80bd2eee08d4339d",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/597a124d4526031f1ccc981f80bd2eee08d4339d"
+    },
+    {
+      "path": "tests/loader_v3_deploy/deploy_lifecycle.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5db51d5166349891d922ea812290b68ce9973b9e",
+      "size": 7367,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5db51d5166349891d922ea812290b68ce9973b9e"
+    },
+    {
+      "path": "tests/loader_v3_deploy/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "254afaf3fa416e73443d4afd12b5ef89b022d5ce",
+      "size": 68,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/254afaf3fa416e73443d4afd12b5ef89b022d5ce"
+    },
+    {
+      "path": "tests/multi_signer",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "270760aab9341059b07b49542eb17bce23a76922",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/270760aab9341059b07b49542eb17bce23a76922"
+    },
+    {
+      "path": "tests/multi_signer/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7aeeb1f503d90a22261bb15e3353c7862203c6b1",
+      "size": 441,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7aeeb1f503d90a22261bb15e3353c7862203c6b1"
+    },
+    {
+      "path": "tests/multi_signer/signer_management.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "78c177ecdfc506dc06ad87bda9fc9b99de0abafa",
+      "size": 9041,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/78c177ecdfc506dc06ad87bda9fc9b99de0abafa"
+    },
+    {
+      "path": "tests/payment_address",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "ea56f425d7631c623ffd238f5bf6c4b15963fbf6",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/ea56f425d7631c623ffd238f5bf6c4b15963fbf6"
+    },
+    {
+      "path": "tests/payment_address/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "0eeceac3013e048352ed95b597770ad3492cd000",
+      "size": 664,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/0eeceac3013e048352ed95b597770ad3492cd000"
+    },
+    {
+      "path": "tests/payment_address/payment_address_legacy_tests.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "7827bad219f2146aa077c958e094fddf9bfaba6d",
+      "size": 3947,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/7827bad219f2146aa077c958e094fddf9bfaba6d"
+    },
+    {
+      "path": "tests/payment_address/payment_address_multi_payment_tests.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1b202f8f794e2439c9ca40728ba6bfb9480ec06e",
+      "size": 5623,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1b202f8f794e2439c9ca40728ba6bfb9480ec06e"
+    },
+    {
+      "path": "tests/payment_address/payment_address_v0_lut_tests.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "8689385c76b0c3085501530a37d932b48565f578",
+      "size": 3486,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/8689385c76b0c3085501530a37d932b48565f578"
+    },
+    {
+      "path": "tests/payment_address/payment_address_v0_tests.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "fd06c11a38d43bd3cf8f58dcde892f05c7a28ec0",
+      "size": 4039,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/fd06c11a38d43bd3cf8f58dcde892f05c7a28ec0"
+    },
+    {
+      "path": "tests/rpc",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "7ff2a70b447669a6b1f435391c24658a4cfc407f",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/7ff2a70b447669a6b1f435391c24658a4cfc407f"
+    },
+    {
+      "path": "tests/rpc/basic_endpoints.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "9c11d979b0ae75f1e51fd919d8d65795e80ef71f",
+      "size": 9150,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/9c11d979b0ae75f1e51fd919d8d65795e80ef71f"
+    },
+    {
+      "path": "tests/rpc/bundles.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2ce53f713cd683fa9049101c364778f50b3b7963",
+      "size": 32722,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2ce53f713cd683fa9049101c364778f50b3b7963"
+    },
+    {
+      "path": "tests/rpc/compute_budget.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "91158055771b40240b409a297f15abfb89482b44",
+      "size": 5088,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/91158055771b40240b409a297f15abfb89482b44"
+    },
+    {
+      "path": "tests/rpc/durable_transactions.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e3c202cc86410dc3bc670c0d40024a498c15b073",
+      "size": 2173,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e3c202cc86410dc3bc670c0d40024a498c15b073"
+    },
+    {
+      "path": "tests/rpc/fee_estimation.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "aaa0c094a02c6fea548c56d7076a29b1777a85b6",
+      "size": 16141,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/aaa0c094a02c6fea548c56d7076a29b1777a85b6"
+    },
+    {
+      "path": "tests/rpc/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d98dcd24e0cafb162c8f46d608220f771ac22ce1",
+      "size": 792,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d98dcd24e0cafb162c8f46d608220f771ac22ce1"
+    },
+    {
+      "path": "tests/rpc/transaction_signing.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a27120231b9591d0187572647fdcc989cca6d968",
+      "size": 21652,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a27120231b9591d0187572647fdcc989cca6d968"
+    },
+    {
+      "path": "tests/rpc/transfers.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "bfe977426cc9ee1f75c03d94c0b3bcc50d8ee357",
+      "size": 2883,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/bfe977426cc9ee1f75c03d94c0b3bcc50d8ee357"
+    },
+    {
+      "path": "tests/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "739e87a7b394d17be866bd99ff238e389f635cde",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/739e87a7b394d17be866bd99ff238e389f635cde"
+    },
+    {
+      "path": "tests/src/bin",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "31dbd9d71948e327bb01c79cc80f7890e43f7356",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/31dbd9d71948e327bb01c79cc80f7890e43f7356"
+    },
+    {
+      "path": "tests/src/bin/test_runner.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c486cb191f5ecc5fb385c13145cda6d61e636f58",
+      "size": 16793,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/c486cb191f5ecc5fb385c13145cda6d61e636f58"
+    },
+    {
+      "path": "tests/src/common",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "2321fcef294909f3dc7ae2b6688f41acd98ebeaa",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/2321fcef294909f3dc7ae2b6688f41acd98ebeaa"
+    },
+    {
+      "path": "tests/src/common/assertions.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6235690416e4dda2ec2c0004387960cb9976f9b5",
+      "size": 6148,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6235690416e4dda2ec2c0004387960cb9976f9b5"
+    },
+    {
+      "path": "tests/src/common/auth_helpers.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "db9a98bc6243b825e12e131df9ace70d6ef44f96",
+      "size": 3334,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/db9a98bc6243b825e12e131df9ace70d6ef44f96"
+    },
+    {
+      "path": "tests/src/common/client.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6e7c6aaf55aff547fb7ce3d26f0f548aa7819d0a",
+      "size": 4020,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6e7c6aaf55aff547fb7ce3d26f0f548aa7819d0a"
+    },
+    {
+      "path": "tests/src/common/constants.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "510357ec29848002ddb777d6c6f8b912e23ab7cd",
+      "size": 5065,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/510357ec29848002ddb777d6c6f8b912e23ab7cd"
+    },
+    {
+      "path": "tests/src/common/extension_helpers.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "020998a5118af3659bd9949821211fc330311e5d",
+      "size": 10867,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/020998a5118af3659bd9949821211fc330311e5d"
+    },
+    {
+      "path": "tests/src/common/fixtures",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "58ba42aada1dde94a55d998c77f3bce61ab2348a",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/58ba42aada1dde94a55d998c77f3bce61ab2348a"
+    },
+    {
+      "path": "tests/src/common/fixtures/auth-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "36dab9e3339eca391729eb32b431be6d02af8edd",
+      "size": 2911,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/36dab9e3339eca391729eb32b431be6d02af8edd"
+    },
+    {
+      "path": "tests/src/common/fixtures/fee-payer-policy-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5c42eb0a7736fa99af493ed09783b4a5581da49f",
+      "size": 3851,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5c42eb0a7736fa99af493ed09783b4a5581da49f"
+    },
+    {
+      "path": "tests/src/common/fixtures/gas-swap-plugin-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5d836860977cb16877672b4077ada03aeee10fad",
+      "size": 2903,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5d836860977cb16877672b4077ada03aeee10fad"
+    },
+    {
+      "path": "tests/src/common/fixtures/kora-free-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "50b73971e3deeb36774fd64bbbe172c194fe1816",
+      "size": 3674,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/50b73971e3deeb36774fd64bbbe172c194fe1816"
+    },
+    {
+      "path": "tests/src/common/fixtures/kora-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6cae1d0ac7ccd9ce1f0f785b6fb1c846544008f9",
+      "size": 3842,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6cae1d0ac7ccd9ce1f0f785b6fb1c846544008f9"
+    },
+    {
+      "path": "tests/src/common/fixtures/lighthouse-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dffa6b62ccef9477895ff5f1ea4546680d807967",
+      "size": 3622,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/dffa6b62ccef9477895ff5f1ea4546680d807967"
+    },
+    {
+      "path": "tests/src/common/fixtures/loader-v3-deploy-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "28c7c487d63cf38566b5783de284045a6d8514f8",
+      "size": 1692,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/28c7c487d63cf38566b5783de284045a6d8514f8"
+    },
+    {
+      "path": "tests/src/common/fixtures/paymaster-address-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b7c16f8a0a03034caf94cd9902f89b80b4f80a5",
+      "size": 2866,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3b7c16f8a0a03034caf94cd9902f89b80b4f80a5"
+    },
+    {
+      "path": "tests/src/common/fixtures/signers-multi.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d5032a28a0b8aabaf6c70ae1d7a9ac3fcc235100",
+      "size": 231,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d5032a28a0b8aabaf6c70ae1d7a9ac3fcc235100"
+    },
+    {
+      "path": "tests/src/common/fixtures/signers-openfort.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "56efd34e2e092a29df2851f8ae26bfa3e911b501",
+      "size": 229,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/56efd34e2e092a29df2851f8ae26bfa3e911b501"
+    },
+    {
+      "path": "tests/src/common/fixtures/signers-privy.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2df7dc2f97b7cbfd8e8e891d16c15dfc92a279be",
+      "size": 197,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2df7dc2f97b7cbfd8e8e891d16c15dfc92a279be"
+    },
+    {
+      "path": "tests/src/common/fixtures/signers-turnkey.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "34c6ee092574ac2c62be0d39f042d6f802efa575",
+      "size": 329,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/34c6ee092574ac2c62be0d39f042d6f802efa575"
+    },
+    {
+      "path": "tests/src/common/fixtures/signers.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "6b3b4d72a4d598daa652e828499b38c3d4125a15",
+      "size": 137,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/6b3b4d72a4d598daa652e828499b38c3d4125a15"
+    },
+    {
+      "path": "tests/src/common/fixtures/test-programs",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "b1480e6e80716c0fc6746e6d3605ed2e16391f45",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/b1480e6e80716c0fc6746e6d3605ed2e16391f45"
+    },
+    {
+      "path": "tests/src/common/fixtures/test-programs/lighthouse.so",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "20373f5d516d677df9855c288e5867e9c6f875e9",
+      "size": 424248,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/20373f5d516d677df9855c288e5867e9c6f875e9"
+    },
+    {
+      "path": "tests/src/common/fixtures/usage-limit-test.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6a53762b70d9700035d0c4594c04241647a046b",
+      "size": 4014,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e6a53762b70d9700035d0c4594c04241647a046b"
+    },
+    {
+      "path": "tests/src/common/helpers.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "ebed383868c8ca70ddb06a8db2cec0d0d5e02274",
+      "size": 8099,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/ebed383868c8ca70ddb06a8db2cec0d0d5e02274"
+    },
+    {
+      "path": "tests/src/common/local-keys",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "57127fc86e78deec8af95c2b188bf74049db5e0a",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/57127fc86e78deec8af95c2b188bf74049db5e0a"
+    },
+    {
+      "path": "tests/src/common/local-keys/fee-payer-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "64603da142c5ce849557f1bbe133e3e997a324bb",
+      "size": 225,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/64603da142c5ce849557f1bbe133e3e997a324bb"
+    },
+    {
+      "path": "tests/src/common/local-keys/fee-payer-policy-mint-local-2022.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e2c9c80913271279f809d75083a9755995790fa",
+      "size": 233,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4e2c9c80913271279f809d75083a9755995790fa"
+    },
+    {
+      "path": "tests/src/common/local-keys/fee-payer-policy-mint-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3b68632f72f278a2d512fe51300e4b6595306bf0",
+      "size": 219,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3b68632f72f278a2d512fe51300e4b6595306bf0"
+    },
+    {
+      "path": "tests/src/common/local-keys/mint-2022-interest-bearing.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f69da225a26d3385810aa157ecfe9f04250548c6",
+      "size": 218,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f69da225a26d3385810aa157ecfe9f04250548c6"
+    },
+    {
+      "path": "tests/src/common/local-keys/mint-transfer-hook-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "682e8b8a7f2670df420696e04e32cebd53296a98",
+      "size": 222,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/682e8b8a7f2670df420696e04e32cebd53296a98"
+    },
+    {
+      "path": "tests/src/common/local-keys/payment-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "1aa25bf17583953122b064bffe2869386ca3e109",
+      "size": 232,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/1aa25bf17583953122b064bffe2869386ca3e109"
+    },
+    {
+      "path": "tests/src/common/local-keys/sender-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e83687017e38fcecca28eb8163b26aba14c40efd",
+      "size": 224,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e83687017e38fcecca28eb8163b26aba14c40efd"
+    },
+    {
+      "path": "tests/src/common/local-keys/signer2-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5b06bfeed2f8d9f98c46a6836689164ac78d18ce",
+      "size": 220,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5b06bfeed2f8d9f98c46a6836689164ac78d18ce"
+    },
+    {
+      "path": "tests/src/common/local-keys/usdc-mint-2022-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d8d1a95cb046387601c7b4dabc24a7046033421",
+      "size": 238,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4d8d1a95cb046387601c7b4dabc24a7046033421"
+    },
+    {
+      "path": "tests/src/common/local-keys/usdc-mint-local.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d863185b1d2cc46093ddeca1afc84f1fac588cb0",
+      "size": 538,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d863185b1d2cc46093ddeca1afc84f1fac588cb0"
+    },
+    {
+      "path": "tests/src/common/lookup_tables.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cd8980d9bab9ed6e93044b4a131538f29c01c5cd",
+      "size": 6437,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/cd8980d9bab9ed6e93044b4a131538f29c01c5cd"
+    },
+    {
+      "path": "tests/src/common/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4d4825747e86d16e3fb1145db9318cc71b8decfd",
+      "size": 435,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4d4825747e86d16e3fb1145db9318cc71b8decfd"
+    },
+    {
+      "path": "tests/src/common/setup.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e1776c65387419b4c9427dd019749e332dbce0a7",
+      "size": 36231,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e1776c65387419b4c9427dd019749e332dbce0a7"
+    },
+    {
+      "path": "tests/src/common/transaction.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "93c051c9c2e6921e21c5771a014de9ac215638c0",
+      "size": 26514,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/93c051c9c2e6921e21c5771a014de9ac215638c0"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "cb09409022360bf6ecb2273670caf56a10644e47",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/cb09409022360bf6ecb2273670caf56a10644e47"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example/Cargo.lock",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "a641f58f9f04e717ee2f3062e6dc2cc48ce98b3a",
+      "size": 61150,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/a641f58f9f04e717ee2f3062e6dc2cc48ce98b3a"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example/Cargo.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "2a1918dcc195b8a1b155e52b0ebea82e06910930",
+      "size": 343,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/2a1918dcc195b8a1b155e52b0ebea82e06910930"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example/build.sh",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "246350b74dea6d1a4c3aef46dba7c2c8d8d0f2c5",
+      "size": 520,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/246350b74dea6d1a4c3aef46dba7c2c8d8d0f2c5"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example/src",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "59efdf22e7925e07ad71bfec34238b750daeac0c",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/59efdf22e7925e07ad71bfec34238b750daeac0c"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "b01958bd7f8b1d9ff65f8bdf7cb6a7e6a3aa18f0",
+      "size": 7122,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/b01958bd7f8b1d9ff65f8bdf7cb6a7e6a3aa18f0"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example/transfer-hook-keypair.json",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adf0131df1c006d3a8a6513e7b4ba5a68f26981c",
+      "size": 228,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/adf0131df1c006d3a8a6513e7b4ba5a68f26981c"
+    },
+    {
+      "path": "tests/src/common/transfer-hook-example/transfer_hook_example.so",
+      "mode": "100755",
+      "type": "blob",
+      "sha": "4aca51e0e6c9ba32b434973d7df2ff71e071585a",
+      "size": 94808,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4aca51e0e6c9ba32b434973d7df2ff71e071585a"
+    },
+    {
+      "path": "tests/src/lib.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "4e71485c45fbe217bc9ea16236323e1cf3a98c34",
+      "size": 37,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/4e71485c45fbe217bc9ea16236323e1cf3a98c34"
+    },
+    {
+      "path": "tests/src/test_runner",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "c3a84dd2d061b3a2f45091547ae5958062129e17",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/c3a84dd2d061b3a2f45091547ae5958062129e17"
+    },
+    {
+      "path": "tests/src/test_runner/accounts.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f53191de580bb7ee6200355e240a131206b196fc",
+      "size": 16634,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f53191de580bb7ee6200355e240a131206b196fc"
+    },
+    {
+      "path": "tests/src/test_runner/commands.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "81e8ecf524f271f5ab5ed0a334926d4851abebfe",
+      "size": 4651,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/81e8ecf524f271f5ab5ed0a334926d4851abebfe"
+    },
+    {
+      "path": "tests/src/test_runner/config.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "f5d880da6b89a14de75d09fd4309e2ba12cdba2d",
+      "size": 941,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/f5d880da6b89a14de75d09fd4309e2ba12cdba2d"
+    },
+    {
+      "path": "tests/src/test_runner/kora.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "adbe6fdbffbff5995993c6ec43dc11052c515c3c",
+      "size": 4378,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/adbe6fdbffbff5995993c6ec43dc11052c515c3c"
+    },
+    {
+      "path": "tests/src/test_runner/mod.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "066a4c85a2b5d09cf009b28a13a16f9d518ed0c6",
+      "size": 101,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/066a4c85a2b5d09cf009b28a13a16f9d518ed0c6"
+    },
+    {
+      "path": "tests/src/test_runner/output.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "dfd700fdcd97fd26666c225e697473ee58984a8b",
+      "size": 7153,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/dfd700fdcd97fd26666c225e697473ee58984a8b"
+    },
+    {
+      "path": "tests/src/test_runner/test_cases.toml",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "61bb17c3277512a80cf428ca4b1f25395099b47e",
+      "size": 2642,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/61bb17c3277512a80cf428ca4b1f25395099b47e"
+    },
+    {
+      "path": "tests/src/test_runner/validator.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "e6fb51303bb1c42feba61f9ce6567d4b1f987586",
+      "size": 3725,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/e6fb51303bb1c42feba61f9ce6567d4b1f987586"
+    },
+    {
+      "path": "tests/tokens",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "60f797947524e6d2030fbb22bf8db69f2fc297b1",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/60f797947524e6d2030fbb22bf8db69f2fc297b1"
+    },
+    {
+      "path": "tests/tokens/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "cae4fa9a6fd12db687392811e2d4b239477f3610",
+      "size": 438,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/cae4fa9a6fd12db687392811e2d4b239477f3610"
+    },
+    {
+      "path": "tests/tokens/token_2022_extensions_test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "d1bdcbaa83240eecc9f0ac81cd4c0a0a86a81a29",
+      "size": 26664,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/d1bdcbaa83240eecc9f0ac81cd4c0a0a86a81a29"
+    },
+    {
+      "path": "tests/tokens/token_2022_test.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "683767a6a6846a3ed069ebbec2b8f8154f5898cf",
+      "size": 22015,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/683767a6a6846a3ed069ebbec2b8f8154f5898cf"
+    },
+    {
+      "path": "tests/usage_limit",
+      "mode": "040000",
+      "type": "tree",
+      "sha": "366da599ec5a9340708e92b20bf94164d9104ce1",
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/trees/366da599ec5a9340708e92b20bf94164d9104ce1"
+    },
+    {
+      "path": "tests/usage_limit/bundle_limits.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "3c05872e80fb9c8539a0322ba31ca5ce4c75ee67",
+      "size": 9636,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/3c05872e80fb9c8539a0322ba31ca5ce4c75ee67"
+    },
+    {
+      "path": "tests/usage_limit/instruction_limits.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "5ac8f7f5e285e09732efb0be77ed0926c283507a",
+      "size": 12683,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/5ac8f7f5e285e09732efb0be77ed0926c283507a"
+    },
+    {
+      "path": "tests/usage_limit/main.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "c7266e0c07b9b78b8959aec539d6674938cb2840",
+      "size": 587,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/c7266e0c07b9b78b8959aec539d6674938cb2840"
+    },
+    {
+      "path": "tests/usage_limit/multiple_rules.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "257a7a36e6c97e73b47039beae340bcbbb004fac",
+      "size": 7789,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/257a7a36e6c97e73b47039beae340bcbbb004fac"
+    },
+    {
+      "path": "tests/usage_limit/transaction_limits.rs",
+      "mode": "100644",
+      "type": "blob",
+      "sha": "58ec7271c470521f1bf94df7fbe7fc767f5fcaca",
+      "size": 11574,
+      "url": "https://api.github.com/repos/solana-foundation/kora/git/blobs/58ec7271c470521f1bf94df7fbe7fc767f5fcaca"
+    }
+  ],
+  "truncated": false
+}

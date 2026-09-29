@@ -1,0 +1,1 @@
+{"jsonrpc": "2.0", "id": "rent-112", "method": "getMinimumBalanceForRentExemption", "params": [112, {"commitment": "confirmed"}]}

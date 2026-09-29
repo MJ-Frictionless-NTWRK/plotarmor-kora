@@ -1,0 +1,21 @@
+Read-only source: /home/sucka/plotarmor-program/evidence/2026-09-30-security-txt/06_size_vs_devnet_capacity.txt
+Tue Sep 29 20:15:10 UTC 2026
+### new binary (commit 14815bb, pinned v1.52): file_bytes 472440, trimmed_bytes 472425
+### live devnet ProgramData
+
+Program Id: 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2
+Owner: BPFLoaderUpgradeab1e11111111111111111111111
+ProgramData Address: Dr8S95D7bHGBrd6gFSAommQjBNH1qcBMJpofe9ooLRpL
+Authority: EjeeFw3Ft856o9Ek2VWti6aAco9RXxGUyeLk96dPSWzd
+Last Deployed In Slot: 476301346
+Data Length: 471960 (0x73398) bytes
+Balance: 3.28604568 SOL
+
+shortfall vs 471960: file 480 bytes, trimmed 465 bytes
+ProgramData account data_len = 45 + program capacity:
+  now 472005, needed 472485
+### rent for current vs needed ProgramData size (solana rent, devnet)
+Rent-exempt minimum: 2398435640 lamports
+
+Rent-exempt minimum: 2400874040 lamports
+

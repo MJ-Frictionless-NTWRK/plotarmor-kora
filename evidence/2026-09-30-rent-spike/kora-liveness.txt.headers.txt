@@ -1,0 +1,11 @@
+HTTP/2 200 
+date: Tue, 29 Sep 2026 22:06:03 GMT
+content-type: application/json; charset=utf-8
+cf-cache-status: DYNAMIC
+rndr-id: 57f9b0cb-69c1-4a09
+server: cloudflare
+vary: Accept-Encoding
+x-render-origin-server: Render
+cf-ray: a42e4aae5e9ac0ef-PRG
+alt-svc: h3=":443"; ma=86400
+

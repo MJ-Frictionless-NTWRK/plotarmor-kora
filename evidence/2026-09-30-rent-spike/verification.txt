@@ -1,0 +1,7 @@
+Current TOML unchanged: two signatures, sign-and-send disabled.
+RPC rent response IDs/types and six-row sum validated: 7147560.
+All 17 upstream Rust snapshots match Git blob identities in the downloaded tagged tree.
+All relative report evidence links resolve.
+Local config/image/signer-definition snapshots match unchanged working files.
+No live transaction tests run; zero new signing/broadcast verification passes. These are offline evidence-integrity checks only.
+Staged scope reviewed: 98 files, only the requested directory. Report diff whitespace check passed. Full diff check flags original HTTP CRLF/trailing whitespace and raw upstream HTML formatting; raw evidence was preserved byte-for-byte rather than normalized.
