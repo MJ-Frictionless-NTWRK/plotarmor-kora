@@ -50,7 +50,7 @@ enabled = []
 
 [validation]
 max_allowed_lamports = 1000000
-max_signatures = 2
+max_signatures = 3
 price_source = "Mock"
 allow_durable_transactions = false
 cross_cluster_check = false
