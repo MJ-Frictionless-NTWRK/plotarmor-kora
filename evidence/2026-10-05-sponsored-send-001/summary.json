@@ -1,0 +1,29 @@
+{
+  "mode": "send",
+  "result": "PASS",
+  "signature": "59ntRv2vP4a5guNf9z1hGZZXkFmGk1YGRufFZjNxAGBdhfioMryeCzVoJAfgTTeJsyeyQFn11cW9YZBqn98C5LPk",
+  "signers": [
+    "HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW",
+    "4p5u6WvMN6BEc8jNmvBMiao1bG1gdJ4UJD5CA9AUZirh",
+    "HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn"
+  ],
+  "fee_lamports": 15000,
+  "slot": 507736558,
+  "rent_lamports": 7147560,
+  "rent_wallet_delta": -7147560,
+  "kora_delta": -15000,
+  "writer_post_lamports": 0,
+  "records": {
+    "registry_config": "BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG",
+    "content_artifact": "8A9vYTp7odtEZPsRtLj55iAgLm1Wy7FZ5jTW6VZ7RRkM",
+    "work_claim": "fcT9HJWSCgU6co6K2ic2qxVThxXhc8EPAngP99mwq16",
+    "ownership": "H8Eve625aJ9wt6mCneVJNGeKEyK4HwuraEZ5d44kt8db",
+    "owner_record": "ABD89jjbZgWAkc7tMGDYh3m5c2d9oy9HYaUPe9swHum7",
+    "claim_artifact_link": "khZKQWP9h7aRS2Ra8rYqu96K4rJvGji3KJFNaFf5MpR",
+    "anchor_record": "EjQmRJ9YKffHw8dkpopjn1W1bCr3FdHRoJigk5Sf1eRU",
+    "signer": "4p5u6WvMN6BEc8jNmvBMiao1bG1gdJ4UJD5CA9AUZirh",
+    "system_program": "11111111111111111111111111111111"
+  },
+  "explorer": "https://explorer.solana.com/tx/59ntRv2vP4a5guNf9z1hGZZXkFmGk1YGRufFZjNxAGBdhfioMryeCzVoJAfgTTeJsyeyQFn11cW9YZBqn98C5LPk?cluster=devnet",
+  "finished_at": "2026-10-05T12:48:20.571Z"
+}
