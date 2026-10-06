@@ -19,7 +19,8 @@ const ixName = 'register_work_claim';
 const sha256 = value => createHash('sha256').update(value).digest();
 
 // Default arguments are the original probe shape. Callers may override them, for example with the
-// values the app sends today (claim_kind 1, shares 100/100, content_kind 1).
+// values the app sends today (claim_kind 1, shares 100/100, content_kind 1). An optional
+// external_ref_hash (32 numbers) replaces the all-zero default.
 export const PROBE_DEFAULTS = Object.freeze({ content_kind: 0, claim_kind: 0, total_shares: 1, threshold_shares: 1 });
 
 export function buildRegistrationProbe(payerAddress, claimantAddress, blockhash, intent, overrides = {}) {
@@ -59,11 +60,52 @@ export function buildRegistrationProbe(payerAddress, claimantAddress, blockhash,
     raw_hash: [...rawHash], content_kind: args.content_kind, claim_kind: args.claim_kind,
     total_shares: args.total_shares, threshold_shares: args.threshold_shares,
     link_nonce: [...linkNonce], anchor_nonce: [...anchorNonce], anchor_mode_arg: 1,
-    external_ref_hash: Array(32).fill(0),
+    external_ref_hash: args.external_ref_hash ?? Array(32).fill(0),
   });
   const instruction = new TransactionInstruction({ programId: program, data,
     keys: addresses.map((pubkey, i) => ({ pubkey, isWritable: expectedFlags[i][0], isSigner: expectedFlags[i][1] })),
   });
+  const transaction = new Transaction({ feePayer: payer, recentBlockhash: blockhash }).add(instruction);
+  const wire = transaction.serialize({ requireAllSignatures: false, verifySignatures: false });
+  return { wire, rawHash, linkNonce, anchorNonce, data, addresses: Object.fromEntries(names.map((name, i) => [name, addresses[i].toBase58()])) };
+}
+
+// add_version for an existing claim. Content, link nonce and anchor nonce are derived from a fresh intent so the
+// three new accounts are unused. `workClaim` and `expectedPreviousLink` are base58 addresses read from the chain.
+// Seeds follow programs/plotarmor/src/instructions/add_version.rs: the anchor is derived from the CONTENT artifact.
+export function buildAddVersionProbe(payerAddress, claimantAddress, blockhash, intent, { workClaim, expectedPreviousLink, contentKind = 1, externalRefHash }) {
+  if (idl.address !== PROGRAM) throw new Error('IDL program address mismatch');
+  if (!intent || Buffer.byteLength(intent) > 256) throw new Error('Supply a nonempty probe intent, at most 256 UTF-8 bytes');
+  const payer = new PublicKey(payerAddress);
+  const claimant = new PublicKey(claimantAddress);
+  if (payer.equals(claimant)) throw new Error('A separate funded claimant is required by Kora rent policy');
+  const program = new PublicKey(PROGRAM);
+  const derive = (...seeds) => PublicKey.findProgramAddressSync(seeds, program)[0];
+  const rawHash = sha256(`PlotArmor version probe content\n${claimantAddress}\n${intent}\n`);
+  const linkNonce = sha256(`PlotArmor version probe link nonce\n${claimantAddress}\n${intent}\n`);
+  const anchorNonce = sha256(`PlotArmor version probe anchor nonce\n${claimantAddress}\n${intent}\n`);
+  const claim = new PublicKey(workClaim);
+  const registry = derive(Buffer.from('config'));
+  const content = derive(Buffer.from('content'), rawHash);
+  const link = derive(Buffer.from('claim_artifact'), claim.toBuffer(), linkNonce);
+  const anchor = derive(Buffer.from('anchor'), content.toBuffer(), anchorNonce);
+  const addresses = [registry, claim, content, link, anchor, claimant, new PublicKey(SYSTEM)];
+  const names = ['registry_config', 'work_claim', 'content_artifact', 'claim_artifact_link', 'anchor_record', 'claimant', 'system_program'];
+  const flags = [[false, false], [true, false], [true, false], [true, false], [true, false], [true, true], [false, false]];
+  const definition = idl.instructions.find(ix => ix.name === 'add_version');
+  if (!definition || JSON.stringify(definition.accounts.map(a => a.name)) !== JSON.stringify(names)) {
+    throw new Error('IDL add_version account layout changed; review probe against source');
+  }
+  definition.accounts.forEach((a, i) => {
+    if (Boolean(a.writable) !== flags[i][0] || Boolean(a.signer) !== flags[i][1]) throw new Error('IDL add_version account permissions changed');
+  });
+  const data = new BorshInstructionCoder(idl).encode('add_version', {
+    raw_hash: [...rawHash], content_kind: contentKind, link_nonce: [...linkNonce], anchor_nonce: [...anchorNonce],
+    anchor_mode_arg: 1, expected_previous_link: new PublicKey(expectedPreviousLink),
+    external_ref_hash: externalRefHash ?? Array(32).fill(0),
+  });
+  const instruction = new TransactionInstruction({ programId: program, data,
+    keys: addresses.map((pubkey, i) => ({ pubkey, isWritable: flags[i][0], isSigner: flags[i][1] })) });
   const transaction = new Transaction({ feePayer: payer, recentBlockhash: blockhash }).add(instruction);
   const wire = transaction.serialize({ requireAllSignatures: false, verifySignatures: false });
   return { wire, rawHash, linkNonce, anchorNonce, data, addresses: Object.fromEntries(names.map((name, i) => [name, addresses[i].toBase58()])) };
