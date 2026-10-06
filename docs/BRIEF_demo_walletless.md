@@ -84,7 +84,9 @@ NOT tested, you must do or report as not run:
   resolving `@solana/web3.js`, `@noble/curves/ed25519` and `buffer` inside the Supabase bundler). No Deno
   was available. Run `supabase functions serve` locally if you can, otherwise report "not run".
 - The SQL on a real Postgres: RLS behavior, limits, concurrency, the unique index (section 9, test S).
-- Everything live: Kora, Supabase, devnet. Whether Kora accepts a UUID `user_id` is unproven; the script
+- Everything live for this code: Kora, Supabase, devnet. The command-line script path has landed devnet
+  registrations and an `add_version` through Kora (section 12), but the Edge Function and browser code have
+  never run against real services. Whether Kora accepts a UUID `user_id` is unproven; the script
   has only ever sent a wallet address.
 - Your edits to `UploadFlow.tsx`, `VaultApp.tsx`, `RegistrationResult.tsx`, `tsconfig.json`,
   `package.json`, vite build output, eslint and prettier on the new files.
@@ -2692,11 +2694,24 @@ repo's tooling, so they are two readouts, not an independent audit. The earlier 
 is `evidence/2026-10-06-sponsored-dryrun-003-app-params/`. This does not prove the Edge Function, the
 browser flow, or anything below.
 
-Still unproven until live: a non-zero `external_ref_hash` (the proven run used 32 zero bytes; the app sends
-the sha256 digest of the CIDv0); `add_version` through Kora with the sponsored transfer; Kora accepting a
-UUID as `user_id` (if it rejects, the fix is one line in `handle.ts`: pass the writer address instead, and
-say so in the evidence); `isBlockhashValid` on the server RPC; the real cold start time against "up to 30
-seconds".
+Also proven on devnet through Kora (provisional, script path only, one landed pair): a non-zero
+`external_ref_hash` and `add_version`. In one process the script registered with the digest of CIDv0
+`QmT2DLbRoj4JLPJb4PxGw95che5KYvaFkoaX3emGbtWjPX` (`45914b08...d01ba`) in signature
+`fFa8grTPZPnL8i2934g1qwdh4z8zFCGjvmWCSsfgGbqfKRxCkSzNVGqukUxvxkb3kZW7kvtHRQyoNwS4iLLEX5L`, waited for finalized, read the claim's `latest_link`
+from the chain, then sent the rent transfer plus `add_version` with the same writer key in
+`5CNSubE6TC4APHo2WhBRDHUMMD4MDJ7rj1MP4fA5H6P62YiP7bJrxi2sVfLyBXAH7mP6MHAZWLf3CRAkusVsPitn`. Both are finalized with three signers (Kora, writer,
+rent wallet); the writer ended at 0 lamports each time; the rent wallet paid 7,147,560 and 3,190,240; Kora
+paid 15,000 each time. The `add_version` instruction carried the registration's `claim_artifact_link` as
+`expected_previous_link` and the same digest. After it, the claim's `latest_link` and `latest_artifact`
+were the version's link and content accounts. Evidence: `evidence/2026-10-06-sponsored-send-with-version-001-cid/`
+(the script's own readbacks), `evidence/2026-10-06-sponsored-dryrun-004-cid/` (dry run before it) and the
+separate finalized readout `evidence/2026-10-06_sponsored_register_and_version_cid_devnet.md`. As before,
+this is tooling from the same repo, not an independent audit.
+
+Still unproven until live: the Edge Function and the browser flow (nothing in section 7 has run against
+real services); Kora accepting a UUID as `user_id` (every proven run sent the writer address; if Kora
+rejects a UUID, the fix is one line in `handle.ts`: pass the writer address instead, and say so in the
+evidence); `isBlockhashValid` on the server RPC; the real cold start time against "up to 30 seconds".
 
 ## 13. Defaults taken where Milan said "use your recommended defaults"
 

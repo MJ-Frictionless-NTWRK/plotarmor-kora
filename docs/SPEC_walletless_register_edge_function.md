@@ -33,12 +33,19 @@ What exists as evidence for the underlying mechanism (not for this design):
   `evidence/2026-10-06-sponsored-dryrun-003-app-params/` (the dry run before it) and
   `evidence/2026-10-06_sponsored_register_app_params_devnet.md` (a separate finalized readout). Two readouts
   made with the same tooling; not an independent audit.
+- One live devnet pair with a real CID digest and `add_version`, finalized, written by the script's
+  `send-with-version` mode with one in-memory writer key: register
+  `fFa8grTPZPnL8i2934g1qwdh4z8zFCGjvmWCSsfgGbqfKRxCkSzNVGqukUxvxkb3kZW7kvtHRQyoNwS4iLLEX5L`
+  (`external_ref_hash` equal to the digest of CIDv0 `QmT2DLbRoj4JLPJb4PxGw95che5KYvaFkoaX3emGbtWjPX`), then
+  `add_version`
+  `5CNSubE6TC4APHo2WhBRDHUMMD4MDJ7rj1MP4fA5H6P62YiP7bJrxi2sVfLyBXAH7mP6MHAZWLf3CRAkusVsPitn`
+  (lineage head from the chain, same digest). Evidence:
+  `evidence/2026-10-06-sponsored-send-with-version-001-cid/`,
+  `evidence/2026-10-06-sponsored-dryrun-004-cid/` and
+  `evidence/2026-10-06_sponsored_register_and_version_cid_devnet.md`.
 
 What has NOT been exercised and is therefore unverified:
 
-- A non-zero external ref hash (the app sends the sha256 digest of the CIDv0; the landed run above used
-  32 zero bytes) and `add_version` through Kora with the sponsored transfer. The app's `claim_kind`, shares
-  and `content_kind` are no longer in this list; they landed in the run above.
 - A Supabase user id as Kora `user_id` (the script sends the writer address).
 - Anything running inside a Supabase Edge Function (Deno), including HMAC via Web Crypto.
 - The browser signing and sending half of the flow.
