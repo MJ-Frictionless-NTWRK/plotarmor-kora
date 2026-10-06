@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","result":{"signer_address":"HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW","payment_address":"HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW"},"id":2}

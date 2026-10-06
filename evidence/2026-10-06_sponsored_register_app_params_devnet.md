@@ -1,0 +1,86 @@
+# Sponsored register_work_claim with app parameters, devnet transaction readout
+
+Signature: 3PnhZSwa1SX4ecbhDNXEK3wSSG7NNQ1oTkctM4AWmzRhmLz4ikMBqjUaQqj9sZYjLeEc7iQbVmb1WVKJB4pDVMgW
+
+Source: https://api.devnet.solana.com, commitment finalized.
+
+Command (run from the repo root):
+
+```
+node evidence/2026-10-06_sponsored_register_app_params_devnet.fetch.mjs
+```
+
+Output:
+
+```
+slot 508216529 blockTime 1791319246 2026-10-06T20:40:46.000Z version legacy err null
+fee 15000
+numRequiredSignatures 3 numSignatures 3
+signer 0 HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW sig 3PnhZSwa1SX4ecbhDNXEK3wSSG7NNQ1oTkctM4AWmzRhmLz4ikMBqjUaQqj9sZYjLeEc7iQbVmb1WVKJB4pDVMgW
+signer 1 DzB9k4muizQVCNMPKw3pcSp6ozjz7uUuhoB7tAtF6FH4 sig 5TvFQQB7zVwmubLpJi5gmuhXonondSJNZSaXA2csXWX1MZZttE813EE7N6wLVzLfNjtwWQ9kmyVSdMTciEr7yUWc
+signer 2 HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn sig 2CSFFJuLWcJGT8pw7UiQq2gtsj9RdhtC3jKr8opLhGjxZ777A8es8BkBeFqiygDLi9nLu3zgxiyhzmdCJyY6riwv
+first signature equals queried: true
+acct 0 HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW pre 4999985000 post 4999970000 delta -15000
+acct 1 DzB9k4muizQVCNMPKw3pcSp6ozjz7uUuhoB7tAtF6FH4 pre 0 post 0 delta 0
+acct 2 HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn pre 9985699880 post 9978552320 delta -7147560
+acct 3 3D8crJdgacraUfJPtJb2CSvDVwKQHKwoPJXmnShXC1Mt pre 0 post 1209040 delta 1209040
+acct 4 4D6NppGr27mkGPxkYCAf3dW9hX3XPTqdLkLguRj4tMTC pre 0 post 904240 delta 904240
+acct 5 7CvH5Aj3a174UkSjE8XTSbz1msEBGsTUjjmiAw7atHhZ pre 0 post 1717040 delta 1717040
+acct 6 9WYAVY9fJxEGAyhog2Kn6StfB8zTXFzQyN7qVpxdT7r5 pre 0 post 1066800 delta 1066800
+acct 7 9yDm1ceG26bwowz3vhbC3cHFUT6wWcaYUsvprTpaHWnQ pre 0 post 1031240 delta 1031240
+acct 8 Fqb6bwSJEFgPTLWChHFiGd4MLaR9KmAWPa1BsvuLTdHd pre 0 post 1219200 delta 1219200
+acct 9 11111111111111111111111111111111 pre 1 post 1 delta 0
+acct 10 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 pre 1141440 post 1141440 delta 0
+acct 11 BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG pre 1197120 post 1197120 delta 0
+acct 12 L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 pre 1770541440 post 1770541440 delta 0
+ix 0 program 11111111111111111111111111111111 accounts HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn,DzB9k4muizQVCNMPKw3pcSp6ozjz7uUuhoB7tAtF6FH4
+ix 1 program 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 accounts BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG,4D6NppGr27mkGPxkYCAf3dW9hX3XPTqdLkLguRj4tMTC,7CvH5Aj3a174UkSjE8XTSbz1msEBGsTUjjmiAw7atHhZ,3D8crJdgacraUfJPtJb2CSvDVwKQHKwoPJXmnShXC1Mt,9yDm1ceG26bwowz3vhbC3cHFUT6wWcaYUsvprTpaHWnQ,Fqb6bwSJEFgPTLWChHFiGd4MLaR9KmAWPa1BsvuLTdHd,9WYAVY9fJxEGAyhog2Kn6StfB8zTXFzQyN7qVpxdT7r5,DzB9k4muizQVCNMPKw3pcSp6ozjz7uUuhoB7tAtF6FH4,11111111111111111111111111111111
+ix 2 program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 accounts HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW
+ix 0 data hex 0200000028106d0000000000
+ix 1 data hex 80e030f0a60e774cc012a691ea410e192667e1e1c90bbb84731f9abae83ee87c
+ix 2 data hex 050000d07c052a0100000004
+now 0 HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW lamports 4999970000 owner 11111111111111111111111111111111 dataLen 0
+now 1 DzB9k4muizQVCNMPKw3pcSp6ozjz7uUuhoB7tAtF6FH4 null
+now 2 HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn lamports 9978552320 owner 11111111111111111111111111111111 dataLen 0
+now 3 3D8crJdgacraUfJPtJb2CSvDVwKQHKwoPJXmnShXC1Mt lamports 1209040 owner 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 dataLen 110
+now 4 4D6NppGr27mkGPxkYCAf3dW9hX3XPTqdLkLguRj4tMTC lamports 904240 owner 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 dataLen 50
+now 5 7CvH5Aj3a174UkSjE8XTSbz1msEBGsTUjjmiAw7atHhZ lamports 1717040 owner 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 dataLen 210
+now 6 9WYAVY9fJxEGAyhog2Kn6StfB8zTXFzQyN7qVpxdT7r5 lamports 1066800 owner 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 dataLen 82
+now 7 9yDm1ceG26bwowz3vhbC3cHFUT6wWcaYUsvprTpaHWnQ lamports 1031240 owner 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 dataLen 75
+now 8 Fqb6bwSJEFgPTLWChHFiGd4MLaR9KmAWPa1BsvuLTdHd lamports 1219200 owner 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 dataLen 112
+now 9 11111111111111111111111111111111 lamports 1 owner NativeLoader1111111111111111111111111111111 dataLen 14
+now 10 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 lamports 1141440 owner BPFLoaderUpgradeab1e11111111111111111111111 dataLen 36
+now 11 BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG lamports 1197120 owner 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 dataLen 44
+now 12 L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 lamports 1770541440 owner BPFLoaderUpgradeab1e11111111111111111111111 dataLen 36
+claimed fee payer match true rent in keys true writer DzB9k4muizQVCNMPKw3pcSp6ozjz7uUuhoB7tAtF6FH4
+balance writer DzB9k4muizQVCNMPKw3pcSp6ozjz7uUuhoB7tAtF6FH4 pre 0 post 0 delta 0
+balance rent wallet HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn pre 9985699880 post 9978552320 delta -7147560
+balance Kora HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW pre 4999985000 post 4999970000 delta -15000
+instruction programs in order: 11111111111111111111111111111111 , 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 , L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95
+register_work_claim data bytes 143 discriminator 80e030f0a60e774c
+decoded content_kind 1 claim_kind 1 total_shares 100 threshold_shares 100 anchor_mode_arg 1
+external_ref_hash hex 0000000000000000000000000000000000000000000000000000000000000000
+serialized transaction bytes 835
+accounts owned by PlotArmor with pre 0: 6 sum lamports now 7147560
+log Program 11111111111111111111111111111111 invoke [1]
+log Program 11111111111111111111111111111111 success
+log Program 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 invoke [1]
+log Program log: Instruction: RegisterWorkClaim
+log Program 11111111111111111111111111111111 invoke [2]
+log Program 11111111111111111111111111111111 success
+log Program 11111111111111111111111111111111 invoke [2]
+log Program 11111111111111111111111111111111 success
+log Program 11111111111111111111111111111111 invoke [2]
+log Program 11111111111111111111111111111111 success
+log Program 11111111111111111111111111111111 invoke [2]
+log Program 11111111111111111111111111111111 success
+log Program 11111111111111111111111111111111 invoke [2]
+log Program 11111111111111111111111111111111 success
+log Program 11111111111111111111111111111111 invoke [2]
+log Program 11111111111111111111111111111111 success
+log Program 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 consumed 49717 of 402850 compute units
+log Program 3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2 success
+log Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 invoke [1]
+log Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 consumed 678 of 353133 compute units
+log Program L2TExMFKdjpN9kozasaurPirfHy9P8sbXoAN1qA3S95 success
+```
