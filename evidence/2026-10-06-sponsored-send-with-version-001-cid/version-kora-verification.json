@@ -1,0 +1,12 @@
+{
+  "signature_valid": true,
+  "blockhash_and_fee_payer_unchanged": true,
+  "instructions_0_1_identical": true,
+  "only_lighthouse_appended": true,
+  "signer_set": [
+    "HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW",
+    "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x",
+    "HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn"
+  ],
+  "lighthouse_minimum_lamports": "4999940000"
+}

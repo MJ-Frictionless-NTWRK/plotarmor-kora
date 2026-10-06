@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","id":20,"method":"getMultipleAccounts","params":[["6D2YVwDGo2ZWexzfmMPqAvs7oYZ1gK1GReBCrmionDrK"],{"encoding":"base64","commitment":"finalized"}]}

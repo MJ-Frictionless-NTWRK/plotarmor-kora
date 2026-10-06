@@ -1,0 +1,10 @@
+{
+  "started_at": "2026-10-06T20:52:17.628Z",
+  "mode": "dry-run",
+  "cid": "QmT2DLbRoj4JLPJb4PxGw95che5KYvaFkoaX3emGbtWjPX",
+  "external_ref_hash_hex": "45914b08915ab9dda49fc41c7da8655123afedef07ba0963f4f840edb74d01ba",
+  "program": "3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2",
+  "kora": "https://plotarmor-kora-devnet.onrender.com",
+  "devnet": "https://api.devnet.solana.com",
+  "policy_sha256": "862b89fd3e6d639f0f02b7eb6bc5b536f5450f760f233796728f9bf8e5b789fe"
+}

@@ -1,0 +1,69 @@
+{
+  "mode": "send-with-version",
+  "result": "PASS",
+  "register": {
+    "result": "PASS",
+    "signature": "fFa8grTPZPnL8i2934g1qwdh4z8zFCGjvmWCSsfgGbqfKRxCkSzNVGqukUxvxkb3kZW7kvtHRQyoNwS4iLLEX5L",
+    "signers": [
+      "HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW",
+      "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x",
+      "HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn"
+    ],
+    "fee_lamports": 15000,
+    "slot": 508219548,
+    "rent_lamports": 7147560,
+    "rent_wallet_delta": -7147560,
+    "kora_delta": -15000,
+    "writer_post_lamports": 0,
+    "records": {
+      "registry_config": "BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG",
+      "content_artifact": "GEErzPsD56dekprpMGZkZ7y3kX8o51z5AD9AnFJMgqZf",
+      "work_claim": "6D2YVwDGo2ZWexzfmMPqAvs7oYZ1gK1GReBCrmionDrK",
+      "ownership": "7Hvu39MDGqBqEMaC1hQig9RFyqBxr3wMJnbrc8tuko6W",
+      "owner_record": "867hJpM7W8rzNLmaMnPjwL2gqSDHjpSg3XbS8XVPiECz",
+      "claim_artifact_link": "DTmNpzqqVXWwt3tGaqnaJ7wL1oVjrqH8XnJERFAV9PPW",
+      "anchor_record": "Dm9AHmbLoY9g1NbzJ36B3Vdc74pCWidcGRL8jzZboLb9",
+      "signer": "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x",
+      "system_program": "11111111111111111111111111111111"
+    },
+    "explorer": "https://explorer.solana.com/tx/fFa8grTPZPnL8i2934g1qwdh4z8zFCGjvmWCSsfgGbqfKRxCkSzNVGqukUxvxkb3kZW7kvtHRQyoNwS4iLLEX5L?cluster=devnet"
+  },
+  "add_version": {
+    "result": "PASS",
+    "signature": "5CNSubE6TC4APHo2WhBRDHUMMD4MDJ7rj1MP4fA5H6P62YiP7bJrxi2sVfLyBXAH7mP6MHAZWLf3CRAkusVsPitn",
+    "signers": [
+      "HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW",
+      "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x",
+      "HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn"
+    ],
+    "fee_lamports": 15000,
+    "slot": 508219557,
+    "rent_lamports": 3190240,
+    "rent_wallet_delta": -3190240,
+    "kora_delta": -15000,
+    "writer_post_lamports": 0,
+    "records": {
+      "registry_config": "BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG",
+      "work_claim": "6D2YVwDGo2ZWexzfmMPqAvs7oYZ1gK1GReBCrmionDrK",
+      "content_artifact": "8KN6BwpbbqB6samG4LAKH1zaUkcFQFzd3hjHfzffKDzY",
+      "claim_artifact_link": "7UAqGkw5dSsMGAfjnPNZuoUvfkDGV5yjx8TyZ8rEFiXT",
+      "anchor_record": "KuCm6eYJ5NcTTouNVm7Edz5DRmRNd1HkpatkpXm7TK4",
+      "claimant": "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x",
+      "system_program": "11111111111111111111111111111111"
+    },
+    "explorer": "https://explorer.solana.com/tx/5CNSubE6TC4APHo2WhBRDHUMMD4MDJ7rj1MP4fA5H6P62YiP7bJrxi2sVfLyBXAH7mP6MHAZWLf3CRAkusVsPitn?cluster=devnet"
+  },
+  "claim_head_before": {
+    "rootArtifact": "GEErzPsD56dekprpMGZkZ7y3kX8o51z5AD9AnFJMgqZf",
+    "latestArtifact": "GEErzPsD56dekprpMGZkZ7y3kX8o51z5AD9AnFJMgqZf",
+    "latestLink": "DTmNpzqqVXWwt3tGaqnaJ7wL1oVjrqH8XnJERFAV9PPW",
+    "claimant": "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x"
+  },
+  "claim_head_after": {
+    "rootArtifact": "GEErzPsD56dekprpMGZkZ7y3kX8o51z5AD9AnFJMgqZf",
+    "latestArtifact": "8KN6BwpbbqB6samG4LAKH1zaUkcFQFzd3hjHfzffKDzY",
+    "latestLink": "7UAqGkw5dSsMGAfjnPNZuoUvfkDGV5yjx8TyZ8rEFiXT",
+    "claimant": "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x"
+  },
+  "finished_at": "2026-10-06T20:52:53.574Z"
+}

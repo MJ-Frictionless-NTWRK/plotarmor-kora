@@ -1,0 +1,26 @@
+{
+  "intent": "sponsored-demo-f369bc91-20dd-4053-815f-bc9973426dd4",
+  "writer": "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x",
+  "rent_wallet": "HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn",
+  "kora_fee_payer": "HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW",
+  "rent_lamports": 7147560,
+  "rent_per_record": {
+    "content_artifact": 904240,
+    "work_claim": 1717040,
+    "ownership": 1209040,
+    "owner_record": 1031240,
+    "claim_artifact_link": 1219200,
+    "anchor_record": 1066800
+  },
+  "records": {
+    "registry_config": "BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG",
+    "content_artifact": "GEErzPsD56dekprpMGZkZ7y3kX8o51z5AD9AnFJMgqZf",
+    "work_claim": "6D2YVwDGo2ZWexzfmMPqAvs7oYZ1gK1GReBCrmionDrK",
+    "ownership": "7Hvu39MDGqBqEMaC1hQig9RFyqBxr3wMJnbrc8tuko6W",
+    "owner_record": "867hJpM7W8rzNLmaMnPjwL2gqSDHjpSg3XbS8XVPiECz",
+    "claim_artifact_link": "DTmNpzqqVXWwt3tGaqnaJ7wL1oVjrqH8XnJERFAV9PPW",
+    "anchor_record": "Dm9AHmbLoY9g1NbzJ36B3Vdc74pCWidcGRL8jzZboLb9",
+    "signer": "Cry931DosfVvGL8Le4zyxHczyuxDB8drMBjL5EBeqb6x",
+    "system_program": "11111111111111111111111111111111"
+  }
+}
