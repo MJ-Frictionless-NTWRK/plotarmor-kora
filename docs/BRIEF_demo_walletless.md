@@ -2681,10 +2681,22 @@ Passes needed before any "verified" wording (CLAUDE.md in `plotarmor-kora`: four
 4. An independent re-audit by a different session or agent of the validator, the function, the
    migration, and the browser flow, with the ledger rows and function logs available.
 
-Unproven until live: Kora accepting a UUID as `user_id` (if it rejects, the fix is one line in
-`handle.ts`: pass the writer address instead, and say so in the evidence); the app arguments (claim_kind 1,
-shares 100/100) through Kora; `isBlockhashValid` on the server RPC; the real cold start time against
-"up to 30 seconds".
+Proven on devnet through Kora (provisional, script path only, one landed registration): the app
+arguments `content_kind 1`, `claim_kind 1`, `total_shares 100`, `threshold_shares 100`, `anchor_mode_arg 1`
+landed in signature `3PnhZSwa1SX4ecbhDNXEK3wSSG7NNQ1oTkctM4AWmzRhmLz4ikMBqjUaQqj9sZYjLeEc7iQbVmb1WVKJB4pDVMgW`
+(finalized, three signers: Kora, writer, rent wallet; writer ended at 0 lamports; rent wallet paid
+7,147,560; Kora paid the 15,000 network fee). There are two readouts of it in `plotarmor-kora`: the script's
+own ledger readback in `evidence/2026-10-06-sponsored-send-002-app-params/` and a separate finalized
+readout in `evidence/2026-10-06_sponsored_register_app_params_devnet.md`. Both were produced with this
+repo's tooling, so they are two readouts, not an independent audit. The earlier dry run with the same values
+is `evidence/2026-10-06-sponsored-dryrun-003-app-params/`. This does not prove the Edge Function, the
+browser flow, or anything below.
+
+Still unproven until live: a non-zero `external_ref_hash` (the proven run used 32 zero bytes; the app sends
+the sha256 digest of the CIDv0); `add_version` through Kora with the sponsored transfer; Kora accepting a
+UUID as `user_id` (if it rejects, the fix is one line in `handle.ts`: pass the writer address instead, and
+say so in the evidence); `isBlockhashValid` on the server RPC; the real cold start time against "up to 30
+seconds".
 
 ## 13. Defaults taken where Milan said "use your recommended defaults"
 
