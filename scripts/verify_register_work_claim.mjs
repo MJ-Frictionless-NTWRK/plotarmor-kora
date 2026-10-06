@@ -18,7 +18,12 @@ export const freshRegistrationIntent = () => `kora-register-signing-only-${rando
 const ixName = 'register_work_claim';
 const sha256 = value => createHash('sha256').update(value).digest();
 
-export function buildRegistrationProbe(payerAddress, claimantAddress, blockhash, intent) {
+// Default arguments are the original probe shape. Callers may override them, for example with the
+// values the app sends today (claim_kind 1, shares 100/100, content_kind 1).
+export const PROBE_DEFAULTS = Object.freeze({ content_kind: 0, claim_kind: 0, total_shares: 1, threshold_shares: 1 });
+
+export function buildRegistrationProbe(payerAddress, claimantAddress, blockhash, intent, overrides = {}) {
+  const args = { ...PROBE_DEFAULTS, ...overrides };
   if (idl.address !== PROGRAM) throw new Error('IDL program address mismatch');
   if (!intent || Buffer.byteLength(intent) > 256) throw new Error('Supply a nonempty probe intent, at most 256 UTF-8 bytes');
   const payer = new PublicKey(payerAddress);
@@ -51,7 +56,8 @@ export function buildRegistrationProbe(payerAddress, claimantAddress, blockhash,
     }
   });
   const data = new BorshInstructionCoder(idl).encode(ixName, {
-    raw_hash: [...rawHash], content_kind: 0, claim_kind: 0, total_shares: 1, threshold_shares: 1,
+    raw_hash: [...rawHash], content_kind: args.content_kind, claim_kind: args.claim_kind,
+    total_shares: args.total_shares, threshold_shares: args.threshold_shares,
     link_nonce: [...linkNonce], anchor_nonce: [...anchorNonce], anchor_mode_arg: 1,
     external_ref_hash: Array(32).fill(0),
   });

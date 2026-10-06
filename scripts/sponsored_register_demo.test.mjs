@@ -1,7 +1,7 @@
 import test from 'node:test';
 import assert from 'node:assert/strict';
 import { createRequire } from 'node:module';
-import { buildSponsoredTransaction, verifyKoraReturn, sumRent, RENT_WALLET, RECORD_SIZES, MAX_RENT_LAMPORTS } from './sponsored_register_demo.mjs';
+import { buildSponsoredTransaction, verifyKoraReturn, sumRent, RENT_WALLET, RECORD_SIZES, MAX_RENT_LAMPORTS, APP_PARAMS } from './sponsored_register_demo.mjs';
 import { buildRegistrationProbe } from './verify_register_work_claim.mjs';
 import { PROGRAM } from './verify_plotarmor_sign_transaction.mjs';
 const require = createRequire(new URL('../../plotarmor-program/package.json', import.meta.url));
@@ -37,7 +37,7 @@ test('unsigned Design B transaction: transfer then unchanged registration, three
   assert.deepEqual(transfer.keys.map(k => k.pubkey.toBase58()), [RENT_WALLET, writer]);
   assert.equal(transfer.data.readUInt32LE(0), 2);
   assert.equal(transfer.data.readBigUInt64LE(4), BigInt(rent));
-  const probe = buildRegistrationProbe(payer, writer, hash, intent);
+  const probe = buildRegistrationProbe(payer, writer, hash, intent, APP_PARAMS);
   assert.equal(registration.programId.toBase58(), PROGRAM);
   assert.deepEqual(registration.data, probe.data);
   assert.deepEqual(registration.keys.map(k => k.pubkey.toBase58()), Object.values(probe.addresses));
@@ -79,4 +79,24 @@ test('rent quote sums exactly six live values and enforces the gateway cap', () 
   assert.throws(() => sumRent(five), /exactly the six/);
   assert.throws(() => buildSponsoredTransaction(payer, writer, hash, MAX_RENT_LAMPORTS + 1, intent), /gateway cap/);
   assert.throws(() => buildSponsoredTransaction(RENT_WALLET, writer, hash, rent, intent), /distinct/);
+});
+
+test('sponsored script sends the app arguments: content_kind 1, claim_kind 1, shares 100/100, attested devnet', () => {
+  const { wire } = buildSponsoredTransaction(payer, writer, hash, rent, intent);
+  const data = Transaction.from(wire).instructions[1].data;
+  assert.equal(data.length, 143);
+  assert.equal(data[8 + 32], 1, 'content_kind');
+  assert.equal(data[8 + 32 + 1], 1, 'claim_kind');
+  assert.equal(data.readUInt16LE(8 + 32 + 2), 100, 'total_shares');
+  assert.equal(data.readUInt16LE(8 + 32 + 4), 100, 'threshold_shares');
+  assert.equal(data[8 + 32 + 6 + 64], 1, 'anchor_mode_arg');
+  assert.ok(data.subarray(8 + 32 + 7 + 64).equals(Buffer.alloc(32)), 'external_ref_hash stays zero in the script');
+});
+
+test('the plain registration probe keeps its original arguments', () => {
+  const data = buildRegistrationProbe(payer, writer, hash, intent).data;
+  assert.equal(data[8 + 32], 0);
+  assert.equal(data[8 + 32 + 1], 0);
+  assert.equal(data.readUInt16LE(8 + 32 + 2), 1);
+  assert.equal(data.readUInt16LE(8 + 32 + 4), 1);
 });

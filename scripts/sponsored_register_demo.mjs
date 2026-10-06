@@ -1,7 +1,7 @@
 #!/usr/bin/env node
 // Devnet only. Design B from evidence/2026-09-30-rent-spike/REPORT.md, sections 3 and 5.
 // One legacy transaction: rent wallet -> fresh zero-SOL writer (exact live rent), then
-// register_work_claim with the writer as signer, claimant and payer, then Kora's appended
+// register_work_claim (app parameters: claim_kind 1, shares 100/100) with the writer as signer, claimant and payer, then Kora's appended
 // Lighthouse assertion. Kora is fee payer and pays the network fee only.
 // Requires the deployed policy to allow max_signatures = 3.
 // Modes: "dry-run" stops after the fully signed sigVerify simulation; "send" broadcasts once.
@@ -29,6 +29,9 @@ export const RENT_WALLET = 'HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn';
 export const RECORD_SIZES = { content_artifact: 50, work_claim: 210, ownership: 110, owner_record: 75, claim_artifact_link: 112, anchor_record: 82 };
 // Gateway cap on rent-wallet spending per registration (Kora's caps protect only Kora's key).
 export const MAX_RENT_LAMPORTS = 8_000_000;
+// Arguments the web app sends today (UploadFlow.tsx: Original claim, 100/100 shares, screenplay).
+// anchor_mode_arg stays 1 (AttestedDevnet) and external_ref_hash stays zero in this script.
+export const APP_PARAMS = Object.freeze({ content_kind: 1, claim_kind: 1, total_shares: 100, threshold_shares: 100 });
 const sha = value => createHash('sha256').update(value).digest('hex');
 const encode58 = bytes => (bs58.default ?? bs58).encode(bytes);
 
@@ -46,7 +49,7 @@ export function sumRent(perRecord) {
 export function buildSponsoredTransaction(payer, writer, blockhash, lamports, intent) {
   assert.ok(Number.isSafeInteger(lamports) && lamports > 0 && lamports <= MAX_RENT_LAMPORTS, 'Transfer amount outside the gateway cap');
   assert.ok(new Set([payer, writer, RENT_WALLET]).size === 3, 'Kora, rent wallet and writer must be distinct');
-  const probe = buildRegistrationProbe(payer, writer, blockhash, intent);
+  const probe = buildRegistrationProbe(payer, writer, blockhash, intent, APP_PARAMS);
   const registration = Transaction.from(probe.wire).instructions[0];
   // Restore the IDL account flags: decoding marks every transaction signer as signer here.
   registration.keys = registration.keys.map(k => ({ ...k, isSigner: k.pubkey.toBase58() === writer }));
