@@ -1,0 +1,18 @@
+node:fs:1349
+  const result = binding.mkdir(
+                         ^
+
+Error: ENOENT: no such file or directory, mkdir '/home/sucka/plotarmor-kora/evidence/2026-09-17-stateful-readiness'
+    at mkdirSync (node:fs:1349:26)
+    at main (file:///home/sucka/plotarmor-kora/scripts/verify_stateful_signing.mjs:93:3)
+    at file:///home/sucka/plotarmor-kora/scripts/verify_stateful_signing.mjs:252:87
+    at ModuleJob.run (node:internal/modules/esm/module_job:377:25)
+    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:691:26)
+    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:101:5) {
+  errno: -2,
+  code: 'ENOENT',
+  syscall: 'mkdir',
+  path: '/home/sucka/plotarmor-kora/evidence/2026-09-17-stateful-readiness'
+}
+
+Node.js v24.10.0

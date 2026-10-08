@@ -1,0 +1,11 @@
+{
+  "statuses": {
+    "register_work_claim": {
+      "status": "PASS",
+      "verification": "register_work_claim.verification.json",
+      "fully_signed_simulation": "register_work_claim-fully-signed.balance.json"
+    }
+  },
+  "finished_at": "2026-09-17T17:41:31.268Z",
+  "qualifying_live_passes": 1
+}

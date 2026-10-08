@@ -552,6 +552,22 @@ Render remains a separate human action after review and secret setup.
 
 ## Verification record
 
+**Update, 2026-09-17:** live probes for `add_version`, `add_owner`, and
+`anchor_authorized_contract` passed on their first attempts, along with a fresh
+`register_work_claim` signing probe. All four include verified Kora signatures,
+preserved PlotArmor instructions, Lighthouse assertions, authority signatures and
+successful fully signed devnet simulations. This run produced **4 qualifying live
+passes**. Distinct instruction coverage is now **5/6**, including the historical
+evidence-anchor pass; `sign_contract` remains unprobed and its current client shape
+requires M2 deployment alignment. Exactly one ordinary-wallet registration was
+broadcast for setup; no Kora-signed transaction was broadcast. See the
+[raw-artifact report](evidence/2026-09-17-stateful-probes-001/REPORT.md) for the setup
+signature, per-instruction requests/responses, simulation outputs and rent deltas.
+
+The record below is the historical pre-2026-09-17 baseline. Its 2-of-4 count and
+no-setup-broadcast statement are superseded by the update above; untested controls
+and the historical evidence-anchor status are not upgraded by these new probes.
+
 Current evidence is provisional. Source inspection and digest resolution are not
 independent runtime passes. Multiple assertions within one suite remain one pass.
 

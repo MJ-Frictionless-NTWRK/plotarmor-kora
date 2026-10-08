@@ -1,0 +1,8 @@
+{
+  "signature_valid": true,
+  "original_instruction_identical": true,
+  "only_lighthouse_appended": true,
+  "message_sha256": "76348f49928ce75c1176afd288cdc304d89c1e50c7771d0b80bce22564ee8faa",
+  "lighthouse_target": "HWfGUebvq9ez4EWZKXoDBiNfH8uQ2q3mpMqpVCHfMdSW",
+  "lighthouse_minimum_lamports": "4999990000"
+}

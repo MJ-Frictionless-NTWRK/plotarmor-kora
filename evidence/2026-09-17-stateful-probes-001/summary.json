@@ -1,0 +1,21 @@
+{
+  "statuses": {
+    "add_version": {
+      "status": "PASS",
+      "verification": "add_version.verification.json",
+      "fully_signed_simulation": "add_version-fully-signed.balance.json"
+    },
+    "add_owner": {
+      "status": "PASS",
+      "verification": "add_owner.verification.json",
+      "fully_signed_simulation": "add_owner-fully-signed.balance.json"
+    },
+    "anchor_authorized_contract": {
+      "status": "PASS",
+      "verification": "anchor_authorized_contract.verification.json",
+      "fully_signed_simulation": "anchor_authorized_contract-fully-signed.balance.json"
+    }
+  },
+  "finished_at": "2026-09-17T17:41:45.253Z",
+  "qualifying_live_passes": 3
+}

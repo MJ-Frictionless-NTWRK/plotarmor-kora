@@ -1,0 +1,18 @@
+{
+  "statuses": {
+    "add_version": {
+      "status": "BLOCKED",
+      "reason": "AssertionError [ERR_ASSERTION]: Kora API/HMAC credentials unavailable in this session"
+    },
+    "add_owner": {
+      "status": "BLOCKED",
+      "reason": "AssertionError [ERR_ASSERTION]: Kora API/HMAC credentials unavailable in this session"
+    },
+    "anchor_authorized_contract": {
+      "status": "BLOCKED",
+      "reason": "AssertionError [ERR_ASSERTION]: Kora API/HMAC credentials unavailable in this session"
+    }
+  },
+  "finished_at": "2026-09-17T17:03:02.006Z",
+  "qualifying_live_passes": 0
+}

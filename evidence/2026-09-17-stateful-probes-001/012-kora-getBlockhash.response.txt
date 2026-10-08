@@ -1,0 +1,1 @@
+{"jsonrpc":"2.0","result":{"blockhash":"GxkZyjM5M6zu9mMsLGHvjd7AWai78TnxMdRuYRPJzeJ4"},"id":12}

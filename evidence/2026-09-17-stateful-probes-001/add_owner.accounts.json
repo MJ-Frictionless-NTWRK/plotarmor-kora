@@ -1,0 +1,16 @@
+{
+  "accounts": {
+    "registry_config": "BpsMTsw9uxmmgmy1iVjgwaLfoyKMGuoisyBQ8sTrxvmG",
+    "work_claim": "9JWbN2t4DSwezAYW6LmtZo7eWvJVgZDSuzm1v7wbxj9B",
+    "ownership": "5uBxg1AuP7qxAwhQfYL8WsctML1tpWvt6VbcRRtLfp6A",
+    "new_owner_record": "J19asx6SdyfwX9HPGUjgqQHgNnQ1NktU6SitQJ2reYrV",
+    "admin": "HZJTTwQMa6uyfA9AMXMmJKb9UrzxzGTKPAXQ2LKxgFLn",
+    "new_owner": "6x5SYnLroiN7WYq8NQYU9KHcH4YjpBbwpUfVu3EB7ieH",
+    "system_program": "11111111111111111111111111111111"
+  },
+  "args": {
+    "new_share": 1,
+    "new_role": 0,
+    "new_threshold_shares": 1
+  }
+}

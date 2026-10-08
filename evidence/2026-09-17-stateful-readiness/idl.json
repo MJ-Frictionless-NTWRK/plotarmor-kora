@@ -1,0 +1,1743 @@
+{
+  "address": "3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2",
+  "metadata": {
+    "name": "plotarmor",
+    "version": "0.1.0",
+    "spec": "0.1.0",
+    "description": "Created with Anchor"
+  },
+  "instructions": [
+    {
+      "name": "add_owner",
+      "discriminator": [
+        211,
+        140,
+        15,
+        161,
+        64,
+        48,
+        232,
+        184
+      ],
+      "accounts": [
+        {
+          "name": "registry_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "work_claim",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  108,
+                  97,
+                  105,
+                  109
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim.root_artifact",
+                "account": "WorkClaim"
+              },
+              {
+                "kind": "account",
+                "path": "work_claim.claimant",
+                "account": "WorkClaim"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ownership",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  111,
+                  119,
+                  110,
+                  101,
+                  114,
+                  115,
+                  104,
+                  105,
+                  112
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim"
+              }
+            ]
+          }
+        },
+        {
+          "name": "new_owner_record",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  111,
+                  119,
+                  110,
+                  101,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "ownership"
+              },
+              {
+                "kind": "account",
+                "path": "new_owner"
+              }
+            ]
+          }
+        },
+        {
+          "name": "admin",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "ownership"
+          ]
+        },
+        {
+          "name": "new_owner"
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "new_share",
+          "type": "u16"
+        },
+        {
+          "name": "new_role",
+          "type": "u8"
+        },
+        {
+          "name": "new_threshold_shares",
+          "type": "u16"
+        }
+      ]
+    },
+    {
+      "name": "add_version",
+      "discriminator": [
+        167,
+        42,
+        0,
+        24,
+        83,
+        109,
+        61,
+        248
+      ],
+      "accounts": [
+        {
+          "name": "registry_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "work_claim",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  108,
+                  97,
+                  105,
+                  109
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim.root_artifact",
+                "account": "WorkClaim"
+              },
+              {
+                "kind": "account",
+                "path": "work_claim.claimant",
+                "account": "WorkClaim"
+              }
+            ]
+          }
+        },
+        {
+          "name": "content_artifact",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  116,
+                  101,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "raw_hash"
+              }
+            ]
+          }
+        },
+        {
+          "name": "claim_artifact_link",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  108,
+                  97,
+                  105,
+                  109,
+                  95,
+                  97,
+                  114,
+                  116,
+                  105,
+                  102,
+                  97,
+                  99,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim"
+              },
+              {
+                "kind": "arg",
+                "path": "link_nonce"
+              }
+            ]
+          }
+        },
+        {
+          "name": "anchor_record",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  110,
+                  99,
+                  104,
+                  111,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "content_artifact"
+              },
+              {
+                "kind": "arg",
+                "path": "anchor_nonce"
+              }
+            ]
+          }
+        },
+        {
+          "name": "claimant",
+          "writable": true,
+          "signer": true,
+          "relations": [
+            "work_claim"
+          ]
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "raw_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "content_kind",
+          "type": "u8"
+        },
+        {
+          "name": "link_nonce",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "anchor_nonce",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "anchor_mode_arg",
+          "type": "u8"
+        },
+        {
+          "name": "expected_previous_link",
+          "type": "pubkey"
+        },
+        {
+          "name": "external_ref_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "anchor_authorized_contract",
+      "discriminator": [
+        210,
+        79,
+        150,
+        32,
+        196,
+        91,
+        92,
+        64
+      ],
+      "accounts": [
+        {
+          "name": "registry_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "work_claim",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  108,
+                  97,
+                  105,
+                  109
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim.root_artifact",
+                "account": "WorkClaim"
+              },
+              {
+                "kind": "account",
+                "path": "work_claim.claimant",
+                "account": "WorkClaim"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ownership",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  111,
+                  119,
+                  110,
+                  101,
+                  114,
+                  115,
+                  104,
+                  105,
+                  112
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim"
+              }
+            ]
+          }
+        },
+        {
+          "name": "contract_artifact",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  97,
+                  99,
+                  116,
+                  95,
+                  97,
+                  114,
+                  116,
+                  105,
+                  102,
+                  97,
+                  99,
+                  116
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "raw_contract_hash"
+              }
+            ]
+          }
+        },
+        {
+          "name": "authorized_contract_anchor",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  117,
+                  116,
+                  104,
+                  111,
+                  114,
+                  105,
+                  122,
+                  101,
+                  100,
+                  95,
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  97,
+                  99,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim"
+              },
+              {
+                "kind": "account",
+                "path": "contract_artifact"
+              }
+            ]
+          }
+        },
+        {
+          "name": "anchor_record",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  110,
+                  99,
+                  104,
+                  111,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "authorized_contract_anchor"
+              },
+              {
+                "kind": "arg",
+                "path": "anchor_nonce"
+              }
+            ]
+          }
+        },
+        {
+          "name": "admin",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "raw_contract_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "contract_kind",
+          "type": "u8"
+        },
+        {
+          "name": "anchor_nonce",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "anchor_mode_arg",
+          "type": "u8"
+        },
+        {
+          "name": "external_ref_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "anchor_evidence_contract",
+      "discriminator": [
+        5,
+        43,
+        187,
+        2,
+        36,
+        176,
+        229,
+        86
+      ],
+      "accounts": [
+        {
+          "name": "registry_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "contract_artifact",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  97,
+                  99,
+                  116,
+                  95,
+                  97,
+                  114,
+                  116,
+                  105,
+                  102,
+                  97,
+                  99,
+                  116
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "raw_contract_hash"
+              }
+            ]
+          }
+        },
+        {
+          "name": "evidence_anchor",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  101,
+                  118,
+                  105,
+                  100,
+                  101,
+                  110,
+                  99,
+                  101
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "anchorer"
+              },
+              {
+                "kind": "account",
+                "path": "contract_artifact"
+              }
+            ]
+          }
+        },
+        {
+          "name": "anchor_record",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  110,
+                  99,
+                  104,
+                  111,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "evidence_anchor"
+              },
+              {
+                "kind": "arg",
+                "path": "anchor_nonce"
+              }
+            ]
+          }
+        },
+        {
+          "name": "anchorer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "raw_contract_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "contract_kind",
+          "type": "u8"
+        },
+        {
+          "name": "anchor_nonce",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "anchor_mode_arg",
+          "type": "u8"
+        },
+        {
+          "name": "asserted_work_claim",
+          "type": "pubkey"
+        },
+        {
+          "name": "external_ref_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "init_registry_config",
+      "discriminator": [
+        157,
+        90,
+        204,
+        184,
+        92,
+        221,
+        52,
+        86
+      ],
+      "accounts": [
+        {
+          "name": "registry_config",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        },
+        {
+          "name": "program",
+          "address": "3h9CzV9MJDeD5yjhVhdE6cupuXVRnLW1Cu6P14EJBKv2"
+        },
+        {
+          "name": "program_data"
+        }
+      ],
+      "args": []
+    },
+    {
+      "name": "register_work_claim",
+      "discriminator": [
+        128,
+        224,
+        48,
+        240,
+        166,
+        14,
+        119,
+        76
+      ],
+      "accounts": [
+        {
+          "name": "registry_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "content_artifact",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  116,
+                  101,
+                  110,
+                  116
+                ]
+              },
+              {
+                "kind": "arg",
+                "path": "raw_hash"
+              }
+            ]
+          }
+        },
+        {
+          "name": "work_claim",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  108,
+                  97,
+                  105,
+                  109
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "content_artifact"
+              },
+              {
+                "kind": "account",
+                "path": "signer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "ownership",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  111,
+                  119,
+                  110,
+                  101,
+                  114,
+                  115,
+                  104,
+                  105,
+                  112
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim"
+              }
+            ]
+          }
+        },
+        {
+          "name": "owner_record",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  111,
+                  119,
+                  110,
+                  101,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "ownership"
+              },
+              {
+                "kind": "account",
+                "path": "signer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "claim_artifact_link",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  108,
+                  97,
+                  105,
+                  109,
+                  95,
+                  97,
+                  114,
+                  116,
+                  105,
+                  102,
+                  97,
+                  99,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim"
+              },
+              {
+                "kind": "arg",
+                "path": "link_nonce"
+              }
+            ]
+          }
+        },
+        {
+          "name": "anchor_record",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  97,
+                  110,
+                  99,
+                  104,
+                  111,
+                  114
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "work_claim"
+              },
+              {
+                "kind": "arg",
+                "path": "anchor_nonce"
+              }
+            ]
+          }
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "raw_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "content_kind",
+          "type": "u8"
+        },
+        {
+          "name": "claim_kind",
+          "type": "u8"
+        },
+        {
+          "name": "total_shares",
+          "type": "u16"
+        },
+        {
+          "name": "threshold_shares",
+          "type": "u16"
+        },
+        {
+          "name": "link_nonce",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "anchor_nonce",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        },
+        {
+          "name": "anchor_mode_arg",
+          "type": "u8"
+        },
+        {
+          "name": "external_ref_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "name": "sign_contract",
+      "discriminator": [
+        145,
+        83,
+        234,
+        177,
+        104,
+        87,
+        183,
+        156
+      ],
+      "accounts": [
+        {
+          "name": "registry_config",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  102,
+                  105,
+                  103
+                ]
+              }
+            ]
+          }
+        },
+        {
+          "name": "contract_artifact",
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  99,
+                  111,
+                  110,
+                  116,
+                  114,
+                  97,
+                  99,
+                  116,
+                  95,
+                  97,
+                  114,
+                  116,
+                  105,
+                  102,
+                  97,
+                  99,
+                  116
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "contract_artifact.raw_hash",
+                "account": "ContractArtifact"
+              }
+            ]
+          }
+        },
+        {
+          "name": "contract_signature",
+          "writable": true,
+          "pda": {
+            "seeds": [
+              {
+                "kind": "const",
+                "value": [
+                  115,
+                  105,
+                  103,
+                  110,
+                  97,
+                  116,
+                  117,
+                  114,
+                  101
+                ]
+              },
+              {
+                "kind": "account",
+                "path": "contract_artifact"
+              },
+              {
+                "kind": "account",
+                "path": "signer"
+              }
+            ]
+          }
+        },
+        {
+          "name": "signer",
+          "writable": true,
+          "signer": true
+        },
+        {
+          "name": "system_program",
+          "address": "11111111111111111111111111111111"
+        }
+      ],
+      "args": [
+        {
+          "name": "content_hash",
+          "type": {
+            "array": [
+              "u8",
+              32
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "accounts": [
+    {
+      "name": "AnchorRecord",
+      "discriminator": [
+        18,
+        113,
+        142,
+        13,
+        101,
+        130,
+        207,
+        223
+      ]
+    },
+    {
+      "name": "AuthorizedContractAnchor",
+      "discriminator": [
+        36,
+        219,
+        186,
+        192,
+        120,
+        236,
+        101,
+        46
+      ]
+    },
+    {
+      "name": "ClaimArtifactLink",
+      "discriminator": [
+        236,
+        10,
+        36,
+        209,
+        164,
+        167,
+        156,
+        69
+      ]
+    },
+    {
+      "name": "ContentArtifact",
+      "discriminator": [
+        93,
+        184,
+        215,
+        45,
+        244,
+        173,
+        147,
+        101
+      ]
+    },
+    {
+      "name": "ContractArtifact",
+      "discriminator": [
+        30,
+        37,
+        242,
+        17,
+        204,
+        13,
+        231,
+        208
+      ]
+    },
+    {
+      "name": "ContractSignature",
+      "discriminator": [
+        165,
+        97,
+        146,
+        105,
+        80,
+        228,
+        87,
+        65
+      ]
+    },
+    {
+      "name": "EvidenceAnchor",
+      "discriminator": [
+        194,
+        239,
+        221,
+        1,
+        37,
+        134,
+        22,
+        64
+      ]
+    },
+    {
+      "name": "OwnerRecord",
+      "discriminator": [
+        5,
+        36,
+        17,
+        69,
+        246,
+        236,
+        83,
+        166
+      ]
+    },
+    {
+      "name": "Ownership",
+      "discriminator": [
+        41,
+        84,
+        101,
+        206,
+        145,
+        175,
+        88,
+        65
+      ]
+    },
+    {
+      "name": "RegistryConfig",
+      "discriminator": [
+        23,
+        118,
+        10,
+        246,
+        173,
+        231,
+        243,
+        156
+      ]
+    },
+    {
+      "name": "WorkClaim",
+      "discriminator": [
+        149,
+        227,
+        108,
+        190,
+        112,
+        37,
+        190,
+        47
+      ]
+    }
+  ],
+  "errors": [
+    {
+      "code": 6000,
+      "name": "AlreadyInitialized",
+      "msg": "Account already initialized"
+    },
+    {
+      "code": 6001,
+      "name": "StaleLineageHead",
+      "msg": "Lineage head is stale; refresh and retry"
+    },
+    {
+      "code": 6002,
+      "name": "AnchorModeNotAllowed",
+      "msg": "Anchor mode not allowed by registry config"
+    },
+    {
+      "code": 6003,
+      "name": "SimulatedModeRejected",
+      "msg": "Simulated anchor mode is rejected on this build"
+    },
+    {
+      "code": 6004,
+      "name": "ShareOverflow",
+      "msg": "Share arithmetic overflow"
+    },
+    {
+      "code": 6005,
+      "name": "ShareSumMismatch",
+      "msg": "Share sum mismatch"
+    },
+    {
+      "code": 6006,
+      "name": "ReservedFieldNonZero",
+      "msg": "Reserved field must be zero"
+    },
+    {
+      "code": 6007,
+      "name": "ThresholdNotMet",
+      "msg": "Threshold not met"
+    },
+    {
+      "code": 6008,
+      "name": "Paused",
+      "msg": "Program is paused"
+    },
+    {
+      "code": 6009,
+      "name": "Unauthorized",
+      "msg": "Signer is not the work claim claimant"
+    },
+    {
+      "code": 6010,
+      "name": "SupersededClaim",
+      "msg": "Work claim has been superseded"
+    },
+    {
+      "code": 6011,
+      "name": "ContentHashMismatch",
+      "msg": "Provided content hash does not match the on-chain contract artifact"
+    }
+  ],
+  "types": [
+    {
+      "name": "AnchorRecord",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "anchored_object",
+            "type": "pubkey"
+          },
+          {
+            "name": "anchored_object_kind",
+            "type": "u8"
+          },
+          {
+            "name": "anchor_mode",
+            "type": "u8"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          },
+          {
+            "name": "external_ref_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "AuthorizedContractAnchor",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "work_claim",
+            "type": "pubkey"
+          },
+          {
+            "name": "contract_artifact",
+            "type": "pubkey"
+          },
+          {
+            "name": "timestamp",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ClaimArtifactLink",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "work_claim",
+            "type": "pubkey"
+          },
+          {
+            "name": "content_artifact",
+            "type": "pubkey"
+          },
+          {
+            "name": "previous_link",
+            "type": "pubkey"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ContentArtifact",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "is_initialized",
+            "type": "bool"
+          },
+          {
+            "name": "raw_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "content_kind",
+            "type": "u8"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ContractArtifact",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "is_initialized",
+            "type": "bool"
+          },
+          {
+            "name": "raw_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "content_kind",
+            "type": "u8"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "ContractSignature",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "contract_artifact",
+            "type": "pubkey"
+          },
+          {
+            "name": "signer",
+            "type": "pubkey"
+          },
+          {
+            "name": "content_hash",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          },
+          {
+            "name": "signed_at",
+            "type": "i64"
+          },
+          {
+            "name": "slot",
+            "type": "u64"
+          },
+          {
+            "name": "bump",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "EvidenceAnchor",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "anchorer",
+            "type": "pubkey"
+          },
+          {
+            "name": "contract_artifact",
+            "type": "pubkey"
+          },
+          {
+            "name": "asserted_work_claim",
+            "type": "pubkey"
+          },
+          {
+            "name": "timestamp",
+            "type": "i64"
+          }
+        ]
+      }
+    },
+    {
+      "name": "OwnerRecord",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "ownership",
+            "type": "pubkey"
+          },
+          {
+            "name": "owner",
+            "type": "pubkey"
+          },
+          {
+            "name": "share",
+            "type": "u16"
+          },
+          {
+            "name": "role",
+            "type": "u8"
+          }
+        ]
+      }
+    },
+    {
+      "name": "Ownership",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "work_claim",
+            "type": "pubkey"
+          },
+          {
+            "name": "total_shares",
+            "type": "u16"
+          },
+          {
+            "name": "threshold_shares",
+            "type": "u16"
+          },
+          {
+            "name": "admin",
+            "type": "pubkey"
+          },
+          {
+            "name": "rules_version",
+            "type": "u8"
+          },
+          {
+            "name": "privacy_mode",
+            "type": "u8"
+          },
+          {
+            "name": "commitment_root",
+            "type": {
+              "array": [
+                "u8",
+                32
+              ]
+            }
+          }
+        ]
+      }
+    },
+    {
+      "name": "RegistryConfig",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "authority",
+            "type": "pubkey"
+          },
+          {
+            "name": "schema_version",
+            "type": "u8"
+          },
+          {
+            "name": "enabled_anchor_modes",
+            "type": "u16"
+          },
+          {
+            "name": "paused",
+            "type": "bool"
+          }
+        ]
+      }
+    },
+    {
+      "name": "WorkClaim",
+      "type": {
+        "kind": "struct",
+        "fields": [
+          {
+            "name": "root_artifact",
+            "type": "pubkey"
+          },
+          {
+            "name": "latest_artifact",
+            "type": "pubkey"
+          },
+          {
+            "name": "latest_link",
+            "type": "pubkey"
+          },
+          {
+            "name": "claimant",
+            "type": "pubkey"
+          },
+          {
+            "name": "ownership",
+            "type": "pubkey"
+          },
+          {
+            "name": "created_at",
+            "type": "i64"
+          },
+          {
+            "name": "claim_kind",
+            "type": "u8"
+          },
+          {
+            "name": "discoverability",
+            "type": "u8"
+          },
+          {
+            "name": "superseded_by",
+            "type": "pubkey"
+          }
+        ]
+      }
+    }
+  ],
+  "constants": [
+    {
+      "name": "SEED",
+      "type": "string",
+      "value": "\"anchor\""
+    }
+  ]
+}
